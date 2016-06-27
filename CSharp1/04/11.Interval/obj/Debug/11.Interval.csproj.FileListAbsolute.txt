@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\04\11.Interval\bin\Debug\11.Interval.exe.config
+D:\Coding\Telerik\CSharp1\04\11.Interval\bin\Debug\11.Interval.exe
+D:\Coding\Telerik\CSharp1\04\11.Interval\bin\Debug\11.Interval.pdb
+D:\Coding\Telerik\CSharp1\04\11.Interval\obj\Debug\11.Interval.exe
+D:\Coding\Telerik\CSharp1\04\11.Interval\obj\Debug\11.Interval.pdb

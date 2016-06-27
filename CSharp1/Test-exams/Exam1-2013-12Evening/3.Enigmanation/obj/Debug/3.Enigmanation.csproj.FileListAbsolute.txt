@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\3.Enigmanation\bin\Debug\3.Enigmanation.exe.config
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\3.Enigmanation\bin\Debug\3.Enigmanation.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\3.Enigmanation\bin\Debug\3.Enigmanation.pdb
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\3.Enigmanation\obj\Debug\3.Enigmanation.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\3.Enigmanation\obj\Debug\3.Enigmanation.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\3.Enigmanation\obj\Debug\3.Enigmanation.pdb

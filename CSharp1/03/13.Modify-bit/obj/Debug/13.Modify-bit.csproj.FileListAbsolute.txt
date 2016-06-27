@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\03\13.Modify-bit\bin\Debug\13.Modify-bit.exe.config
+D:\Coding\Telerik\CSharp1\03\13.Modify-bit\bin\Debug\13.Modify-bit.exe
+D:\Coding\Telerik\CSharp1\03\13.Modify-bit\bin\Debug\13.Modify-bit.pdb
+D:\Coding\Telerik\CSharp1\03\13.Modify-bit\obj\Debug\13.Modify-bit.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\03\13.Modify-bit\obj\Debug\13.Modify-bit.exe
+D:\Coding\Telerik\CSharp1\03\13.Modify-bit\obj\Debug\13.Modify-bit.pdb

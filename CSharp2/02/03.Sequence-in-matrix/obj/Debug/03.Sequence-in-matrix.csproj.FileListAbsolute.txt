@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\02\03.Sequence-in-matrix\bin\Debug\03.Sequence-in-matrix.exe.config
+D:\Coding\Telerik\CSharp2\02\03.Sequence-in-matrix\bin\Debug\03.Sequence-in-matrix.exe
+D:\Coding\Telerik\CSharp2\02\03.Sequence-in-matrix\bin\Debug\03.Sequence-in-matrix.pdb
+D:\Coding\Telerik\CSharp2\02\03.Sequence-in-matrix\obj\Debug\03.Sequence-in-matrix.exe
+D:\Coding\Telerik\CSharp2\02\03.Sequence-in-matrix\obj\Debug\03.Sequence-in-matrix.pdb

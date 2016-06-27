@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\3.Saddy-kopper\bin\Debug\3.Saddy-kopper.exe.config
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\3.Saddy-kopper\bin\Debug\3.Saddy-kopper.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\3.Saddy-kopper\bin\Debug\3.Saddy-kopper.pdb
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\3.Saddy-kopper\obj\Debug\3.Saddy-kopper.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\3.Saddy-kopper\obj\Debug\3.Saddy-kopper.pdb
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\3.Saddy-kopper\obj\Debug\3.Saddy-kopper.csprojResolveAssemblyReference.cache

@@ -1,0 +1,1 @@
+D:\Coding\Telerik\CSharp2\05\05.Triangle-surface-by-sides\bin\Debug\05.Triangle-surface-by-sides.exe.config

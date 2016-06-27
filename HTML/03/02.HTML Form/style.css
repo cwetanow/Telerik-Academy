@@ -1,0 +1,14 @@
+#submit{
+  border: 2px solid #79C99E;
+  border-radius: 10px;
+  color:#508484;
+  background-color: #99B3FF;
+  font-style: italic;
+  font-size: 24px;
+
+}
+label{
+  font-style: oblique;
+  font-size: 20px;
+
+}

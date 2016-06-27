@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\Exam\2.Speeds\bin\Debug\2.Speeds.exe.config
+D:\Coding\Telerik\CSharp1\Exam\2.Speeds\bin\Debug\2.Speeds.exe
+D:\Coding\Telerik\CSharp1\Exam\2.Speeds\bin\Debug\2.Speeds.pdb
+D:\Coding\Telerik\CSharp1\Exam\2.Speeds\obj\Debug\2.Speeds.exe
+D:\Coding\Telerik\CSharp1\Exam\2.Speeds\obj\Debug\2.Speeds.pdb

@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\06\03.Correct-brackets\bin\Debug\03.Correct-brackets.exe.config
+D:\Coding\Telerik\CSharp2\06\03.Correct-brackets\bin\Debug\03.Correct-brackets.exe
+D:\Coding\Telerik\CSharp2\06\03.Correct-brackets\bin\Debug\03.Correct-brackets.pdb
+D:\Coding\Telerik\CSharp2\06\03.Correct-brackets\obj\Debug\03.Correct-brackets.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\06\03.Correct-brackets\obj\Debug\03.Correct-brackets.exe
+D:\Coding\Telerik\CSharp2\06\03.Correct-brackets\obj\Debug\03.Correct-brackets.pdb

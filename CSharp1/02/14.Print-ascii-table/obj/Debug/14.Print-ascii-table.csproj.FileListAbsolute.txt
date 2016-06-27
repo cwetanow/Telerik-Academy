@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\02\14.Print-ascii-table\bin\Debug\14.Print-ascii-table.exe.config
+D:\Coding\Telerik\CSharp1\02\14.Print-ascii-table\bin\Debug\14.Print-ascii-table.exe
+D:\Coding\Telerik\CSharp1\02\14.Print-ascii-table\bin\Debug\14.Print-ascii-table.pdb
+D:\Coding\Telerik\CSharp1\02\14.Print-ascii-table\obj\Debug\14.Print-ascii-table.exe
+D:\Coding\Telerik\CSharp1\02\14.Print-ascii-table\obj\Debug\14.Print-ascii-table.pdb

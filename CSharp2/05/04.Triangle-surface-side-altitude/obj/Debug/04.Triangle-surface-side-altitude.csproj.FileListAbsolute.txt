@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\05\04.Triangle-surface-side-altitude\bin\Debug\04.Triangle-surface-side-altitude.exe.config
+D:\Coding\Telerik\CSharp2\05\04.Triangle-surface-side-altitude\bin\Debug\04.Triangle-surface-side-altitude.exe
+D:\Coding\Telerik\CSharp2\05\04.Triangle-surface-side-altitude\bin\Debug\04.Triangle-surface-side-altitude.pdb
+D:\Coding\Telerik\CSharp2\05\04.Triangle-surface-side-altitude\obj\Debug\04.Triangle-surface-side-altitude.exe
+D:\Coding\Telerik\CSharp2\05\04.Triangle-surface-side-altitude\obj\Debug\04.Triangle-surface-side-altitude.pdb

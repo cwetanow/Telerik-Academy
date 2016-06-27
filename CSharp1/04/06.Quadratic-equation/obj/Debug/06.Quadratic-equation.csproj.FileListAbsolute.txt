@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\04\06.Quadratic-equation\bin\Debug\06.Quadratic-equation.exe.config
+D:\Coding\Telerik\CSharp1\04\06.Quadratic-equation\bin\Debug\06.Quadratic-equation.exe
+D:\Coding\Telerik\CSharp1\04\06.Quadratic-equation\bin\Debug\06.Quadratic-equation.pdb
+D:\Coding\Telerik\CSharp1\04\06.Quadratic-equation\obj\Debug\06.Quadratic-equation.exe
+D:\Coding\Telerik\CSharp1\04\06.Quadratic-equation\obj\Debug\06.Quadratic-equation.pdb

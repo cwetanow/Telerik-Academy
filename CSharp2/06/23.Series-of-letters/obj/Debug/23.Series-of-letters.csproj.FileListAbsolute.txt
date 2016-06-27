@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\06\23.Series-of-letters\bin\Debug\23.Series-of-letters.exe.config
+D:\Coding\Telerik\CSharp2\06\23.Series-of-letters\bin\Debug\23.Series-of-letters.exe
+D:\Coding\Telerik\CSharp2\06\23.Series-of-letters\bin\Debug\23.Series-of-letters.pdb
+D:\Coding\Telerik\CSharp2\06\23.Series-of-letters\obj\Debug\23.Series-of-letters.exe
+D:\Coding\Telerik\CSharp2\06\23.Series-of-letters\obj\Debug\23.Series-of-letters.pdb

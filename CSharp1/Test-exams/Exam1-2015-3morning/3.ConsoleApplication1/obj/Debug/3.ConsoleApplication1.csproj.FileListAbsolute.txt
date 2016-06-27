@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\3.ConsoleApplication1\bin\Debug\3.ConsoleApplication1.exe.config
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\3.ConsoleApplication1\bin\Debug\3.ConsoleApplication1.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\3.ConsoleApplication1\bin\Debug\3.ConsoleApplication1.pdb
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\3.ConsoleApplication1\obj\Debug\3.ConsoleApplication1.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\3.ConsoleApplication1\obj\Debug\3.ConsoleApplication1.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\3.ConsoleApplication1\obj\Debug\3.ConsoleApplication1.pdb

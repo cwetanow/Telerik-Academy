@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\01.Calculation-problem\bin\Debug\01.Calculation-problem.exe.config
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\01.Calculation-problem\bin\Debug\01.Calculation-problem.exe
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\01.Calculation-problem\bin\Debug\01.Calculation-problem.pdb
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\01.Calculation-problem\obj\Debug\01.Calculation-problem.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\01.Calculation-problem\obj\Debug\01.Calculation-problem.exe
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\01.Calculation-problem\obj\Debug\01.Calculation-problem.pdb

@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\06\05.Calculate\bin\Debug\05.Calculate.exe.config
+D:\Coding\Telerik\CSharp1\06\05.Calculate\bin\Debug\05.Calculate.exe
+D:\Coding\Telerik\CSharp1\06\05.Calculate\bin\Debug\05.Calculate.pdb
+D:\Coding\Telerik\CSharp1\06\05.Calculate\obj\Debug\05.Calculate.exe
+D:\Coding\Telerik\CSharp1\06\05.Calculate\obj\Debug\05.Calculate.pdb
+D:\Coding\Telerik\CSharp1\06\05.Calculate\obj\Debug\05.Calculate.csprojResolveAssemblyReference.cache

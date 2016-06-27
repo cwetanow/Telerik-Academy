@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\06\10.Odd-even-product\bin\Debug\10.Odd-even-product.exe.config
+D:\Coding\Telerik\CSharp1\06\10.Odd-even-product\bin\Debug\10.Odd-even-product.exe
+D:\Coding\Telerik\CSharp1\06\10.Odd-even-product\bin\Debug\10.Odd-even-product.pdb
+D:\Coding\Telerik\CSharp1\06\10.Odd-even-product\obj\Debug\10.Odd-even-product.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\06\10.Odd-even-product\obj\Debug\10.Odd-even-product.exe
+D:\Coding\Telerik\CSharp1\06\10.Odd-even-product\obj\Debug\10.Odd-even-product.pdb

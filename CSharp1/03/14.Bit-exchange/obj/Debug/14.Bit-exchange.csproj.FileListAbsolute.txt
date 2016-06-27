@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\03\14.Bit-exchange\bin\Debug\14.Bit-exchange.exe.config
+D:\Coding\Telerik\CSharp1\03\14.Bit-exchange\obj\Debug\14.Bit-exchange.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\03\14.Bit-exchange\bin\Debug\14.Bit-exchange.exe
+D:\Coding\Telerik\CSharp1\03\14.Bit-exchange\bin\Debug\14.Bit-exchange.pdb
+D:\Coding\Telerik\CSharp1\03\14.Bit-exchange\obj\Debug\14.Bit-exchange.exe
+D:\Coding\Telerik\CSharp1\03\14.Bit-exchange\obj\Debug\14.Bit-exchange.pdb

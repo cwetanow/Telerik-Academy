@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\04\07.Sum-of-5-numbers\bin\Debug\07.Sum-of-5-numbers.exe.config
+D:\Coding\Telerik\CSharp1\04\07.Sum-of-5-numbers\bin\Debug\07.Sum-of-5-numbers.exe
+D:\Coding\Telerik\CSharp1\04\07.Sum-of-5-numbers\bin\Debug\07.Sum-of-5-numbers.pdb
+D:\Coding\Telerik\CSharp1\04\07.Sum-of-5-numbers\obj\Debug\07.Sum-of-5-numbers.exe
+D:\Coding\Telerik\CSharp1\04\07.Sum-of-5-numbers\obj\Debug\07.Sum-of-5-numbers.pdb

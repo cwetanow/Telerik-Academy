@@ -1,0 +1,18 @@
+table{
+    border: 2px solid grey;   
+    border-collapse: collapse;
+     
+}
+td{
+    border: 2px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+.headers{
+    text-align: center;
+    font-weight: bold; 
+}
+.marks{
+    font-weight: bold;
+    
+}

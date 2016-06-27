@@ -1,0 +1,9 @@
+D:\Coding\Telerik\CSharp2\01.Fill-matrix\01.Fill-matrix\bin\Debug\01.Fill-matrix.exe.config
+D:\Coding\Telerik\CSharp2\01.Fill-matrix\01.Fill-matrix\bin\Debug\01.Fill-matrix.exe
+D:\Coding\Telerik\CSharp2\01.Fill-matrix\01.Fill-matrix\bin\Debug\01.Fill-matrix.pdb
+D:\Coding\Telerik\CSharp2\01.Fill-matrix\01.Fill-matrix\obj\Debug\01.Fill-matrix.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\01.Fill-matrix\01.Fill-matrix\obj\Debug\01.Fill-matrix.exe
+D:\Coding\Telerik\CSharp2\01.Fill-matrix\01.Fill-matrix\obj\Debug\01.Fill-matrix.pdb
+D:\Coding\Telerik\CSharp2\02\01.Fill-matrix\01.Fill-matrix\bin\Debug\01.Fill-matrix.exe.config
+D:\Coding\Telerik\CSharp2\02\01.Fill-matrix\01.Fill-matrix\obj\Debug\01.Fill-matrix.exe
+D:\Coding\Telerik\CSharp2\02\01.Fill-matrix\01.Fill-matrix\obj\Debug\01.Fill-matrix.pdb

@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\Exam\3.Piglets\bin\Debug\3.Piglets.exe.config
+D:\Coding\Telerik\CSharp2\Exam\3.Piglets\bin\Debug\3.Piglets.exe
+D:\Coding\Telerik\CSharp2\Exam\3.Piglets\bin\Debug\3.Piglets.pdb
+D:\Coding\Telerik\CSharp2\Exam\3.Piglets\obj\Debug\3.Piglets.exe
+D:\Coding\Telerik\CSharp2\Exam\3.Piglets\obj\Debug\3.Piglets.pdb
+D:\Coding\Telerik\CSharp2\Exam\3.Piglets\obj\Debug\3.Piglets.csprojResolveAssemblyReference.cache

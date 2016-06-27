@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\2.Text-to-number\bin\Debug\2.Text-to-number.exe.config
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\2.Text-to-number\bin\Debug\2.Text-to-number.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\2.Text-to-number\bin\Debug\2.Text-to-number.pdb
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\2.Text-to-number\obj\Debug\2.Text-to-number.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\2.Text-to-number\obj\Debug\2.Text-to-number.pdb
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\2.Text-to-number\obj\Debug\2.Text-to-number.csprojResolveAssemblyReference.cache

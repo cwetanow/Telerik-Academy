@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\01\04.Maximal-sequence\bin\Debug\04.Maximal-sequence.exe.config
+D:\Coding\Telerik\CSharp2\01\04.Maximal-sequence\bin\Debug\04.Maximal-sequence.exe
+D:\Coding\Telerik\CSharp2\01\04.Maximal-sequence\bin\Debug\04.Maximal-sequence.pdb
+D:\Coding\Telerik\CSharp2\01\04.Maximal-sequence\obj\Debug\04.Maximal-sequence.exe
+D:\Coding\Telerik\CSharp2\01\04.Maximal-sequence\obj\Debug\04.Maximal-sequence.pdb

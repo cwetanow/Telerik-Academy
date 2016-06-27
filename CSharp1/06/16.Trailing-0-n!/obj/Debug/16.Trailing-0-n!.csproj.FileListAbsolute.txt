@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\06\16.Trailing-0-n!\bin\Debug\16.Trailing-0-n!.exe.config
+D:\Coding\Telerik\CSharp1\06\16.Trailing-0-n!\bin\Debug\16.Trailing-0-n!.exe
+D:\Coding\Telerik\CSharp1\06\16.Trailing-0-n!\bin\Debug\16.Trailing-0-n!.pdb
+D:\Coding\Telerik\CSharp1\06\16.Trailing-0-n!\obj\Debug\16.Trailing-0-n!.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\06\16.Trailing-0-n!\obj\Debug\16.Trailing-0-n!.exe
+D:\Coding\Telerik\CSharp1\06\16.Trailing-0-n!\obj\Debug\16.Trailing-0-n!.pdb

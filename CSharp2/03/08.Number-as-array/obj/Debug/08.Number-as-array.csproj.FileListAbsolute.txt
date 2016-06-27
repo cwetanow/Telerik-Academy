@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\03\08.Number-as-array\bin\Debug\08.Number-as-array.exe.config
+D:\Coding\Telerik\CSharp2\03\08.Number-as-array\bin\Debug\08.Number-as-array.exe
+D:\Coding\Telerik\CSharp2\03\08.Number-as-array\bin\Debug\08.Number-as-array.pdb
+D:\Coding\Telerik\CSharp2\03\08.Number-as-array\obj\Debug\08.Number-as-array.exe
+D:\Coding\Telerik\CSharp2\03\08.Number-as-array\obj\Debug\08.Number-as-array.pdb
+D:\Coding\Telerik\CSharp2\03\08.Number-as-array\obj\Debug\08.Number-as-array.csprojResolveAssemblyReference.cache

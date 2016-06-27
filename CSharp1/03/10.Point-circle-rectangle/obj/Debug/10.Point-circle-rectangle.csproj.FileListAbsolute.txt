@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\03\10.Point-circle-rectangle\bin\Debug\10.Point-circle-rectangle.exe.config
+D:\Coding\Telerik\CSharp1\03\10.Point-circle-rectangle\obj\Debug\10.Point-circle-rectangle.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\03\10.Point-circle-rectangle\bin\Debug\10.Point-circle-rectangle.exe
+D:\Coding\Telerik\CSharp1\03\10.Point-circle-rectangle\bin\Debug\10.Point-circle-rectangle.pdb
+D:\Coding\Telerik\CSharp1\03\10.Point-circle-rectangle\obj\Debug\10.Point-circle-rectangle.exe
+D:\Coding\Telerik\CSharp1\03\10.Point-circle-rectangle\obj\Debug\10.Point-circle-rectangle.pdb

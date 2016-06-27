@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\03\01.Say-hello\bin\Debug\01.Say-hello.exe.config
+D:\Coding\Telerik\CSharp2\03\01.Say-hello\bin\Debug\01.Say-hello.exe
+D:\Coding\Telerik\CSharp2\03\01.Say-hello\bin\Debug\01.Say-hello.pdb
+D:\Coding\Telerik\CSharp2\03\01.Say-hello\obj\Debug\01.Say-hello.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\03\01.Say-hello\obj\Debug\01.Say-hello.exe
+D:\Coding\Telerik\CSharp2\03\01.Say-hello\obj\Debug\01.Say-hello.pdb

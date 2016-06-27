@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\06\05.Parse-tags\bin\Debug\05.Parse-tags.exe.config
+D:\Coding\Telerik\CSharp2\06\05.Parse-tags\obj\Debug\05.Parse-tags.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\06\05.Parse-tags\bin\Debug\05.Parse-tags.exe
+D:\Coding\Telerik\CSharp2\06\05.Parse-tags\bin\Debug\05.Parse-tags.pdb
+D:\Coding\Telerik\CSharp2\06\05.Parse-tags\obj\Debug\05.Parse-tags.exe
+D:\Coding\Telerik\CSharp2\06\05.Parse-tags\obj\Debug\05.Parse-tags.pdb

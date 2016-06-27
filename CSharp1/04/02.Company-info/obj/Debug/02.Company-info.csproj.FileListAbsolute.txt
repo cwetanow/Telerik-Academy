@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\04\02.Company-info\bin\Debug\02.Company-info.exe.config
+D:\Coding\Telerik\CSharp1\04\02.Company-info\bin\Debug\02.Company-info.exe
+D:\Coding\Telerik\CSharp1\04\02.Company-info\bin\Debug\02.Company-info.pdb
+D:\Coding\Telerik\CSharp1\04\02.Company-info\obj\Debug\02.Company-info.exe
+D:\Coding\Telerik\CSharp1\04\02.Company-info\obj\Debug\02.Company-info.pdb

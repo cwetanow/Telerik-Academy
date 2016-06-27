@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\Decoding\bin\Debug\Decoding.exe.config
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\Decoding\bin\Debug\Decoding.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\Decoding\bin\Debug\Decoding.pdb
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\Decoding\obj\Debug\Decoding.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\Decoding\obj\Debug\Decoding.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\Decoding\obj\Debug\Decoding.pdb

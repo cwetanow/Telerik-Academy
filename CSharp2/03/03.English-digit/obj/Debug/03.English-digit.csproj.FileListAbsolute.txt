@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\03\03.English-digit\bin\Debug\03.English-digit.exe.config
+D:\Coding\Telerik\CSharp2\03\03.English-digit\bin\Debug\03.English-digit.exe
+D:\Coding\Telerik\CSharp2\03\03.English-digit\bin\Debug\03.English-digit.pdb
+D:\Coding\Telerik\CSharp2\03\03.English-digit\obj\Debug\03.English-digit.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\03\03.English-digit\obj\Debug\03.English-digit.exe
+D:\Coding\Telerik\CSharp2\03\03.English-digit\obj\Debug\03.English-digit.pdb

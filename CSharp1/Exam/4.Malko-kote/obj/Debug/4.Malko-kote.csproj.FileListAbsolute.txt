@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\Exam\4.Malko-kote\bin\Debug\4.Malko-kote.exe.config
+D:\Coding\Telerik\CSharp1\Exam\4.Malko-kote\bin\Debug\4.Malko-kote.exe
+D:\Coding\Telerik\CSharp1\Exam\4.Malko-kote\bin\Debug\4.Malko-kote.pdb
+D:\Coding\Telerik\CSharp1\Exam\4.Malko-kote\obj\Debug\4.Malko-kote.exe
+D:\Coding\Telerik\CSharp1\Exam\4.Malko-kote\obj\Debug\4.Malko-kote.pdb
+D:\Coding\Telerik\CSharp1\Exam\4.Malko-kote\obj\Debug\4.Malko-kote.csprojResolveAssemblyReference.cache

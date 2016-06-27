@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\02.Even-differences\bin\Debug\02.Even-differences.exe.config
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\02.Even-differences\bin\Debug\02.Even-differences.exe
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\02.Even-differences\bin\Debug\02.Even-differences.pdb
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\02.Even-differences\obj\Debug\02.Even-differences.exe
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\02.Even-differences\obj\Debug\02.Even-differences.pdb

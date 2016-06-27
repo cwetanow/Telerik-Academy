@@ -1,0 +1,1 @@
+D:\Coding\Telerik\CSharp2\01\05.Maximal-increasing-sequence\bin\Debug\05.Maximal-increasing-sequence.exe.config

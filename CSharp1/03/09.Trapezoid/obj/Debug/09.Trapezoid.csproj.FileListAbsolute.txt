@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\03\09.Trapezoid\bin\Debug\09.Trapezoid.exe.config
+D:\Coding\Telerik\CSharp1\03\09.Trapezoid\bin\Debug\09.Trapezoid.exe
+D:\Coding\Telerik\CSharp1\03\09.Trapezoid\bin\Debug\09.Trapezoid.pdb
+D:\Coding\Telerik\CSharp1\03\09.Trapezoid\obj\Debug\09.Trapezoid.exe
+D:\Coding\Telerik\CSharp1\03\09.Trapezoid\obj\Debug\09.Trapezoid.pdb

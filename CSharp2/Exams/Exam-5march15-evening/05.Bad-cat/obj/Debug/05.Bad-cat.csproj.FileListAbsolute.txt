@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\05.Bad-cat\bin\Debug\05.Bad-cat.exe.config
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\05.Bad-cat\bin\Debug\05.Bad-cat.exe
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\05.Bad-cat\bin\Debug\05.Bad-cat.pdb
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\05.Bad-cat\obj\Debug\05.Bad-cat.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\05.Bad-cat\obj\Debug\05.Bad-cat.exe
+D:\Coding\Telerik\CSharp2\Exams\Exam-5march15-evening\05.Bad-cat\obj\Debug\05.Bad-cat.pdb

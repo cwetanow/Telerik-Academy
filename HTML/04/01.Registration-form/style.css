@@ -1,0 +1,85 @@
+table {
+    border: 1px solid black;
+    border-spacing: none;
+    padding: 0;
+    width: 40%;
+    border-collapse: collapse;                  
+    line-height: 130%;
+    table-layout: fixed;
+}
+td {
+    border: 1px solid black;
+    padding: 1%;
+   border-spacing: none;
+   
+}
+#number {
+    width: 30%;
+}
+#countryCode {
+    width: 12%;
+}
+#areaCode {
+    width: 17%;
+}
+#lastButtons {
+    text-align: center;
+    background-color: #99ccff;
+    padding: 2%;
+    
+}
+input {
+    height: 70%;
+}
+#in {
+    border-style: none;
+    padding: 0;
+    border-spacing: none;
+    border-collapse: collapse;
+}
+#table{
+    border-collapse: collapse;
+    
+}
+#month, #day {
+    width: 10%;
+}
+#year {
+    width: 15%;
+    }
+   #city{
+       width: 85%;
+       
+   }
+   #state{
+       width: 80%;
+       padding-right: 2%;
+   }
+   #address{
+      
+   }
+.leftTable{
+    text-align: right;
+    padding-right: 2%;
+    font-weight: bold;    
+    width: 30%;
+}
+button{
+    font-size: 18px;
+    }
+.country {
+    width: 35%;
+}
+#state{
+    border-right-style: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+#comments{
+    padding-right: 20%;
+    
+}
+textarea{
+    resize:none;
+    
+}

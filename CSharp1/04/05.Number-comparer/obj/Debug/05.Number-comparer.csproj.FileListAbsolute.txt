@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\04\05.Number-comparer\bin\Debug\05.Number-comparer.exe.config
+D:\Coding\Telerik\CSharp1\04\05.Number-comparer\bin\Debug\05.Number-comparer.exe
+D:\Coding\Telerik\CSharp1\04\05.Number-comparer\bin\Debug\05.Number-comparer.pdb
+D:\Coding\Telerik\CSharp1\04\05.Number-comparer\obj\Debug\05.Number-comparer.exe
+D:\Coding\Telerik\CSharp1\04\05.Number-comparer\obj\Debug\05.Number-comparer.pdb

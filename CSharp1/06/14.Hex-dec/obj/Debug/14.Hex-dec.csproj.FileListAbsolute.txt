@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\06\14.Hex-dec\bin\Debug\14.Hex-dec.exe.config
+D:\Coding\Telerik\CSharp1\06\14.Hex-dec\bin\Debug\14.Hex-dec.exe
+D:\Coding\Telerik\CSharp1\06\14.Hex-dec\bin\Debug\14.Hex-dec.pdb
+D:\Coding\Telerik\CSharp1\06\14.Hex-dec\obj\Debug\14.Hex-dec.exe
+D:\Coding\Telerik\CSharp1\06\14.Hex-dec\obj\Debug\14.Hex-dec.pdb

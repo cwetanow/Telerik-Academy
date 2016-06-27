@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\05\02.Bonus\bin\Debug\02.Bonus.exe.config
+D:\Coding\Telerik\CSharp1\05\02.Bonus\bin\Debug\02.Bonus.exe
+D:\Coding\Telerik\CSharp1\05\02.Bonus\bin\Debug\02.Bonus.pdb
+D:\Coding\Telerik\CSharp1\05\02.Bonus\obj\Debug\02.Bonus.exe
+D:\Coding\Telerik\CSharp1\05\02.Bonus\obj\Debug\02.Bonus.pdb

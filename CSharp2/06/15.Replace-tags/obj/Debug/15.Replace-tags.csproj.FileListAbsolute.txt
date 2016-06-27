@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\06\15.Replace-tags\bin\Debug\15.Replace-tags.exe.config
+D:\Coding\Telerik\CSharp2\06\15.Replace-tags\bin\Debug\15.Replace-tags.exe
+D:\Coding\Telerik\CSharp2\06\15.Replace-tags\bin\Debug\15.Replace-tags.pdb
+D:\Coding\Telerik\CSharp2\06\15.Replace-tags\obj\Debug\15.Replace-tags.exe
+D:\Coding\Telerik\CSharp2\06\15.Replace-tags\obj\Debug\15.Replace-tags.pdb

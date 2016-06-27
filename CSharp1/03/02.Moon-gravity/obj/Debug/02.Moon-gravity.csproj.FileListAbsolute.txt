@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\03\02.Moon-gravity\bin\Debug\02.Moon-gravity.exe.config
+D:\Coding\Telerik\CSharp1\03\02.Moon-gravity\bin\Debug\02.Moon-gravity.exe
+D:\Coding\Telerik\CSharp1\03\02.Moon-gravity\bin\Debug\02.Moon-gravity.pdb
+D:\Coding\Telerik\CSharp1\03\02.Moon-gravity\obj\Debug\02.Moon-gravity.exe
+D:\Coding\Telerik\CSharp1\03\02.Moon-gravity\obj\Debug\02.Moon-gravity.pdb

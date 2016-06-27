@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\05\01.Exchange-if-greater\bin\Debug\01.Exchange-if-greater.exe.config
+D:\Coding\Telerik\CSharp1\05\01.Exchange-if-greater\bin\Debug\01.Exchange-if-greater.exe
+D:\Coding\Telerik\CSharp1\05\01.Exchange-if-greater\bin\Debug\01.Exchange-if-greater.pdb
+D:\Coding\Telerik\CSharp1\05\01.Exchange-if-greater\obj\Debug\01.Exchange-if-greater.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\05\01.Exchange-if-greater\obj\Debug\01.Exchange-if-greater.exe
+D:\Coding\Telerik\CSharp1\05\01.Exchange-if-greater\obj\Debug\01.Exchange-if-greater.pdb

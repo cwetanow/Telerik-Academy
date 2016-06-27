@@ -1,0 +1,109 @@
+body {
+    font-family: Roboto;
+    font-size: 16px;
+}
+#wrapper {
+    display: inline;
+}
+#play {
+    width: 854px;
+    float: left;
+}
+nav {
+    background-color: #1A1A1A;
+    width: 426px;
+    float: left;
+    height: 480px;
+}
+nav div {
+    margin-left: 10px;
+}
+h3 {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.controls {
+    margin-left: 30px;
+    margin-top: 10px;
+
+}
+.fa-repeat {
+  margin-right: 5px;
+}
+a {
+    text-decoration: none;
+    color: #8A8E80;
+}
+a:hover {
+    text-decoration: underline;
+}
+.fa:hover {
+    color: #FFFFFF;
+}
+.fa {
+    color: #B8B7BC;
+}
+h3 a {
+    color: #FFF9FF;
+}
+p {
+    color: #8A8E80;
+    display: inline;
+    margin-bottom: 10px;
+}
+.fa-cog {
+    float: right ;
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-right: 5px;
+}
+.fa-cog:visited {
+  color: #B93A33;
+}
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-left: 0;
+    padding: 5px;
+}
+li div {
+  display: inline-block;
+}
+span {
+  text-align: center;
+  color: #CDCBCC;
+
+}
+h4 {
+  color: #9AA1A9;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 0.8em;
+  margin-top: 0;
+}
+h5 {
+  margin: 0;
+  font-size: 0.8em;
+  color: #727274;
+  font-weight: normal;
+}
+.playlist-info {
+  border-bottom: 2px solid #3A3A3A;
+    padding-bottom: 10px;
+}
+.title-playlist {
+
+  width: 250px;
+  display: inline-block;;
+}
+.active-clip {
+  background-color: #3A3A3A;
+}
+.fa-play {
+  color: #B93A33;
+}
+.inactive-clip:hover {
+  background-color: #555054;
+}

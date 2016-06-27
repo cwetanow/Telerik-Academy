@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2evening\1.Money\bin\Debug\1.Money.exe.config
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2evening\1.Money\bin\Debug\1.Money.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2evening\1.Money\bin\Debug\1.Money.pdb
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2evening\1.Money\obj\Debug\1.Money.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2evening\1.Money\obj\Debug\1.Money.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2evening\1.Money\obj\Debug\1.Money.pdb

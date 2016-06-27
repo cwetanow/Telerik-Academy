@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\06\06.String-lenght\bin\Debug\06.String-lenght.exe.config
+D:\Coding\Telerik\CSharp2\06\06.String-lenght\bin\Debug\06.String-lenght.exe
+D:\Coding\Telerik\CSharp2\06\06.String-lenght\bin\Debug\06.String-lenght.pdb
+D:\Coding\Telerik\CSharp2\06\06.String-lenght\obj\Debug\06.String-lenght.exe
+D:\Coding\Telerik\CSharp2\06\06.String-lenght\obj\Debug\06.String-lenght.pdb

@@ -1,0 +1,27 @@
+table{
+  border-collapse: collapse;
+
+}
+
+img {
+  width: 20px;
+}
+td {
+border-right:1px solid black;
+  padding: 5px;
+  padding-right: 44px;
+}
+.head {
+  background-color: #52B506;
+  color: white;
+}
+
+.right, #righthead {
+  border: none;
+}
+.grey{
+  background-color: #ECECD8;
+}
+input{
+  border-radius: none;
+}

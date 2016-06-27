@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\Exam\5.Conductors\bin\Debug\5.Conductors.exe.config
+D:\Coding\Telerik\CSharp1\Exam\5.Conductors\bin\Debug\5.Conductors.exe
+D:\Coding\Telerik\CSharp1\Exam\5.Conductors\bin\Debug\5.Conductors.pdb
+D:\Coding\Telerik\CSharp1\Exam\5.Conductors\obj\Debug\5.Conductors.exe
+D:\Coding\Telerik\CSharp1\Exam\5.Conductors\obj\Debug\5.Conductors.pdb

@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\04\02.Binary-dec\bin\Debug\02.Binary-dec.exe.config
+D:\Coding\Telerik\CSharp2\04\02.Binary-dec\bin\Debug\02.Binary-dec.exe
+D:\Coding\Telerik\CSharp2\04\02.Binary-dec\bin\Debug\02.Binary-dec.pdb
+D:\Coding\Telerik\CSharp2\04\02.Binary-dec\obj\Debug\02.Binary-dec.exe
+D:\Coding\Telerik\CSharp2\04\02.Binary-dec\obj\Debug\02.Binary-dec.pdb

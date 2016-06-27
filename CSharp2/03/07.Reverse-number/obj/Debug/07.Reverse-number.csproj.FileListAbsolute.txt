@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\03\07.Reverse-number\bin\Debug\07.Reverse-number.exe.config
+D:\Coding\Telerik\CSharp2\03\07.Reverse-number\bin\Debug\07.Reverse-number.exe
+D:\Coding\Telerik\CSharp2\03\07.Reverse-number\bin\Debug\07.Reverse-number.pdb
+D:\Coding\Telerik\CSharp2\03\07.Reverse-number\obj\Debug\07.Reverse-number.exe
+D:\Coding\Telerik\CSharp2\03\07.Reverse-number\obj\Debug\07.Reverse-number.pdb

@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\06\02.Reverse-string\bin\Debug\02.Reverse-string.exe.config
+D:\Coding\Telerik\CSharp2\06\02.Reverse-string\bin\Debug\02.Reverse-string.exe
+D:\Coding\Telerik\CSharp2\06\02.Reverse-string\bin\Debug\02.Reverse-string.pdb
+D:\Coding\Telerik\CSharp2\06\02.Reverse-string\obj\Debug\02.Reverse-string.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\06\02.Reverse-string\obj\Debug\02.Reverse-string.exe
+D:\Coding\Telerik\CSharp2\06\02.Reverse-string\obj\Debug\02.Reverse-string.pdb

@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\03\14.Integer-calc\bin\Debug\14.Integer-calc.exe.config
+D:\Coding\Telerik\CSharp2\03\14.Integer-calc\bin\Debug\14.Integer-calc.exe
+D:\Coding\Telerik\CSharp2\03\14.Integer-calc\bin\Debug\14.Integer-calc.pdb
+D:\Coding\Telerik\CSharp2\03\14.Integer-calc\obj\Debug\14.Integer-calc.exe
+D:\Coding\Telerik\CSharp2\03\14.Integer-calc\obj\Debug\14.Integer-calc.pdb

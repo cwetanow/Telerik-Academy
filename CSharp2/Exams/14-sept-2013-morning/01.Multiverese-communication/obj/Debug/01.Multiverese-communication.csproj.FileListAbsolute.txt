@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\01.Multiverese-communication\bin\Debug\01.Multiverese-communication.exe.config
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\01.Multiverese-communication\bin\Debug\01.Multiverese-communication.exe
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\01.Multiverese-communication\bin\Debug\01.Multiverese-communication.pdb
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\01.Multiverese-communication\obj\Debug\01.Multiverese-communication.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\01.Multiverese-communication\obj\Debug\01.Multiverese-communication.exe
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\01.Multiverese-communication\obj\Debug\01.Multiverese-communication.pdb

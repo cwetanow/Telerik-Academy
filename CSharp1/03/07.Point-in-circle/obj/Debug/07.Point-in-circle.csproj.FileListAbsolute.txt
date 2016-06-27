@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\03\07.Point-in-circle\bin\Debug\07.Point-in-circle.exe.config
+D:\Coding\Telerik\CSharp1\03\07.Point-in-circle\bin\Debug\07.Point-in-circle.exe
+D:\Coding\Telerik\CSharp1\03\07.Point-in-circle\bin\Debug\07.Point-in-circle.pdb
+D:\Coding\Telerik\CSharp1\03\07.Point-in-circle\obj\Debug\07.Point-in-circle.exe
+D:\Coding\Telerik\CSharp1\03\07.Point-in-circle\obj\Debug\07.Point-in-circle.pdb

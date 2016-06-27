@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\03\06.Four-digits\bin\Debug\06.Four-digits.exe.config
+D:\Coding\Telerik\CSharp1\03\06.Four-digits\bin\Debug\06.Four-digits.exe
+D:\Coding\Telerik\CSharp1\03\06.Four-digits\bin\Debug\06.Four-digits.pdb
+D:\Coding\Telerik\CSharp1\03\06.Four-digits\obj\Debug\06.Four-digits.exe
+D:\Coding\Telerik\CSharp1\03\06.Four-digits\obj\Debug\06.Four-digits.pdb

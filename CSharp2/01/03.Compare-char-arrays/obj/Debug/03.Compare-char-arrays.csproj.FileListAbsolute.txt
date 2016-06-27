@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\01\03.Compare-char-arrays\bin\Debug\03.Compare-char-arrays.exe.config
+D:\Coding\Telerik\CSharp2\01\03.Compare-char-arrays\bin\Debug\03.Compare-char-arrays.exe
+D:\Coding\Telerik\CSharp2\01\03.Compare-char-arrays\bin\Debug\03.Compare-char-arrays.pdb
+D:\Coding\Telerik\CSharp2\01\03.Compare-char-arrays\obj\Debug\03.Compare-char-arrays.exe
+D:\Coding\Telerik\CSharp2\01\03.Compare-char-arrays\obj\Debug\03.Compare-char-arrays.pdb
+D:\Coding\Telerik\CSharp2\01\03.Compare-char-arrays\obj\Debug\03.Compare-char-arrays.csprojResolveAssemblyReference.cache

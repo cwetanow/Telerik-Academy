@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\05.Feat-grisko\bin\Debug\05.Feat-grisko.exe.config
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\05.Feat-grisko\bin\Debug\05.Feat-grisko.exe
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\05.Feat-grisko\bin\Debug\05.Feat-grisko.pdb
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\05.Feat-grisko\obj\Debug\05.Feat-grisko.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\05.Feat-grisko\obj\Debug\05.Feat-grisko.exe
+D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\05.Feat-grisko\obj\Debug\05.Feat-grisko.pdb

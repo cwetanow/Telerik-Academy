@@ -1,0 +1,72 @@
+#header{
+    font-size: 32px;
+    text-align: center;
+    border: 2px solid black;
+}
+a{
+    color: darkslateblue;
+}
+main{
+    
+   font-size: 40px;
+  
+}
+table{
+    
+    border: 2px solid black;
+    width: 55%;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+fieldset{
+    padding-right: 0;
+    text-align: center;
+    width: 90%;
+    border-collapse: collapse;
+    
+}
+#pics{
+    width: 100%;
+    border: none;
+}
+.slider{
+    border: none;
+}
+#side {
+    border-right: 2px solid black;
+    padding-right: 4%;
+    
+    margin-top: 15%;
+    
+   
+}
+#sliders{
+    border: none;
+  
+    width: 90%;
+}
+.products{
+
+
+   border-collapse: collapse;
+    padding: 1%;
+   
+       
+}
+td{
+  font-size: 16px;
+  font-weight: bold;
+}
+img{
+    width: 100%;
+}
+#items{
+    width: 100%;
+    padding-right: 0;
+   border: 2px solid black;
+   }
+   .item{
+       table-layout: fixed;
+       width: 100%;
+       border: none;
+   }

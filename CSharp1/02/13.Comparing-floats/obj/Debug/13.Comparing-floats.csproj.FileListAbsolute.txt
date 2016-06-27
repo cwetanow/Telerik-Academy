@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\02\13.Comparing-floats\bin\Debug\13.Comparing-floats.exe.config
+D:\Coding\Telerik\CSharp1\02\13.Comparing-floats\bin\Debug\13.Comparing-floats.exe
+D:\Coding\Telerik\CSharp1\02\13.Comparing-floats\bin\Debug\13.Comparing-floats.pdb
+D:\Coding\Telerik\CSharp1\02\13.Comparing-floats\obj\Debug\13.Comparing-floats.exe
+D:\Coding\Telerik\CSharp1\02\13.Comparing-floats\obj\Debug\13.Comparing-floats.pdb

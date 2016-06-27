@@ -1,0 +1,2 @@
+D:\Coding\Telerik\CSharp2\05.Larger-than-neighbours\05.Larger-than-neighbours\bin\Debug\05.Larger-than-neighbours.exe.config
+D:\Coding\Telerik\CSharp2\03\05.Larger-than-neighbours\05.Larger-than-neighbours\bin\Debug\05.Larger-than-neighbours.exe.config

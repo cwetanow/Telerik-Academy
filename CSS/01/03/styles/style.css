@@ -1,0 +1,26 @@
+
+ul{
+    list-style: none;
+}
+body{
+    background-color: #A9A9A9;
+}
+a, a:visited{
+    text-decoration: none;
+   color: #FAFAD2;
+}
+header{
+    text-align: center;
+    font-size: 30px;
+    color: #FAFAD2;
+}
+.current{
+    background-color: #D3D3D3;
+    color: #FAFAD2;
+}
+#4{
+    text-decoration: underline;
+}
+#foot{
+    text-align: center;
+}

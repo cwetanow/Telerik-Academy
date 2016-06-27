@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\03\03.Divide-by-7-5\bin\Debug\03.Divide-by-7-5.exe.config
+D:\Coding\Telerik\CSharp1\03\03.Divide-by-7-5\bin\Debug\03.Divide-by-7-5.exe
+D:\Coding\Telerik\CSharp1\03\03.Divide-by-7-5\bin\Debug\03.Divide-by-7-5.pdb
+D:\Coding\Telerik\CSharp1\03\03.Divide-by-7-5\obj\Debug\03.Divide-by-7-5.exe
+D:\Coding\Telerik\CSharp1\03\03.Divide-by-7-5\obj\Debug\03.Divide-by-7-5.pdb
+D:\Coding\Telerik\CSharp1\03\03.Divide-by-7-5\obj\Debug\03.Divide-by-7-5.csprojResolveAssemblyReference.cache

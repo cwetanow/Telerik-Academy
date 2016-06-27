@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\07\02.Enter-numbers\bin\Debug\02.Enter-numbers.exe.config
+D:\Coding\Telerik\CSharp2\07\02.Enter-numbers\bin\Debug\02.Enter-numbers.exe
+D:\Coding\Telerik\CSharp2\07\02.Enter-numbers\bin\Debug\02.Enter-numbers.pdb
+D:\Coding\Telerik\CSharp2\07\02.Enter-numbers\obj\Debug\02.Enter-numbers.exe
+D:\Coding\Telerik\CSharp2\07\02.Enter-numbers\obj\Debug\02.Enter-numbers.pdb
+D:\Coding\Telerik\CSharp2\07\02.Enter-numbers\obj\Debug\02.Enter-numbers.csprojResolveAssemblyReference.cache

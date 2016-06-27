@@ -1,0 +1,96 @@
+body {
+    font-family: Helvetica;
+}
+#wrapper {
+    margin: 0;
+    padding: 0;
+    width: 243px;
+}
+img {
+    width: 230px;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+#main-info {}
+#main-info h1 {
+    font-size: 1.6em;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+#main-info h2 {
+    color: #666666;
+    margin-top: 3px;
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+#main-info, #details, #git-info {
+    border-bottom: 2px solid #EEEEEE;
+    width: 243px;
+}
+#label {
+    display: inline-block;
+    background-color: #6CC644;
+    color: #F5FFFF;
+    width: 30px;
+    font-size: 11px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 1.5px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+a {
+    color: #45A6DB;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+p {
+    display: inline;
+    margin-left: 0.7em;
+    font-size: 0.9em;
+}
+p a {
+    font-size: 1em;
+}
+#location, #mail, #joined {
+    margin-top: 8px;
+}
+#joined {
+    margin-bottom: 10px;
+}
+.octicon {
+    color: #999999;
+}
+#details {}
+#git-info {
+    color: #A08F76;
+    font-size: 0.7em;
+    text-align: center;
+    margin-top: 0;
+}
+#git-info div span {
+    color: #4078C0;
+    font-weight: bold;
+    font-size: 2.4em;
+    display: block;
+    text-align: center;
+
+}
+.followers {
+    float: left;
+    margin-left: 10px;
+}
+.starred {
+    float: left;
+    margin-left: 18px;
+}
+.following {
+    float: right;
+    margin-right: 25px;
+}
+#git-info div {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\03\12.N-th-bit\bin\Debug\12.N-th-bit.exe.config
+D:\Coding\Telerik\CSharp1\03\12.N-th-bit\bin\Debug\12.N-th-bit.exe
+D:\Coding\Telerik\CSharp1\03\12.N-th-bit\bin\Debug\12.N-th-bit.pdb
+D:\Coding\Telerik\CSharp1\03\12.N-th-bit\obj\Debug\12.N-th-bit.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\03\12.N-th-bit\obj\Debug\12.N-th-bit.exe
+D:\Coding\Telerik\CSharp1\03\12.N-th-bit\obj\Debug\12.N-th-bit.pdb

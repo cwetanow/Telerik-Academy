@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\1.Three-numbers\bin\Debug\1.Three-numbers.exe.config
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\1.Three-numbers\bin\Debug\1.Three-numbers.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\1.Three-numbers\bin\Debug\1.Three-numbers.pdb
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\1.Three-numbers\obj\Debug\1.Three-numbers.exe
+D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\1.Three-numbers\obj\Debug\1.Three-numbers.pdb

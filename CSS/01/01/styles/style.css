@@ -1,0 +1,49 @@
+
+table {
+  background-color: #595959;
+font-size: 0.8em;
+
+}
+
+th{
+  float: left;
+  font-weight: normal;
+  color: #D3D3D3;
+  font-size: 1.2em;
+  font-family:sans-serif;
+}
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+
+}
+
+li{
+
+    text-indent: -.17em;
+}
+
+li::before {
+  content: '• ';
+  font-size: 2em;
+  color:#71B47A;
+}
+#redster{
+  color: red;
+padding-right: 20px;
+}
+.left{
+color: white;
+  font-style: italic;
+
+}
+.yellow {
+  color: #E4E3AF;
+}
+.time {
+  color:#D3D3D3;
+}
+#last{
+  color: orange;
+}

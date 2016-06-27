@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp1\06\13.Dec-hex\bin\Debug\13.Dec-hex.exe.config
+D:\Coding\Telerik\CSharp1\06\13.Dec-hex\bin\Debug\13.Dec-hex.exe
+D:\Coding\Telerik\CSharp1\06\13.Dec-hex\bin\Debug\13.Dec-hex.pdb
+D:\Coding\Telerik\CSharp1\06\13.Dec-hex\obj\Debug\13.Dec-hex.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp1\06\13.Dec-hex\obj\Debug\13.Dec-hex.exe
+D:\Coding\Telerik\CSharp1\06\13.Dec-hex\obj\Debug\13.Dec-hex.pdb

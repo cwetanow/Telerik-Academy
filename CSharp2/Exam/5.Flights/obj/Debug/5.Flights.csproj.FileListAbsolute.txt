@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\Exam\5.Flights\bin\Debug\5.Flights.exe.config
+D:\Coding\Telerik\CSharp2\Exam\5.Flights\bin\Debug\5.Flights.exe
+D:\Coding\Telerik\CSharp2\Exam\5.Flights\bin\Debug\5.Flights.pdb
+D:\Coding\Telerik\CSharp2\Exam\5.Flights\obj\Debug\5.Flights.exe
+D:\Coding\Telerik\CSharp2\Exam\5.Flights\obj\Debug\5.Flights.pdb
+D:\Coding\Telerik\CSharp2\Exam\5.Flights\obj\Debug\5.Flights.csprojResolveAssemblyReference.cache

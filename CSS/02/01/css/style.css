@@ -1,0 +1,18 @@
+body{
+    color: #0094ff;
+}
+@font-face{
+	font-family:"Edwardian Script ITC";
+	src:url("http://www.myfontfree.com/data/54/e/edwardian-script-itc/ITCEDSCR.TTF");
+}
+@font-face{
+	font-family:"Consolas";
+	src:url("http://www.myfontfree.com/data/200/c/consolas/Consolas.ttf");
+}
+label{
+    font-family: Edwardian Script ITC;
+    font-size: 42px;
+}
+h3, p{
+    font-family: Consolas;
+}

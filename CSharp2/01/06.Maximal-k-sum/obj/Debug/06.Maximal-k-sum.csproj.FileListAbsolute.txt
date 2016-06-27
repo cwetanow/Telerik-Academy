@@ -1,0 +1,5 @@
+D:\Coding\Telerik\CSharp2\01\06.Maximal-k-sum\bin\Debug\06.Maximal-k-sum.exe.config
+D:\Coding\Telerik\CSharp2\01\06.Maximal-k-sum\bin\Debug\06.Maximal-k-sum.exe
+D:\Coding\Telerik\CSharp2\01\06.Maximal-k-sum\bin\Debug\06.Maximal-k-sum.pdb
+D:\Coding\Telerik\CSharp2\01\06.Maximal-k-sum\obj\Debug\06.Maximal-k-sum.exe
+D:\Coding\Telerik\CSharp2\01\06.Maximal-k-sum\obj\Debug\06.Maximal-k-sum.pdb

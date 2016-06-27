@@ -1,0 +1,6 @@
+D:\Coding\Telerik\CSharp2\01\01.Allocate-array\bin\Debug\01.Allocate-array.exe.config
+D:\Coding\Telerik\CSharp2\01\01.Allocate-array\bin\Debug\01.Allocate-array.exe
+D:\Coding\Telerik\CSharp2\01\01.Allocate-array\bin\Debug\01.Allocate-array.pdb
+D:\Coding\Telerik\CSharp2\01\01.Allocate-array\obj\Debug\01.Allocate-array.csprojResolveAssemblyReference.cache
+D:\Coding\Telerik\CSharp2\01\01.Allocate-array\obj\Debug\01.Allocate-array.exe
+D:\Coding\Telerik\CSharp2\01\01.Allocate-array\obj\Debug\01.Allocate-array.pdb

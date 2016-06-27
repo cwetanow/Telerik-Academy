@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\64BitArray.cs" />
+    <Compile Include="Classes\Person.cs" />
     <Compile Include="Classes\Student.cs" />
     <Compile Include="Enumerations\Faculty.cs" />
     <Compile Include="Enumerations\Specialty.cs" />
