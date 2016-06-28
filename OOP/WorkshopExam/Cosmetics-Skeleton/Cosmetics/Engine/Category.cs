@@ -49,7 +49,7 @@ namespace Cosmetics.Engine
         {
             this.Sort();
             var builder = new StringBuilder();
-            if (this.productsList.Count==0)
+            if (this.productsList.Count == 0)
             {
                 builder.Append(string.Format("{0} category - {1} {2} in total", this.Name, this.productsList.Count, this.productsList.Count == 1 ? "product" : "products"));
             }
@@ -69,7 +69,7 @@ namespace Cosmetics.Engine
                     }
                 }
             }
-            
+
             return builder.ToString();
         }
 
