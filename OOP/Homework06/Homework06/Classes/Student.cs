@@ -96,9 +96,24 @@ namespace Homework06.Classes
         }
         public int CompareTo(Student a) {
             var comparingName = this.FirstName.CompareTo(a.FirstName);
-            if (comparingName==0)
+            if (this.FirstName.CompareTo(a.FirstName) == 0)
             {
-                return this.SSN.CompareTo(a.SSN);
+                if (this.MiddleName.CompareTo(a.MiddleName) == 0)
+                {
+                    if (this.LastName.CompareTo(a.LastName)==0)
+                    {
+                        return this.SSN.CompareTo(a.SSN);
+                    }
+                    else
+                    {
+                        return this.LastName.CompareTo(a.LastName);
+                    }
+                }
+                else
+                {
+                    return this.MiddleName.CompareTo(a.MiddleName);
+                }
+                
             }
             else
             {
