@@ -1,7 +1,7 @@
 function solve(args) {
     for (let i = 0; i < args.length; i += 1) {
         args[i] = args[i].replace(/:\s\s+/g, ": ");
-        args[i] = args[i].replace(/{/g, " {");
+        args[i] = args[i].replace(/{/g, "{");
     }
     let result = [args[0]];
     var brackets = 1;
