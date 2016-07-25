@@ -18,7 +18,7 @@ namespace School
 
         public void StudentJoins(Student student)
         {
-            if (this.students.Count==30)
+            if (this.students.Count == 30)
             {
                 throw new ArgumentException("Students cannot be more than 30");
             }
@@ -27,11 +27,13 @@ namespace School
 
         public bool StudentLeaves(Student student)
         {
-            if (this.students.Count==0)
+            if (this.students.Count == 0)
             {
                 throw new ArgumentException("No students");
             }
             return this.students.Remove(student);
         }
+
+        public int Count { get { return this.students.Count; } }
     }
 }
