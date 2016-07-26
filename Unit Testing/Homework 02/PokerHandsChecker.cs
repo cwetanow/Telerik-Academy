@@ -6,7 +6,29 @@ namespace Poker
     {
         public bool IsValidHand(IHand hand)
         {
-            throw new NotImplementedException();
+            if (hand.Cards.Count != 5)
+            {
+                return false;
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    if (hand.Cards[i].Face==(hand.Cards[j]).Face && hand.Cards[i].Suit == (hand.Cards[j]).Suit)
+                    {
+                        return false;
+                    }
+                }
+                for (int j = i + 1; j < 5; j++)
+                {
+                    if (hand.Cards[i].Face == (hand.Cards[j]).Face && hand.Cards[i].Suit == (hand.Cards[j]).Suit)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+
         }
 
         public bool IsStraightFlush(IHand hand)
