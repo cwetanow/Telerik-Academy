@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Poker
 {
@@ -14,7 +15,7 @@ namespace Poker
             {
                 for (int j = 0; j < i; j++)
                 {
-                    if (hand.Cards[i].Face==(hand.Cards[j]).Face && hand.Cards[i].Suit == (hand.Cards[j]).Suit)
+                    if (hand.Cards[i].Face == (hand.Cards[j]).Face && hand.Cards[i].Suit == (hand.Cards[j]).Suit)
                     {
                         return false;
                     }
@@ -48,7 +49,33 @@ namespace Poker
 
         public bool IsFlush(IHand hand)
         {
-            throw new NotImplementedException();
+            if (!this.IsValidHand(hand))
+            {
+                throw new ArgumentException();
+            }
+            var suits = new List<CardSuit>
+            {
+                CardSuit.Clubs,
+                CardSuit.Diamonds,
+                CardSuit.Hearts,
+                CardSuit.Spades
+            };
+            var counters = new List<int> { 0, 0, 0, 0 };
+
+            foreach (var card in hand.Cards)
+            {
+                for (int i = 0; i < 4; i++)
+                {
+                    if (card.Suit==suits[i])
+                    {
+                        counters[i]++;
+                        break;
+                    }
+                }
+            }
+
+            return counters.Contains(5);
+
         }
 
         public bool IsStraight(IHand hand)
