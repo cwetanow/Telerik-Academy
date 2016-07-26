@@ -84,5 +84,20 @@ namespace Poker.Tests
             var hand = new Hand(cards);
             Assert.IsTrue(pokerChecker.IsFlush(hand));
         }
+
+        [Test]
+        public void TestHandChecker_PassValidFourOfKind_ShouldReturnTrue()
+        {
+            IList<ICard> cards = new List<ICard>
+            {
+                new Card(CardFace.Five, CardSuit.Diamonds),
+                 new Card(CardFace.Five, CardSuit.Clubs),
+                  new Card(CardFace.Five, CardSuit.Hearts),
+                   new Card(CardFace.Five, CardSuit.Spades),
+                   new Card(CardFace.Queen,CardSuit.Clubs)
+            };
+            var hand = new Hand(cards);
+            Assert.IsTrue(pokerChecker.IsFourOfAKind(hand));
+        }
     }
 }
