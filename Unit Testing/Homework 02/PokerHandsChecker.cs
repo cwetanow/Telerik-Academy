@@ -63,9 +63,24 @@ namespace Poker
                 CardFace.Three,
                 CardFace.Two
             };
-            var counters = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+            var counters = new List<int>();
+            foreach (var item in faces)
+            {
+                counters.Add(0);
+            }
 
-            
+            foreach (var card in hand.Cards)
+            {
+                foreach (var face in faces)
+                {
+                    if (card.Face == face)
+                    {
+                        counters[faces.IndexOf(face)]++;
+                    }
+                }
+            }
+            return counters.Contains(4);
+
         }
 
         public bool IsFullHouse(IHand hand)
@@ -90,9 +105,24 @@ namespace Poker
                 CardFace.Three,
                 CardFace.Two
             };
-            var counters = new List<int> { 0, 0, 0, 0 };
+            var counters = new List<int>();
+            foreach (var item in faces)
+            {
+                counters.Add(0);
+            }
 
-            
+            foreach (var card in hand.Cards)
+            {
+                foreach (var face in faces)
+                {
+                    if (card.Face == face)
+                    {
+                        counters[faces.IndexOf(face)]++;
+                    }
+                }
+            }
+            return counters.Contains(3) && counters.Contains(2);
+
         }
 
         public bool IsFlush(IHand hand)
@@ -153,7 +183,23 @@ namespace Poker
                 CardFace.Three,
                 CardFace.Two
             };
-            var counters = new List<int> { 0, 0, 0, 0 };
+            var counters = new List<int>();
+            foreach (var item in faces)
+            {
+                counters.Add(0);
+            }
+            
+            foreach (var card in hand.Cards)
+            {
+                foreach (var face in faces)
+                {
+                    if (card.Face==face)
+                    {
+                        counters[faces.IndexOf(face)]++;
+                    }
+                }
+            }
+            return counters.Contains(3);
 
             
         }

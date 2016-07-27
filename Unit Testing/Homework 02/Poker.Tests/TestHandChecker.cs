@@ -100,8 +100,8 @@ namespace Poker.Tests
                 new Card(CardFace.Five, CardSuit.Diamonds),
                  new Card(CardFace.Five, CardSuit.Clubs),
                   new Card(CardFace.Five, CardSuit.Hearts),
-                   new Card(CardFace.Five, CardSuit.Spades),
-                   new Card(CardFace.Queen,CardSuit.Clubs)
+                   new Card(CardFace.Four, CardSuit.Spades),
+                   new Card(CardFace.Five,CardSuit.Spades)
             };
             var hand = new Hand(cards);
             Assert.IsTrue(pokerChecker.IsFourOfAKind(hand));
@@ -116,7 +116,7 @@ namespace Poker.Tests
                  new Card(CardFace.Five, CardSuit.Clubs),
                   new Card(CardFace.Queen, CardSuit.Hearts),
                    new Card(CardFace.Six, CardSuit.Spades),
-                   new Card(CardFace.Five,CardSuit.Clubs)
+                   new Card(CardFace.Five,CardSuit.Hearts)
             };
             var hand = new Hand(cards);
             Assert.IsTrue(pokerChecker.IsThreeOfAKind(hand));
@@ -127,7 +127,7 @@ namespace Poker.Tests
         {
             IList<ICard> cards = new List<ICard>
             {
-                new Card(CardFace.Five, CardSuit.Diamonds),
+                new Card(CardFace.Six, CardSuit.Diamonds),
                  new Card(CardFace.Five, CardSuit.Clubs),
                   new Card(CardFace.Five, CardSuit.Hearts),
                    new Card(CardFace.Six, CardSuit.Spades),
