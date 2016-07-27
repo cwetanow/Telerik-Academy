@@ -136,5 +136,50 @@ namespace Poker.Tests
             var hand = new Hand(cards);
             Assert.IsTrue(pokerChecker.IsFullHouse(hand));
         }
+
+        [Test]
+        public void TestHandChecker_PassValidPair_ShouldReturnTrue()
+        {
+            IList<ICard> cards = new List<ICard>
+            {
+                new Card(CardFace.Six, CardSuit.Diamonds),
+                 new Card(CardFace.Five, CardSuit.Clubs),
+                  new Card(CardFace.Seven, CardSuit.Hearts),
+                   new Card(CardFace.Queen, CardSuit.Spades),
+                   new Card(CardFace.Seven,CardSuit.Clubs)
+            };
+            var hand = new Hand(cards);
+            Assert.IsTrue(pokerChecker.IsOnePair(hand));
+        }
+
+        [Test]
+        public void TestHandChecker_PassValidTwoPair_ShouldReturnTrue()
+        {
+            IList<ICard> cards = new List<ICard>
+            {
+                new Card(CardFace.Six, CardSuit.Diamonds),
+                 new Card(CardFace.Queen, CardSuit.Clubs),
+                  new Card(CardFace.Seven, CardSuit.Hearts),
+                   new Card(CardFace.Queen, CardSuit.Spades),
+                   new Card(CardFace.Seven,CardSuit.Clubs)
+            };
+            var hand = new Hand(cards);
+            Assert.IsTrue(pokerChecker.IsTwoPair(hand));
+        }
+
+        [Test]
+        public void TestHandChecker_PassValidStraight_ShouldReturnTrue()
+        {
+            IList<ICard> cards = new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                 new Card(CardFace.Seven, CardSuit.Clubs),
+                  new Card(CardFace.Eight, CardSuit.Hearts),
+                   new Card(CardFace.Nine, CardSuit.Spades),
+                   new Card(CardFace.Ten,CardSuit.Clubs)
+            };
+            var hand = new Hand(cards);
+            Assert.IsTrue(pokerChecker.IsStraight(hand));
+        }
     }
 }

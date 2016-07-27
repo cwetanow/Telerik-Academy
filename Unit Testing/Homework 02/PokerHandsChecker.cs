@@ -5,6 +5,23 @@ namespace Poker
 {
     public class PokerHandsChecker : IPokerHandsChecker
     {
+        private static List<CardFace> faces = new List<CardFace>
+            {
+            CardFace.Two,
+            CardFace.Three,
+            CardFace.Four,
+            CardFace.Five,
+            CardFace.Six,
+            CardFace.Seven,
+            CardFace.Eight,
+            CardFace.Nine,
+            CardFace.Ten,
+            CardFace.Jack,
+            CardFace.Queen,
+            CardFace.King,
+            CardFace.Ace
+            };
+
         public bool IsValidHand(IHand hand)
         {
             if (hand == null)
@@ -47,22 +64,7 @@ namespace Poker
             {
                 throw new ArgumentException();
             }
-            var faces = new List<CardFace>
-            {
-                CardFace.Ace,
-                CardFace.Eight,
-                CardFace.Five,
-                CardFace.Four,
-                CardFace.Jack,
-                CardFace.King,
-                CardFace.Nine,
-                CardFace.Queen,
-                CardFace.Seven,
-                CardFace.Six,
-                CardFace.Ten,
-                CardFace.Three,
-                CardFace.Two
-            };
+
             var counters = new List<int>();
             foreach (var item in faces)
             {
@@ -89,22 +91,7 @@ namespace Poker
             {
                 throw new ArgumentException();
             }
-            var faces = new List<CardFace>
-            {
-                CardFace.Ace,
-                CardFace.Eight,
-                CardFace.Five,
-                CardFace.Four,
-                CardFace.Jack,
-                CardFace.King,
-                CardFace.Nine,
-                CardFace.Queen,
-                CardFace.Seven,
-                CardFace.Six,
-                CardFace.Ten,
-                CardFace.Three,
-                CardFace.Two
-            };
+
             var counters = new List<int>();
             foreach (var item in faces)
             {
@@ -158,7 +145,36 @@ namespace Poker
 
         public bool IsStraight(IHand hand)
         {
-            throw new NotImplementedException();
+            if (!this.IsValidHand(hand))
+            {
+                throw new ArgumentException();
+            }
+
+            var counters = new List<int>();
+            foreach (var item in faces)
+            {
+                counters.Add(0);
+            }
+
+            foreach (var card in hand.Cards)
+            {
+                foreach (var face in faces)
+                {
+                    if (card.Face == face)
+                    {
+                        counters[faces.IndexOf(face)]++;
+                    }
+                }
+            }
+            var result = 0;
+            foreach (var item in counters)
+            {
+                if (item == 0 && result!=0)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
         public bool IsThreeOfAKind(IHand hand)
@@ -167,33 +183,18 @@ namespace Poker
             {
                 throw new ArgumentException();
             }
-            var faces = new List<CardFace>
-            {
-                CardFace.Ace,
-                CardFace.Eight,
-                CardFace.Five,
-                CardFace.Four,
-                CardFace.Jack,
-                CardFace.King,
-                CardFace.Nine,
-                CardFace.Queen,
-                CardFace.Seven,
-                CardFace.Six,
-                CardFace.Ten,
-                CardFace.Three,
-                CardFace.Two
-            };
+
             var counters = new List<int>();
             foreach (var item in faces)
             {
                 counters.Add(0);
             }
-            
+
             foreach (var card in hand.Cards)
             {
                 foreach (var face in faces)
                 {
-                    if (card.Face==face)
+                    if (card.Face == face)
                     {
                         counters[faces.IndexOf(face)]++;
                     }
@@ -201,17 +202,75 @@ namespace Poker
             }
             return counters.Contains(3);
 
-            
+
         }
 
         public bool IsTwoPair(IHand hand)
         {
-            throw new NotImplementedException();
+            if (!this.IsValidHand(hand))
+            {
+                throw new ArgumentException();
+            }
+
+            var counters = new List<int>();
+            foreach (var item in faces)
+            {
+                counters.Add(0);
+            }
+
+            foreach (var card in hand.Cards)
+            {
+                foreach (var face in faces)
+                {
+                    if (card.Face == face)
+                    {
+                        counters[faces.IndexOf(face)]++;
+                    }
+                }
+            }
+            var times = 0;
+            foreach (var item in counters)
+            {
+                if (item == 2)
+                {
+                    times++;
+                }
+            }
+            return times == 2;
         }
 
         public bool IsOnePair(IHand hand)
         {
-            throw new NotImplementedException();
+            if (!this.IsValidHand(hand))
+            {
+                throw new ArgumentException();
+            }
+
+            var counters = new List<int>();
+            foreach (var item in faces)
+            {
+                counters.Add(0);
+            }
+
+            foreach (var card in hand.Cards)
+            {
+                foreach (var face in faces)
+                {
+                    if (card.Face == face)
+                    {
+                        counters[faces.IndexOf(face)]++;
+                    }
+                }
+            }
+            var times = 0;
+            foreach (var item in counters)
+            {
+                if (item==2)
+                {
+                    times++;
+                }
+            }
+            return times==1;
         }
 
         public bool IsHighCard(IHand hand)
