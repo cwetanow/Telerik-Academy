@@ -170,7 +170,7 @@ namespace Poker
             var result = 0;
             foreach (var item in counters)
             {
-                if (item == 0 && result!=0)
+                if (item == 0 && result != 0)
                 {
                     return false;
                 }
@@ -266,12 +266,12 @@ namespace Poker
             var times = 0;
             foreach (var item in counters)
             {
-                if (item==2)
+                if (item == 2)
                 {
                     times++;
                 }
             }
-            return times==1;
+            return times == 1;
         }
 
         public bool IsHighCard(IHand hand)
@@ -281,10 +281,11 @@ namespace Poker
 
         public int CompareHands(IHand firstHand, IHand secondHand)
         {
-            if (GetHandPower(firstHand).CompareTo(GetHandPower(secondHand))<0)
+            if (GetHandPower(firstHand).CompareTo(GetHandPower(secondHand)) < 0)
             {
                 return -1;
-            } else if (GetHandPower(firstHand).CompareTo(GetHandPower(secondHand)) > 0)
+            }
+            else if (GetHandPower(firstHand).CompareTo(GetHandPower(secondHand)) > 0)
             {
                 return 1;
             }
@@ -294,7 +295,24 @@ namespace Poker
                 {
                     return firstHand.Cards.Select(x => (int)x.Face).Max().CompareTo(secondHand.Cards.Select(x => (int)x.Face).Max());
                 }
-                
+                else if (this.IsFourOfAKind(firstHand))
+                {
+
+                }
+                else if (this.IsThreeOfAKind(firstHand))
+                {
+                }
+                else if (this.IsTwoPair(firstHand))
+                {
+                }
+                else if (this.IsOnePair(firstHand))
+                {
+                }
+                else if (this.IsFullHouse(firstHand))
+                {
+
+                }
+
             }
 
             return 5;
@@ -305,7 +323,8 @@ namespace Poker
             if (this.IsStraightFlush(hand))
             {
                 return 10;
-            } else
+            }
+            else
                 if (this.IsFourOfAKind(hand))
             {
                 return 9;
@@ -341,6 +360,6 @@ namespace Poker
             //Ifs because Koceto doesn't like switch
         }
 
-        
+
     }
 }
