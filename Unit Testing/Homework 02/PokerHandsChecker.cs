@@ -280,7 +280,62 @@ namespace Poker
 
         public int CompareHands(IHand firstHand, IHand secondHand)
         {
-            throw new NotImplementedException();
+            if (GetHandPower(firstHand).CompareTo(GetHandPower(secondHand))<0)
+            {
+                return -1;
+            } else if (GetHandPower(firstHand).CompareTo(GetHandPower(secondHand)) > 0)
+            {
+                return 1;
+            }
+            else
+            {
+                if (this.IsStraight(firstHand))
+                {
+
+                }
+            }
+
+
+        }
+
+        private int GetHandPower(IHand hand)
+        {
+            if (this.IsStraightFlush(hand))
+            {
+                return 10;
+            } else
+                if (this.IsFourOfAKind(hand))
+            {
+                return 9;
+            }
+            else if (this.IsFullHouse(hand))
+            {
+                return 8;
+            }
+            else if (this.IsFlush(hand))
+            {
+                return 7;
+            }
+            else if (this.IsStraight(hand))
+            {
+                return 6;
+            }
+            else if (this.IsThreeOfAKind(hand))
+            {
+                return 5;
+            }
+            else if (this.IsTwoPair(hand))
+            {
+                return 4;
+            }
+            else if (this.IsOnePair(hand))
+            {
+                return 3;
+            }
+            else
+            {
+                return 2;
+            }
         }
     }
 }

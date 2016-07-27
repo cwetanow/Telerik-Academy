@@ -211,5 +211,20 @@ namespace Poker.Tests
             var hand = new Hand(cards);
             Assert.IsTrue(pokerChecker.IsHighCard(hand));
         }
+
+        [Test]
+        public void TestHandChecker_PassSamePowerHands_SHouldReturnZero()
+        {
+            IList<ICard> cards = new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                 new Card(CardFace.Seven, CardSuit.Diamonds),
+                  new Card(CardFace.Two, CardSuit.Spades),
+                   new Card(CardFace.Nine, CardSuit.Diamonds),
+                   new Card(CardFace.Ten,CardSuit.Diamonds)
+            };
+            var hand = new Hand(cards);
+            Assert.AreEqual(0,pokerChecker.CompareHands(hand,hand));
+        }
     }
 }
