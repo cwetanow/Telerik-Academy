@@ -24,6 +24,13 @@ namespace Poker.Tests
         }
 
         [Test]
+        public void TestHandChecker_PassNull_ShouldThrow()
+        {
+            TestDelegate test = () => pokerChecker.IsValidHand(null);
+            Assert.Throws(typeof(ArgumentNullException), test);
+        }
+
+        [Test]
         public void TestHandChecker_PassTwoSameCards_ShouldReturnFalse()
         {
             IList<ICard> cards = new List<ICard>

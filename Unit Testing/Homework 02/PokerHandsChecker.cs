@@ -7,6 +7,10 @@ namespace Poker
     {
         public bool IsValidHand(IHand hand)
         {
+            if (hand==null)
+            {
+                throw new ArgumentNullException();
+            }
             if (hand.Cards.Count != 5)
             {
                 return false;
