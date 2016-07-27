@@ -7,7 +7,7 @@ namespace Poker
     {
         public bool IsValidHand(IHand hand)
         {
-            if (hand==null)
+            if (hand == null)
             {
                 throw new ArgumentNullException();
             }
@@ -63,26 +63,36 @@ namespace Poker
                 CardFace.Three,
                 CardFace.Two
             };
-            var counters = new List<int> { 0, 0, 0, 0 };
+            var counters = new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-            foreach (var card in hand.Cards)
-            {
-                for (int i = 0; i < 4; i++)
-                {
-                    if (card.Face == faces[i])
-                    {
-                        counters[i]++;
-                        break;
-                    }
-                }
-            }
-
-            return counters.Contains(4);
+            
         }
 
         public bool IsFullHouse(IHand hand)
         {
-            throw new NotImplementedException();
+            if (!this.IsValidHand(hand))
+            {
+                throw new ArgumentException();
+            }
+            var faces = new List<CardFace>
+            {
+                CardFace.Ace,
+                CardFace.Eight,
+                CardFace.Five,
+                CardFace.Four,
+                CardFace.Jack,
+                CardFace.King,
+                CardFace.Nine,
+                CardFace.Queen,
+                CardFace.Seven,
+                CardFace.Six,
+                CardFace.Ten,
+                CardFace.Three,
+                CardFace.Two
+            };
+            var counters = new List<int> { 0, 0, 0, 0 };
+
+            
         }
 
         public bool IsFlush(IHand hand)
@@ -104,7 +114,7 @@ namespace Poker
             {
                 for (int i = 0; i < 4; i++)
                 {
-                    if (card.Suit==suits[i])
+                    if (card.Suit == suits[i])
                     {
                         counters[i]++;
                         break;
@@ -123,7 +133,29 @@ namespace Poker
 
         public bool IsThreeOfAKind(IHand hand)
         {
-            throw new NotImplementedException();
+            if (!this.IsValidHand(hand))
+            {
+                throw new ArgumentException();
+            }
+            var faces = new List<CardFace>
+            {
+                CardFace.Ace,
+                CardFace.Eight,
+                CardFace.Five,
+                CardFace.Four,
+                CardFace.Jack,
+                CardFace.King,
+                CardFace.Nine,
+                CardFace.Queen,
+                CardFace.Seven,
+                CardFace.Six,
+                CardFace.Ten,
+                CardFace.Three,
+                CardFace.Two
+            };
+            var counters = new List<int> { 0, 0, 0, 0 };
+
+            
         }
 
         public bool IsTwoPair(IHand hand)

@@ -106,5 +106,35 @@ namespace Poker.Tests
             var hand = new Hand(cards);
             Assert.IsTrue(pokerChecker.IsFourOfAKind(hand));
         }
+
+        [Test]
+        public void TestHandChecker_PassValidThreeOfKind_ShouldReturnTrue()
+        {
+            IList<ICard> cards = new List<ICard>
+            {
+                new Card(CardFace.Five, CardSuit.Diamonds),
+                 new Card(CardFace.Five, CardSuit.Clubs),
+                  new Card(CardFace.Queen, CardSuit.Hearts),
+                   new Card(CardFace.Six, CardSuit.Spades),
+                   new Card(CardFace.Five,CardSuit.Clubs)
+            };
+            var hand = new Hand(cards);
+            Assert.IsTrue(pokerChecker.IsThreeOfAKind(hand));
+        }
+
+        [Test]
+        public void TestHandChecker_PassValidFullHouse_ShouldReturnTrue()
+        {
+            IList<ICard> cards = new List<ICard>
+            {
+                new Card(CardFace.Five, CardSuit.Diamonds),
+                 new Card(CardFace.Five, CardSuit.Clubs),
+                  new Card(CardFace.Five, CardSuit.Hearts),
+                   new Card(CardFace.Six, CardSuit.Spades),
+                   new Card(CardFace.Six,CardSuit.Clubs)
+            };
+            var hand = new Hand(cards);
+            Assert.IsTrue(pokerChecker.IsFullHouse(hand));
+        }
     }
 }
