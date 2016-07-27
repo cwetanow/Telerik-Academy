@@ -55,7 +55,7 @@ namespace Poker
 
         public bool IsStraightFlush(IHand hand)
         {
-            throw new NotImplementedException();
+            return IsFlush(hand) && IsStraight(hand);
         }
 
         public bool IsFourOfAKind(IHand hand)
@@ -275,7 +275,7 @@ namespace Poker
 
         public bool IsHighCard(IHand hand)
         {
-            throw new NotImplementedException();
+            return IsOnePair(hand) || IsStraight(hand) || IsFlush(hand);
         }
 
         public int CompareHands(IHand firstHand, IHand secondHand)

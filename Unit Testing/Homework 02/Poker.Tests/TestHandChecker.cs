@@ -181,5 +181,35 @@ namespace Poker.Tests
             var hand = new Hand(cards);
             Assert.IsTrue(pokerChecker.IsStraight(hand));
         }
+
+        [Test]
+        public void TestHandChecker_PassValidStraightFlush_ShouldReturnTrue()
+        {
+            IList<ICard> cards = new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                 new Card(CardFace.Seven, CardSuit.Diamonds),
+                  new Card(CardFace.Eight, CardSuit.Diamonds),
+                   new Card(CardFace.Nine, CardSuit.Diamonds),
+                   new Card(CardFace.Ten,CardSuit.Diamonds)
+            };
+            var hand = new Hand(cards);
+            Assert.IsTrue(pokerChecker.IsStraightFlush(hand));
+        }
+
+        [Test]
+        public void TestHandChecker_PassValidHighCard_ShouldReturnTrue()
+        {
+            IList<ICard> cards = new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                 new Card(CardFace.Seven, CardSuit.Diamonds),
+                  new Card(CardFace.Two, CardSuit.Spades),
+                   new Card(CardFace.Nine, CardSuit.Diamonds),
+                   new Card(CardFace.Ten,CardSuit.Diamonds)
+            };
+            var hand = new Hand(cards);
+            Assert.IsTrue(pokerChecker.IsHighCard(hand));
+        }
     }
 }
