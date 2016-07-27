@@ -226,5 +226,77 @@ namespace Poker.Tests
             var hand = new Hand(cards);
             Assert.AreEqual(0,pokerChecker.CompareHands(hand,hand));
         }
+
+        [Test]
+        public void TestHandChecker_PassBiggerHand_SHouldReturnOne()
+        {
+            IList<ICard> cards1 = new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                 new Card(CardFace.Seven, CardSuit.Diamonds),
+                  new Card(CardFace.Eight, CardSuit.Diamonds),
+                   new Card(CardFace.Nine, CardSuit.Diamonds),
+                   new Card(CardFace.Ten,CardSuit.Diamonds)
+            };
+            var hand1 = new Hand(cards1);
+            IList<ICard> cards2 = new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                 new Card(CardFace.Seven, CardSuit.Diamonds),
+                  new Card(CardFace.Eight, CardSuit.Spades),
+                   new Card(CardFace.Nine, CardSuit.Diamonds),
+                   new Card(CardFace.Ten,CardSuit.Diamonds)
+            };
+            var hand2 = new Hand(cards2);
+            Assert.AreEqual(1, pokerChecker.CompareHands(hand1, hand2));
+        }
+
+        [Test]
+        public void TestHandChecker_PassSmallerHand_SHouldReturnMinusOne()
+        {
+            IList<ICard> cards1 = new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                 new Card(CardFace.Seven, CardSuit.Diamonds),
+                  new Card(CardFace.Eight, CardSuit.Spades),
+                   new Card(CardFace.Nine, CardSuit.Diamonds),
+                   new Card(CardFace.Ten,CardSuit.Diamonds)
+            };
+            var hand1 = new Hand(cards1);
+            IList<ICard> cards2 = new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                 new Card(CardFace.Seven, CardSuit.Diamonds),
+                  new Card(CardFace.Eight, CardSuit.Diamonds),
+                   new Card(CardFace.Nine, CardSuit.Diamonds),
+                   new Card(CardFace.Ten,CardSuit.Diamonds)
+            };
+            var hand2 = new Hand(cards2);
+            Assert.AreEqual(-1, pokerChecker.CompareHands(hand1, hand2));
+        }
+
+        [Test]
+        public void TestHandChecker_PassBiggerHighCard_SHouldReturnOne()
+        {
+            IList<ICard> cards1 = new List<ICard>
+            {
+                new Card(CardFace.Jack, CardSuit.Diamonds),
+                 new Card(CardFace.Seven, CardSuit.Diamonds),
+                  new Card(CardFace.Two, CardSuit.Spades),
+                   new Card(CardFace.Nine, CardSuit.Diamonds),
+                   new Card(CardFace.Ten,CardSuit.Diamonds)
+            };
+            var hand1 = new Hand(cards1);
+            IList<ICard> cards2 = new List<ICard>
+            {
+                new Card(CardFace.Two, CardSuit.Diamonds),
+                 new Card(CardFace.Seven, CardSuit.Diamonds),
+                  new Card(CardFace.Three, CardSuit.Diamonds),
+                   new Card(CardFace.Nine, CardSuit.Spades),
+                   new Card(CardFace.Ten,CardSuit.Diamonds)
+            };
+            var hand2 = new Hand(cards2);
+            Assert.AreEqual(1, pokerChecker.CompareHands(hand1, hand2));
+        }
     }
 }

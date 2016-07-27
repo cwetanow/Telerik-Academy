@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Poker
 {
@@ -289,13 +290,14 @@ namespace Poker
             }
             else
             {
-                if (this.IsStraight(firstHand))
+                if (this.IsStraight(firstHand) || this.IsStraightFlush(firstHand) || this.IsFlush(firstHand) || (this.IsHighCard(firstHand)))
                 {
-
+                    return firstHand.Cards.Select(x => (int)x.Face).Max().CompareTo(secondHand.Cards.Select(x => (int)x.Face).Max());
                 }
+                
             }
 
-
+            return 5;
         }
 
         private int GetHandPower(IHand hand)
@@ -336,6 +338,9 @@ namespace Poker
             {
                 return 2;
             }
+            //Ifs because Koceto doesn't like switch
         }
+
+        
     }
 }
