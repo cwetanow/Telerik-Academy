@@ -67,6 +67,10 @@
       <HintPath>..\packages\NUnit3TestAdapter.3.4.0\lib\NUnit3.TestAdapter.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Ploeh.AutoFixture, Version=3.49.0.0, Culture=neutral, PublicKeyToken=b24654c590009d4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoFixture.3.49.0\lib\net40\Ploeh.AutoFixture.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -82,11 +86,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="TestCreatureFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArmyOfCreatures\ArmyOfCreatures.csproj">
+      <Project>{BB52E531-9691-46AF-9ED3-0EC7B011FBEC}</Project>
+      <Name>ArmyOfCreatures</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

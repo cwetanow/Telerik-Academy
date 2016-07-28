@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace ArmyOfCreatures.Logic
 {
-   public class NewCreatureFactory : ICreaturesFactory
+   public class NewCreatureFactory : CreaturesFactory
     {
-        public virtual Creature CreateCreature(string name)
+        public override Creature CreateCreature(string name)
         {
             switch (name)
             {
