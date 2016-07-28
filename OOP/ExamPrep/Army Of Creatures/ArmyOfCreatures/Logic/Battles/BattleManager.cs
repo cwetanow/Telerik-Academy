@@ -25,7 +25,7 @@
             this.logger = logger;
         }
 
-        public void AddCreatures(CreatureIdentifier creatureIdentifier, int count)
+        public virtual void AddCreatures(CreatureIdentifier creatureIdentifier, int count)
         {
             if (creatureIdentifier == null)
             {

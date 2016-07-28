@@ -94,6 +94,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BattleManagerAttackTests.cs" />
+    <Compile Include="MockedClasses\MockedBattleManager.cs" />
     <Compile Include="TestBattleManager.cs" />
     <Compile Include="TestCreatureFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
