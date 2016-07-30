@@ -97,6 +97,22 @@
             Assert.AreEqual(2005, model.Year);
         }
 
+        [TestMethod]
+        public void TestDetails_PassInvalidData_ShouldReturnNull()
+        {
+            var car = new Car
+            {
+                Id = 15,
+                Make = "BMW",
+                Model = "330d",
+                Year = 2014
+            };
+
+            var model = (Car)this.GetModel(() => this.controller.Add(car));
+
+            Assert.IsNull(this.controller.Details(2));
+        }
+
         private object GetModel(Func<IView> funcView)
         {
             var view = funcView();

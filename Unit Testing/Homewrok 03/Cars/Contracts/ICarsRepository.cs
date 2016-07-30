@@ -1,4 +1,4 @@
-﻿namespace Cars.Contracts
+﻿    namespace Cars.Contracts
 {
     using Cars.Models;
     using System.Collections.Generic;
