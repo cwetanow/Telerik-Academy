@@ -15,6 +15,14 @@ namespace Cars.Tests.JustMock
     [TestFixture]
     public class TetCarsRepository
     {
+        private static ICollection<Car> FakeCarCollection = new List<Car>
+            {
+                new Car { Id = 1, Make = "Audi", Model = "A5", Year = 2005 },
+                new Car { Id = 2, Make = "BMW", Model = "325i", Year = 2008 },
+                new Car { Id = 3, Make = "BMW", Model = "330d", Year = 2007 },
+                new Car { Id = 4, Make = "Opel", Model = "Astra", Year = 2010 },
+            };
+        
 
         [Test]
         public void TestCarsRepository_CheckParameterlessConstructor_ShouldInitialiseCorrectly()
@@ -83,13 +91,17 @@ namespace Cars.Tests.JustMock
         public void TestCarsRepository_GetByIdValidParameter_ShouldReturnCar()
         {
             var carRepo = new CarsRepository();
-            var mockedCar = new Mock<Car>();
-            var idToReturn = 1;
+            var car = new Car { Id = 1, Make = "Audi", Model = "A5", Year = 2005 };
 
-            mockedCar.SetupGet(x => x.Id).Returns(idToReturn);
-            carRepo.Add(mockedCar.Object);
+            carRepo.Add(car);
 
-            Assert.AreEqual(idToReturn, mockedCar.Object.Id);
+            Assert.AreEqual(car, carRepo.GetById(car.Id));
+        }
+
+        [Test]
+        public void TestCarsRepository_AllMethod_ShouldWorkCorrectly()
+        {
+
         }
     }
 }
