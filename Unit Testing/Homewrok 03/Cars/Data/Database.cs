@@ -8,5 +8,10 @@
     public class Database : IDatabase
     {
         public IList<Car> Cars { get; set; }
+        // Added this constructor, otherwise never initialises Cars
+        public Database()
+        {
+            this.Cars = new List<Car>();
+        }
     }
 }
