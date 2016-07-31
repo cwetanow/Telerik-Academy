@@ -143,7 +143,10 @@
         {
             var result = this.controller.Sort("make");
             var otherResult = this.controller.Sort("year");
-            Assert.IsTrue(typeof(ICollection<Car>).Name == result.Model.GetType().Name);
+            IView expectedByMake = new View(this.carsData.SortedByMake());
+            IView expectedByYear = new View(this.carsData.SortedByYear());
+            Assert.AreSame(expectedByMake.Model, result.Model);
+            Assert.AreSame(expectedByYear.Model, otherResult.Model);
         }
 
         private object GetModel(Func<IView> funcView)
