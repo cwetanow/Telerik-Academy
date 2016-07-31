@@ -1,6 +1,7 @@
 ﻿using Cars.Contracts;
 using Cars.Data;
 using Cars.Models;
+using Cars.Tests.JustMock.Mocks;
 using Moq;
 using NUnit.Framework;
 using System;
@@ -14,23 +15,7 @@ namespace Cars.Tests.JustMock
     [TestFixture]
     public class TetCarsRepository
     {
-        private static CarsRepository testCars;
 
-        private void InitialiseAndPopulateTestCars()
-        {
-            var FakeCarCollection = new List<Car>
-            {
-                new Car { Id = 1, Make = "Audi", Model = "A5", Year = 2005 },
-                new Car { Id = 2, Make = "BMW", Model = "325i", Year = 2008 },
-                new Car { Id = 3, Make = "BMW", Model = "330d", Year = 2007 },
-                new Car { Id = 4, Make = "Opel", Model = "Astra", Year = 2010 },
-            };
-            testCars = new CarsRepository();
-            for (int i = 0; i < 4; i++)
-            {
-                testCars.Add(FakeCarCollection[i]);
-            }
-        }
         [Test]
         public void TestCarsRepository_CheckParameterlessConstructor_ShouldInitialiseCorrectly()
         {
@@ -75,15 +60,36 @@ namespace Cars.Tests.JustMock
         [Test]
         public void TestCarsRepository_RemoveMethodWhenPassCarr_ShouldRemoveCorrectly()
         {
-            // Database did not initialise the list, solved it with a database constructor
             var carRepo = new CarsRepository();
             var mockedCar = new Mock<Car>();
             var initialCount = carRepo.TotalCars;
+
             carRepo.Add(mockedCar.Object);
             carRepo.Remove(mockedCar.Object);
             var finalCount = carRepo.TotalCars;
+
             Assert.AreEqual(initialCount, finalCount);
         }
 
+        [Test]
+        public void TestCarsRepository_GetByIdInvalidParameter_ShouldThrowArgumentException()
+        {
+            var carRepo = new CarsRepository();
+
+            Assert.Throws<ArgumentException>(() => carRepo.GetById(5));
+        }
+
+        [Test]
+        public void TestCarsRepository_GetByIdValidParameter_ShouldReturnCar()
+        {
+            var carRepo = new CarsRepository();
+            var mockedCar = new Mock<Car>();
+            var idToReturn = 1;
+
+            mockedCar.SetupGet(x => x.Id).Returns(idToReturn);
+            carRepo.Add(mockedCar.Object);
+
+            Assert.AreEqual(idToReturn, mockedCar.Object.Id);
+        }
     }
 }
