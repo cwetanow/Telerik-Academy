@@ -51,7 +51,7 @@
             if (car == null)
             {
                 throw new ArgumentNullException("car", "Car could not be found");
-            }
+            }   
 
             return new View(car);
         }

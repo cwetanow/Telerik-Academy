@@ -9,7 +9,9 @@
     using Cars.Tests.JustMock.Mocks;
     using Cars.Controllers;
     using Cars.Models;
-    
+    using Infrastructure;
+    using Moq;
+
     [TestClass]
     public class CarsControllerTests
     {
@@ -18,7 +20,7 @@
 
         public CarsControllerTests()
             : this(new JustMockCarsRepository())
-            // : this(new MoqCarsRepository())
+        // : this(new MoqCarsRepository())
         {
         }
 
@@ -98,7 +100,7 @@
         }
 
         [TestMethod]
-        public void TestDetails_PassInvalidData_ShouldReturnNull()
+        public void TestDetails_SeeIfReturnsCorrectView_ShouldReturnTrue()
         {
             var car = new Car
             {
@@ -108,9 +110,32 @@
                 Year = 2014
             };
 
-            var model = (Car)this.GetModel(() => this.controller.Add(car));
+            this.controller.Add(car);
+            var view = this.controller.Details(15);
 
-            Assert.IsNull(this.controller.Details(2));
+            Assert.IsNotNull(view);
+        }
+
+        [TestMethod]
+        public void TestDetails_SeeIfReturnsAView_SHouldReturnTrue()
+        {
+            var car = new Car
+            {
+                Id = 15,
+                Make = "BMW",
+                Model = "330d",
+                Year = 2014
+            };
+
+            this.controller.Add(car);
+            var view = new View(car);
+            Assert.IsTrue(view.GetType()==this.controller.Details(car.Id).GetType());
+        }
+
+        [TestMethod]
+        public void TestSort_PassInvalidParameter_ShouldThrowArgumentException()
+        {
+            NUnit.Framework.Assert.Throws<ArgumentException>(()=>this.controller.Sort("pesho"));
         }
 
         private object GetModel(Func<IView> funcView)
