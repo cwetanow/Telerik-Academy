@@ -129,13 +129,21 @@
 
             this.controller.Add(car);
             var view = new View(car);
-            Assert.IsTrue(view.GetType()==this.controller.Details(car.Id).GetType());
+            Assert.IsTrue(view.GetType() == this.controller.Details(car.Id).GetType());
         }
 
         [TestMethod]
         public void TestSort_PassInvalidParameter_ShouldThrowArgumentException()
         {
-            NUnit.Framework.Assert.Throws<ArgumentException>(()=>this.controller.Sort("pesho"));
+            NUnit.Framework.Assert.Throws<ArgumentException>(() => this.controller.Sort("pesho"));
+        }
+
+        [TestMethod]
+        public void TestSort_SortByMakeSeeIfReturnsCollectionWhenValidParameter_ShouldReturnTrue()
+        {
+            var result = this.controller.Sort("make");
+            var otherResult = this.controller.Sort("year");
+            Assert.IsTrue(typeof(ICollection<Car>).Name == result.Model.GetType().Name);
         }
 
         private object GetModel(Func<IView> funcView)
