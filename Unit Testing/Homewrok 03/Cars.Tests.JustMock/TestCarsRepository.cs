@@ -15,14 +15,13 @@ namespace Cars.Tests.JustMock
     [TestFixture]
     public class TetCarsRepository
     {
-        private static ICollection<Car> FakeCarCollection = new List<Car>
-            {
-                new Car { Id = 1, Make = "Audi", Model = "A5", Year = 2005 },
-                new Car { Id = 2, Make = "BMW", Model = "325i", Year = 2008 },
-                new Car { Id = 3, Make = "BMW", Model = "330d", Year = 2007 },
-                new Car { Id = 4, Make = "Opel", Model = "Astra", Year = 2010 },
+        private static IList<Car> cars = new List<Car>() {
+                (new Mock<Car>()).Object,
+                (new Mock<Car>()).Object,
+                (new Mock<Car>()).Object,
+                (new Mock<Car>()).Object
             };
-        
+
 
         [Test]
         public void TestCarsRepository_CheckParameterlessConstructor_ShouldInitialiseCorrectly()
@@ -101,7 +100,83 @@ namespace Cars.Tests.JustMock
         [Test]
         public void TestCarsRepository_AllMethod_ShouldWorkCorrectly()
         {
+            var carRepo = new CarsRepository();
 
+            foreach (var car in cars)
+            {
+                carRepo.Add(car);
+            }
+
+            Assert.AreEqual(cars, carRepo.All());
+        }
+
+        [Test]
+        public void TestCarsRepository_SortedByMake_ShouldWorkCorrectly()
+        {
+            var carRepo = new CarsRepository();
+
+            foreach (var car in cars)
+            {
+                carRepo.Add(car);
+            }
+
+            Assert.AreEqual(cars.OrderBy(c => c.Make).ToList(), carRepo.SortedByMake());
+        }
+
+        [Test]
+        public void TestCarsRepository_SortedByYear_ShouldWorkCorrectly()
+        {
+            var carRepo = new CarsRepository();
+
+            foreach (var car in cars)
+            {
+                carRepo.Add(car);
+            }
+
+            Assert.AreEqual(cars.OrderBy(c => c.Year).ToList(), carRepo.SortedByYear());
+        }
+
+        [Test]
+        public void TestCarsRepository_SearchMethodPassNull_ShouldReturnAllCars()
+        {
+            var carRepo = new CarsRepository();
+
+            foreach (var car in cars)
+            {
+                carRepo.Add(car);
+            }
+
+            Assert.AreEqual(cars, carRepo.Search(null));
+        }
+
+        [Test]
+        public void TestCarsRepository_SearchMethodPassEmpty_ShouldReturnAllCars()
+        {
+            var carRepo = new CarsRepository();
+
+            foreach (var car in cars)
+            {
+                carRepo.Add(car);
+            }
+
+            Assert.AreEqual(cars, carRepo.Search(string.Empty));
+        }
+
+        [Test]
+        public void TestCarsRepository_SearchMethodPassValidCars_ShouldReturnAllCars()
+        {
+            var carRepo = new CarsRepository();
+            var make = "Audi";
+            List<Car> result;
+
+            cars[0].Make = make;
+            foreach (var car in cars)
+            {
+                carRepo.Add(car);
+            }
+            result = cars.Where(c => c.Make == make || c.Model == make).ToList();
+
+            Assert.AreEqual(result, carRepo.Search(make));
         }
     }
 }
