@@ -91,6 +91,10 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CommonValidatorTest.cs" />
+    <Compile Include="CosmeticsEngineTests.cs" />
+    <Compile Include="CosmeticsFactoryTests\CreateShampooTests.cs" />
+    <Compile Include="CosmeticsFactoryTests\CreateShoppingCartTests.cs" />
+    <Compile Include="CosmeticsFactoryTests\CreateToothpasteTests.cs" />
     <Compile Include="EngineCommandTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

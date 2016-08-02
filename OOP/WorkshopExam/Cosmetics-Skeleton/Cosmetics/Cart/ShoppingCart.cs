@@ -1,4 +1,5 @@
-﻿using Cosmetics.Contracts;
+﻿using Cosmetics.Common;
+using Cosmetics.Contracts;
 using Cosmetics.Engine.Contracts;
 using Cosmetics.Products;
 using System;
@@ -28,6 +29,7 @@ namespace Cosmetics.Cart
 
         public void AddProduct(IProduct product)
         {
+            Validator.CheckIfNull(product, string.Format(GlobalErrorMessages.ObjectCannotBeNull, "Product to add to cart"));
             this.ProductList.Add(product);
            
         }
@@ -39,6 +41,7 @@ namespace Cosmetics.Cart
 
         public void RemoveProduct(IProduct product)
         {
+            Validator.CheckIfNull(product, string.Format(GlobalErrorMessages.ObjectCannotBeNull, "Product to remove from cart"));
             this.ProductList.Remove(product);
         }
 

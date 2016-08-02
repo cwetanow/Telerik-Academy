@@ -29,6 +29,7 @@ namespace Cosmetics.Products
             }
             set
             {
+                Validator.CheckIfStringIsNullOrEmpty(value, string.Format(GlobalErrorMessages.StringCannotBeNullOrEmpty, Name));
                 Validator.CheckIfStringLengthIsValid(
                     value,
                     Constants.maxProductNameLen,
@@ -51,6 +52,7 @@ namespace Cosmetics.Products
             }
             protected set
             {
+                Validator.CheckIfStringIsNullOrEmpty(value, string.Format(GlobalErrorMessages.StringCannotBeNullOrEmpty, Brand));
                 Validator.CheckIfStringLengthIsValid(
                     value,
                     Constants.maxBrandNameLen,

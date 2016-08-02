@@ -50,5 +50,17 @@ namespace Cosmetics.Tests
             Assert.Throws<ArgumentNullException>(() => Command.Parse(string.Empty));
         }
 
+        [TestCase(" Not Valid")]
+        public void TestParse_PassStringEmptyOnName_ShouldThrowArgumentNull(string commandText)
+        {
+            Assert.Throws<ArgumentNullException>(() => Command.Parse(commandText));
+        }
+
+        [TestCase("Not  ")]
+        public void TestParse_PassStringEmptyOnParameters_ShouldThrowArgumentNull(string commandText)
+        {
+            Assert.Throws<ArgumentNullException>(() => Command.Parse(commandText));
+        }
+
     }
 }

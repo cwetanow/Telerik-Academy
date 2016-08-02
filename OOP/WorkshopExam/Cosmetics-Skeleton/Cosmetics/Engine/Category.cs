@@ -27,6 +27,7 @@ namespace Cosmetics.Engine
             }
             set
             {
+                Validator.CheckIfStringIsNullOrEmpty(value, string.Format(GlobalErrorMessages.StringCannotBeNullOrEmpty, "Category name"));
                 Validator.CheckIfStringLengthIsValid(
                         value,
                         Constants.maxCategoryNameLen,
@@ -42,6 +43,7 @@ namespace Cosmetics.Engine
 
         public void AddCosmetics(IProduct cosmetics)
         {
+            Validator.CheckIfNull(cosmetics, string.Format(GlobalErrorMessages.ObjectCannotBeNull, "Cosmetics to add to category"));
             this.productsList.Add(cosmetics);
         }
 
@@ -75,6 +77,7 @@ namespace Cosmetics.Engine
 
         public void RemoveCosmetics(IProduct cosmetics)
         {
+            Validator.CheckIfNull(cosmetics, string.Format(GlobalErrorMessages.ObjectCannotBeNull, "Cosmetics to remove from category"));
             if (!this.productsList.Remove(cosmetics))
             {
                 Console.WriteLine(string.Format("Product {0} does not exist in category {1}!", cosmetics.Name, this.Name));

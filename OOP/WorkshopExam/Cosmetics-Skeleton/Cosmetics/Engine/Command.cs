@@ -44,7 +44,7 @@
 
             private set
             {
-                if (value == null)
+                if (value == null || value.Count==0)
                 {
                     throw new ArgumentNullException("List of strings cannot be null.");
                 }
