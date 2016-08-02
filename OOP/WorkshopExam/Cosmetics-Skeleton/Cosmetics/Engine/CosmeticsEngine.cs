@@ -9,7 +9,9 @@
     using Cosmetics.Contracts;
     using Cosmetics.Products;
     using Cart;
-    public sealed class CosmeticsEngine : IEngine
+    using Contracts;
+
+    internal class CosmeticsEngine : IEngine
     {
         private const string InvalidCommand = "Invalid command name: {0}!";
         private const string CategoryExists = "Category with name {0} already exists!";
@@ -28,29 +30,23 @@
         private const string TotalPriceInShoppingCart = "${0} total price currently in the shopping cart!";
         private const string InvalidGenderType = "Invalid gender type!";
         private const string InvalidUsageType = "Invalid usage type!";
-
-        private static readonly CosmeticsEngine SingleInstance = new CosmeticsEngine();
+        
 
         private readonly ICosmeticsFactory factory;
-        private readonly ShoppingCart shoppingCart;
+        private readonly IShoppingCart shoppingCart;
         private readonly IDictionary<string, ICategory> categories;
         private readonly IDictionary<string, IProduct> products;
 
-        private CosmeticsEngine()
+        public CosmeticsEngine(
+            ICosmeticsFactory factory,
+            IShoppingCart shopCart)
         {
-            this.factory = new CosmeticsFactory();
-            this.shoppingCart = new ShoppingCart();
+            this.factory = factory;
+            this.shoppingCart = shopCart;
             this.categories = new Dictionary<string, ICategory>();
             this.products = new Dictionary<string, IProduct>();
         }
 
-        public static CosmeticsEngine Instance
-        {
-            get
-            {
-                return SingleInstance;
-            }
-        }
 
         public void Start()
         {

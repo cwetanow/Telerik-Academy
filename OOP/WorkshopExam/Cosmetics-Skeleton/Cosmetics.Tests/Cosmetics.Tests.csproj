@@ -97,6 +97,7 @@
     <Compile Include="CosmeticsFactoryTests\CreateShoppingCartTests.cs" />
     <Compile Include="CosmeticsFactoryTests\CreateToothpasteTests.cs" />
     <Compile Include="EngineCommandTests.cs" />
+    <Compile Include="Mocks\MockedCosmeticsEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
