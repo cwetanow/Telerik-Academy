@@ -1,5 +1,7 @@
 /* globals $ */
 
+//beautify is not working !
+
 function solve() {
   $.fn.gallery = function (cols) {
     $(this).addClass('gallery');
@@ -10,15 +12,25 @@ function solve() {
       columns=4;
     }
 
-
+    var $images = $(this).find('.image-container');
+    var count = 0;
+    $images.each(function (index, image) {
+      var $image = $(image);
+      count += 1;
+      if (count === columns && index < $images.length - 1) {
+        $image.next().addClass('clearfix');
+        count = 0;
+      }
+    });
     //Fix table width
-    var $width = 100/columns-1;
-    $('.gallery .image-container').width($width+'%');
-    $('.selected').hide();
+    // var $width = 100/columns-1;
+    // $('.gallery .image-container').width($width+'%');
+     $('.selected').hide();
 
+    //find src of all images
     var $imageSrc=[];
     $('.gallery-list').children().each(function(index, image) {
-    $imageSrc.push($(image).children().attr('src'));
+      $imageSrc.push($(image).find('img').attr('src'));
     });
 
     //Change main image
