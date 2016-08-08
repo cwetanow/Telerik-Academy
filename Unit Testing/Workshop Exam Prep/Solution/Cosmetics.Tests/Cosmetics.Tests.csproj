@@ -91,6 +91,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Engine\CosmeticsEngineTests.cs" />
+    <Compile Include="Engine\CosmeticsFactoryTests.cs" />
     <Compile Include="Mocks\MockedCosmeticsEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
