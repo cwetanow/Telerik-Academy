@@ -93,6 +93,8 @@
     <Compile Include="Engine\CosmeticsEngineTests.cs" />
     <Compile Include="Engine\CosmeticsFactoryTests.cs" />
     <Compile Include="Mocks\MockedCosmeticsEngine.cs" />
+    <Compile Include="Mocks\MockedShoppingCart.cs" />
+    <Compile Include="Products\ShoppingCartTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
