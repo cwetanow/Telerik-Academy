@@ -1,0 +1,199 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CalcuLectors</title>
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo/calculectors.png" alt="Logo" class="logo">
+
+    </header>
+
+    <div id="wrapper">
+
+        <div id="menu" class="inline-block" align="center">
+
+            <!--- logo -->
+            <div id="choosebg">
+                <p class="containertitle">1.Select background!</p>
+                <div id="backgrounds">
+                    <div class="backgroungImgHolder" data-info="1">
+                        <img src="./images/backgrounds/background1.jpg" class="backgroundImage" />
+                    </div>
+                    <div class="backgroungImgHolder" data-info="2">
+                        <img src="./images/backgrounds/background2.jpg" class="backgroundImage" />
+                    </div>
+                    <div class="backgroungImgHolder" data-info="3">
+                        <img src="./images/backgrounds/background3.jpg" class="backgroundImage" />
+                    </div>
+                    <div class="backgroungImgHolder" data-info="4">
+                        <img src="./images/backgrounds/background4.jpg" class="backgroundImage" />
+                    </div>
+                    <div class="backgroungImgHolder" data-info="5">
+                        <img src="./images/backgrounds/background5.jpg" class="backgroundImage" />
+                    </div>
+                    <div class="backgroungImgHolder" data-info="6">
+                        <img src="./images/backgrounds/background6.jpg" class="backgroundImage" />
+                    </div>
+                </div>
+            </div>
+            <div id="choosehero">
+                <p class="containertitle">2.Select hero!</p>
+
+                <div id="heroes">
+
+                    <div class="center">
+
+                        <span class="info-holder description inline-block">
+                    <span class="hidden">
+                        <b>Cyki</b> is good with numbers, or is he? Let see how fast he can calculate.
+                    </span>
+                        </span>
+
+                        <img src="./images/avatars/cyki_select.png" class="select" id="cyki" title="Cuki" />
+
+                        <span class="info-holder benefits inline-block">
+                    <span class="hidden">
+                         Play with <b>Cyki</b> and there will be more multiply sings <img src="./images/signs/multiplyBlue.png" title="Cuki"/>. 
+                    </span>
+                        </span>
+                    </div>
+
+                    <div class="center">
+                        <span class="info-holder description inline-block">
+                    <span class="hidden">
+                        <b>Koceto</b> is always talking about beer. <br />
+                        Well, we do like beer!.
+                    </span>
+                        </span>
+
+                        <img src="./images/avatars/koce_select.png" class="select" id="koce" title="Koce" />
+
+                        <span class="info-holder benefits inline-block">
+                    <span class="hidden">
+                         Play with <b>Koceto</b> and there will be no division signs <img src="./images/signs/divideRed.png" />.<br />
+                         We want beer, not more calculation stuff.
+                    </span>
+                        </span>
+                    </div>
+
+                    <div class="center">
+                        <span class="info-holder description inline-block">
+                    <span class="hidden">
+                        <b>Doncho</b> is the head of operations. <br />
+                        He teaches us that we should be lazy and do things the easy way.
+                    </span>
+                        </span>
+
+                        <img src="./images/avatars/doncho_select.png" class="select" id="doncho" title="Doncho" />
+
+                        <span class="info-holder benefits inline-block">
+                    <span class="hidden">
+                        Play with <b>Doncho</b> and there will be more zero signs <img src="./images/signs/zeroGreen.png" /><br /> to slow the falling speed of the numbers.<br />
+                       We have to be lazy, remember?.
+                    </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div id="heroinfo">
+
+                <p id="heroinfotitle">Hero info:</p>
+                <p class="subheroinfotitles"> Description:</p>
+                <p class="subheroinfotitles">Boosts:</p>
+
+
+            </div>
+            <h1 class="inline-block"><a href="https://github.com/GalinStoychev/TeamBacardi/blob/master/README.md" target="_blank">
+        Game rules
+    </a></h1>
+            <a id="playbtn" class="inline-block" href="#">Play</a>
+        </div>
+        <div align="center">
+            <div id="gameScreen">
+
+                <div id="score" class="inline">
+                    <span>Score: <span class="scoreValue"></span></span>
+
+                </div>
+                <div class="inline">
+                    <canvas id="main"></canvas>
+                </div>
+                <div id="gravity" class="inline"><span>Gravity speed: <span class="gravityValue"></span></span>
+                </div>
+
+            </div>
+        </div>
+        <div id="gameOver" class="hidden" align="center">
+            <h2 class="purple">Game Over!</h2>
+            <h3 class="maxScore purple">Max Score: <span id="maxScore"></span></h3>
+            <p><a id="playagainbtn" href="#">Play again</a></p>
+            <p><a id="changeplayerbtn" href="#">Change player</a></p>
+        </div>
+    </div>
+
+
+    <div id="images">
+        <img src="./images/avatars/cyki.png" id="cykiImage" />
+        <img src="./images/avatars/koce.png" id="koceImage" />
+        <img src="./images/avatars/doncho.png" id="donchoImage" />
+
+        <!-- <img src="./images/avatars/multiply.png" id="multiply" />
+        <img src="./images/avatars/divide.png" id="divide" />
+        <img src="./images/avatars/zero.png" id="zero" />
+
+        <img src="./images/avatars/1blue.png" id="positiveOne" />
+        <img src="./images/avatars/2blue.png" id="positiveTwo" />
+        <img src="./images/avatars/3blue.png" id="positiveThree" />
+        <img src="./images/avatars/4blue.png" id="positiveFour" />
+        <img src="./images/avatars/5blue.png" id="positiveFive" />
+        <img src="./images/avatars/6blue.png" id="positiveSix" />
+        <img src="./images/avatars/7blue.png" id="positiveSeven" />
+        <img src="./images/avatars/8blue.png" id="positiveEight" />
+        <img src="./images/avatars/9blue.png" id="positiveNine" />
+
+        <img src="./images/avatars/1red.png" id="negativeOne" />
+        <img src="./images/avatars/2red.png" id="negativeTwo" />
+        <img src="./images/avatars/3red.png" id="negativeThree" />
+        <img src="./images/avatars/4red.png" id="negativeFour" />
+        <img src="./images/avatars/5red.png" id="negativeFive" />
+        <img src="./images/avatars/6red.png" id="negativeSix" />
+        <img src="./images/avatars/7red.png" id="negativeSeven" />
+        <img src="./images/avatars/8red.png" id="negativeEight" />
+        <img src="./images/avatars/9red.png" id="negativeNine" /> -->
+
+        <img src="./images/backgrounds/background1.jpg" id="background1" class="backgroundImage" />
+        <img src="./images/backgrounds/background2.jpg" id="background2" class="backgroundImage" />
+        <img src="./images/backgrounds/background3.jpg" id="background3" class="backgroundImage" />
+        <img src="./images/backgrounds/background4.jpg" id="background4" class="backgroundImage" />
+        <img src="./images/backgrounds/background5.jpg" id="background5" class="backgroundImage" />
+        <img src="./images/backgrounds/background6.jpg" id="background6" class="backgroundImage" />
+        <img src="./images/logo/calculectors.png" class="logo" />
+    </div>
+
+    <div id="audio">
+        <audio src="./audio/walk.mp3" id="walkingAudioMp3"></audio>
+        <audio src="./audio/walk.ogg" id="walkingAudioOgg"></audio>
+        <audio src="./audio/pickedPositiveNumber.mp3" id="positiveNumberAudio"> </audio>
+        <audio src="./audio/divisionAudio.mp3" id="substractionAudio"> </audio>
+        <audio src="./audio/multiplicationSound.mp3" id="multiplicationAudio"> </audio>
+        <audio src="./audio/pickedNegativeNumber.mp3" id="negativeAudio"> </audio>
+    </div>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/math.js"></script>
+    <script src="scripts/gameproperties.js"></script>
+    <script src="scripts/sprites.js"></script>
+    <script src="scripts/hero.js"></script>
+    <script src="scripts/spawnNumbers.js"></script>
+    <script src="scripts/collision.js"></script>
+    <script src="scripts/start.js"></script>
+    <script src="scripts/interface.js"></script>
+</body>
+
+</html>

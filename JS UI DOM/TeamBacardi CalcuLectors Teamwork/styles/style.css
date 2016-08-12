@@ -1,0 +1,264 @@
+body {
+    font-family: 'Chewy', cursive;
+}
+
+#main {
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+.hidden {
+    display: none;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+h1,
+#playbtn,
+.description,
+.benefits {
+    position: absolute;
+}
+
+.description {
+    top: 170px;
+    right: 90px;
+    border: 2px solid #01928b;
+    border-radius: 10px;
+    padding: 20px 0;
+    width: 200px;
+    height: 70px;
+}
+
+.benefits {
+    top: 320px;
+    right: 90px;
+    border: 2px solid #01928b;
+    border-radius: 10px;
+    padding: 20px 0;
+    width: 200px;
+    height: 100px;
+}
+
+h1 {
+    top: 460px;
+    right: 10%;
+}
+
+#playbtn {
+    top: 620px;
+    right: 13%;
+}
+
+h1 a:hover,
+#playbtn:hover,
+#playagainbtn:hover,
+#changeplayerbtn:hover {
+    text-shadow: 1px 2px black;
+    -webkit-filter: brightness(85%);
+    filter: brightness(85%);
+}
+
+#changeplayerbtn,
+#playagainbtn,
+#playbtn,
+h1 a {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #01928b;
+    text-shadow: 1px 1px black;
+    padding: 20px 60px;
+    border-radius: 9px;
+    text-decoration: none;
+    border: 5px solid #01928b;
+}
+
+#images {
+    display: none;
+}
+
+#menu {
+    width: 100%;
+}
+
+#choosebg {
+    width: 45%;
+    float: left;
+}
+
+#choosehero {
+    width: 20%;
+    float: left;
+}
+
+.backgroundImage {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    z-index: -2;
+}
+
+.center {
+    width: 20%;
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+.logo {
+    margin-top: 20px;
+}
+
+.select {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 35px;
+    border-radius: 5%;
+    margin-left: -75px;
+    cursor: pointer;
+}
+
+.info-holder {
+    width: 30%;
+    font-size: 1.3em;
+    color: #01928b;
+    text-shadow: 2px 1px #006762;
+    letter-spacing: 1.5px;
+}
+
+#heroinfo {
+    float: left;
+}
+
+#heroinfotitle {
+    margin-left: 90px;
+    font-size: 1.8em;
+}
+
+.containertitle {
+    font-size: 1.8em;
+}
+
+.subheroinfotitles {
+    margin: -20px 0 140px 10px;
+    text-align: left;
+}
+
+a,
+p,
+h2 {
+    color: #01928b;
+    text-shadow: 2px 1px #006762;
+    font-size: 1.3em;
+}
+
+#score,
+#gravity,
+.maxScore {
+    font-size: 30px;
+    color: #01928b;
+    margin-top: 0px;
+    font-size: 4em;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+#gravity {
+    width: 250px;
+    height: 150px;
+}
+
+#score {
+    height: 150px;
+    width: 200px;
+}
+
+.inline {
+    display: inline-block;
+    align-content: center;
+}
+
+.select,
+#playbtn,
+#playagainbtn,
+#changeplayerbtn,
+body,
+h1 a {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdc54c+29,f68a4c+100 */
+    background: #fdc54c;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #fdc54c 29%, #f68a4c 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #fdc54c 29%, #f68a4c 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #fdc54c 29%, #f68a4c 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#fdc54c', endColorstr='#f68a4c', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+#gameScreen {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#gameOver {
+    position: relative;
+}
+
+h2 {
+    font-size: 120px;
+    padding-top: 130px;
+    margin-bottom: 200px;
+}
+
+.darken {
+    -webkit-filter: brightness(85%);
+    filter: brightness(85%);
+}
+
+.border {
+    border: 5px solid #01928b;
+    border-radius: 8px;
+    -moz-box-shadow: inset 0 0 20px #000000;
+    -webkit-box-shadow: inset 0 0 20px #000000;
+    box-shadow: inset 0 0 20px #000000;
+}
+
+.backgroungImgHolder {
+    display: inline-block;
+    margin: 5;
+    padding: 0;
+    cursor: pointer;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+/**/

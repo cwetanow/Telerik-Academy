@@ -1,0 +1,26 @@
+// ------------
+- spawnNumber.js - create number with random value; DONE!
+- start.js + collision.js - calculate values DONE!
+- start.js - array of all numbers  DONE!
+// ------------
+- gravity - bounce DONE!
+// ------------
+UI:
+- create lectors sprites DONE!
+- create backgrounds + functionality in start.js DONE!
+- start screen  DONE!
+- create score box DONE!
+- main.js - buttons events DONE!
+
+// ------------
+- readme.md - explain game rulles 
+    - update rules for when a hero grabs a zero DONE!
+    - add screenshorts, link to video, and link to the project in the telerik system DONE!
+
+// ------------
+- make heroes specialties work DONE!
+- make if all numbers are red, they should disappear DONE!
+
+
+// ------------
+- create video // when the project is finished DONE!
