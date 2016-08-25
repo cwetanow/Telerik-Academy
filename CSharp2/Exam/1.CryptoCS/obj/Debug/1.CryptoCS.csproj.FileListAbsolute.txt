@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\Exam\1.CryptoCS\bin\Debug\1.CryptoCS.exe.config
-D:\Coding\Telerik\CSharp2\Exam\1.CryptoCS\bin\Debug\1.CryptoCS.exe
-D:\Coding\Telerik\CSharp2\Exam\1.CryptoCS\bin\Debug\1.CryptoCS.pdb
-D:\Coding\Telerik\CSharp2\Exam\1.CryptoCS\obj\Debug\1.CryptoCS.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\Exam\1.CryptoCS\obj\Debug\1.CryptoCS.exe
-D:\Coding\Telerik\CSharp2\Exam\1.CryptoCS\obj\Debug\1.CryptoCS.pdb

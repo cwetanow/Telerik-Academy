@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\Exam\4.Kot-takoa\bin\Debug\4.Kot-takoa.exe.config
-D:\Coding\Telerik\CSharp2\Exam\4.Kot-takoa\bin\Debug\4.Kot-takoa.exe
-D:\Coding\Telerik\CSharp2\Exam\4.Kot-takoa\bin\Debug\4.Kot-takoa.pdb
-D:\Coding\Telerik\CSharp2\Exam\4.Kot-takoa\obj\Debug\4.Kot-takoa.exe
-D:\Coding\Telerik\CSharp2\Exam\4.Kot-takoa\obj\Debug\4.Kot-takoa.pdb

@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\Exam\2.Kitty\bin\Debug\2.Kitty.exe.config
-D:\Coding\Telerik\CSharp2\Exam\2.Kitty\bin\Debug\2.Kitty.exe
-D:\Coding\Telerik\CSharp2\Exam\2.Kitty\bin\Debug\2.Kitty.pdb
-D:\Coding\Telerik\CSharp2\Exam\2.Kitty\obj\Debug\2.Kitty.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\Exam\2.Kitty\obj\Debug\2.Kitty.exe
-D:\Coding\Telerik\CSharp2\Exam\2.Kitty\obj\Debug\2.Kitty.pdb
