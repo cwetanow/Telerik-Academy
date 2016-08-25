@@ -3,17 +3,12 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using Bunnies.Contracts.Enumerations;
 using Bunnies.Helpers;
 using Bunnies.Models;
 
 namespace Bunnies
 {
-    using System.Runtime.Serialization.Formatters.Binary;
-    using System.Text;
-    using System.Threading.Tasks;
-
     public class Bunnies
     {
         public static void Main(string[] args)
