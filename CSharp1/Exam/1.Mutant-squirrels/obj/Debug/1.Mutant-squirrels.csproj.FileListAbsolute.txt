@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp1\Exam\1.Mutant-squirrels\bin\Debug\1.Mutant-squirrels.exe.config
-D:\Coding\Telerik\CSharp1\Exam\1.Mutant-squirrels\bin\Debug\1.Mutant-squirrels.exe
-D:\Coding\Telerik\CSharp1\Exam\1.Mutant-squirrels\bin\Debug\1.Mutant-squirrels.pdb
-D:\Coding\Telerik\CSharp1\Exam\1.Mutant-squirrels\obj\Debug\1.Mutant-squirrels.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp1\Exam\1.Mutant-squirrels\obj\Debug\1.Mutant-squirrels.exe
-D:\Coding\Telerik\CSharp1\Exam\1.Mutant-squirrels\obj\Debug\1.Mutant-squirrels.pdb

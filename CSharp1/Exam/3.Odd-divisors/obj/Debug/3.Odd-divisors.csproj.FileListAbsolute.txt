@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\Exam\3.Odd-divisors\bin\Debug\3.Odd-divisors.exe.config
-D:\Coding\Telerik\CSharp1\Exam\3.Odd-divisors\bin\Debug\3.Odd-divisors.exe
-D:\Coding\Telerik\CSharp1\Exam\3.Odd-divisors\bin\Debug\3.Odd-divisors.pdb
-D:\Coding\Telerik\CSharp1\Exam\3.Odd-divisors\obj\Debug\3.Odd-divisors.exe
-D:\Coding\Telerik\CSharp1\Exam\3.Odd-divisors\obj\Debug\3.Odd-divisors.pdb
