@@ -6,8 +6,34 @@
 		3) it must throw an Error if any of the range params is missing
 */
 
-function findPrimes() {
-	
+function findPrimes(starting, ending) {
+	starting = +starting;
+	ending = +ending;
+	var result = [];
+
+	if (isNaN(starting) || isNaN(ending)) {
+		throw new Error();
+	}
+
+	for (var i = starting; i <= ending; i += 1) {
+		if (isPrime(i)) {
+			result.push(i);
+		}
+	}
+
+	function isPrime(number) {
+		if (number<2) {
+			return false;
+		}
+		for (var index = 2; index <= Math.sqrt(number); index += 1) {
+			if (number % index === 0) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	return result;
 }
 
 module.exports = findPrimes;
