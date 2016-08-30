@@ -8,8 +8,22 @@
 
 */
 
-function sum() {
-	
+function sum(numbers) {
+	'use strict';
+
+	if (!numbers.length) {
+		return null;
+	}
+
+	return numbers.reduce(function (sum, num) {
+		var number = +num;
+
+		if (isNaN(number)) {
+			throw new Error();
+		}
+
+		return sum + number;
+	}, 0);
 }
 
 module.exports = sum;
