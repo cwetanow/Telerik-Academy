@@ -22,7 +22,7 @@ function findPrimes(starting, ending) {
 	}
 
 	function isPrime(number) {
-		if (number<2) {
+		if (number < 2) {
 			return false;
 		}
 		for (var index = 2; index <= Math.sqrt(number); index += 1) {
