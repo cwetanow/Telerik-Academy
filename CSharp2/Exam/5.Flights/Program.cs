@@ -29,9 +29,6 @@ namespace _5.Flights
             } while (true);
             var allFlights=new int[n,n];
             var safe = 0;
-            
-            
-            //Console.WriteLine(count);
            
             Console.WriteLine(safe);
         }
