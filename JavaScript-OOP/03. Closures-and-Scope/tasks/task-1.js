@@ -24,8 +24,19 @@ function solve() {
 	var library = (function () {
 		var books = [];
 		var categories = [];
-		function listBooks() {
-			return books;
+		function listBooks(options) {
+			if (options) {
+				if (options.category) {
+					books = books.filter(function (v, i) {
+						return books[i].category === options.category;
+					});
+				} else if (options.author) {
+					books = books.filter(function (v, i) {
+						return books[i].author === options.author;
+					});
+				}
+			}
+			return books.sort();
 		}
 
 		function addBook(book) {
@@ -41,13 +52,19 @@ function solve() {
 				throw new Error();
 			}
 
-			books.forEach(function (i) {
+			books.forEach(function (v, i) {
 				if (books[i].isbn === book.isbn || books[i].title === book.title) {
 					throw new Error();
 				}
 			});
+
 			book.ID = books.length + 1;
 			books.push(book);
+
+			if (!categories.includes(book.category)) {
+				categories.push(book.category);
+			}
+
 			return book;
 		}
 
