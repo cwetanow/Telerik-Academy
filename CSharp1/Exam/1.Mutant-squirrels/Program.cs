@@ -11,27 +11,25 @@ namespace _1.Mutant_squirrels
     {
         static void Main(string[] args)
         {
-            
-            
-            int t = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
-            int s = int.Parse(Console.ReadLine());
-            int n = int.Parse(Console.ReadLine());
-            double allTails = t * b;
-            allTails *= s;
-            allTails *= n;
-            
-            if (allTails%2==0)
-            {
+            int trees = int.Parse(Console.ReadLine());
+            int branches = int.Parse(Console.ReadLine());
+            int squirrel = int.Parse(Console.ReadLine());
+            int averageTails = int.Parse(Console.ReadLine());
 
+            double allTails = trees;
+            allTails *= branches;
+            allTails *= squirrel;
+            allTails *= averageTails;
+
+            if (allTails % 2 == 0)
+            {
                 allTails *= 376439;
                 Console.WriteLine("{0:F3}", allTails);
             }
-            else if (allTails%2==1)
+            else if (allTails % 2 == 1)
             {
-
                 allTails /= 7;
-               Console.WriteLine("{0:F3}", allTails);
+                Console.WriteLine("{0:F3}", allTails);
             }
 
         }

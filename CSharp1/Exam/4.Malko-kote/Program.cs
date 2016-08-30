@@ -10,74 +10,85 @@ namespace _4.Malko_kote
     {
         static void Main(string[] args)
         {
-            int s = int.Parse(Console.ReadLine());
-            string k = Console.ReadLine();
-            char c = k[0];
-            int width=9 + (s - 10) / 2;
-            char[,] kote = new char[s, width];
-           
-           
-            for (int i = 0; i < s; i++)
-            {
-                for (int j = 0; j < 9 + (s - 10) / 2; j++)
-                {
+            var length = int.Parse(Console.ReadLine());
+            var character = Console.ReadLine()[0];
+            var width = 9 + (length - 10) / 2;
+            var kote = new char[length, width];
 
+            for (var i = 0; i < length; i++)
+            {
+                for (var j = 0; j < 9 + (length - 10) / 2; j++)
+                {
                     kote[i, j] = ' ';
-                    if (i==0 && (j==0 || j==width/2-2)) //ears
+
+                    //ears
+                    if (i == 0 && (j == 0 || j == width / 2 - 2)) 
                     {
-                        kote[i, j] = c;
+                        kote[i, j] = character;
                     }
-                    if (i<(s/4) && i>0 && j>0 && j<=width/2-1) //head
+
+                    //head
+                    if (i < (length / 4) && i > 0 && j > 0 && j <= width / 2 - 1)
                     {
-                        kote[i, j] = c;
+                        kote[i, j] = character;
                     }
-                    if (i<(s/4)*2-1 && i>0 && j>1 && j<=width/2-2) //throat
+
+                    if (i < (length / 4) * 2 - 1 && i > 0 && j > 1 && j <= width / 2 - 2) //throat
                     {
-                        kote[i, j] = c;
+                        kote[i, j] = character;
                     }
-                    if (i<(s/4)*2-1+s/4 && i>=(s/4)*2-1 && j>0 && j<=width/2-1) //traps
+
+                    if (i < (length / 4) * 2 - 1 + length / 4 && i >= (length / 4) * 2 - 1 && j > 0 && j <= width / 2 - 1) //traps
                     {
-                        kote[i, j] = c;
+                        kote[i, j] = character;
                     }
-                    if (i<s-1 && i>=(s/4)*2-1+s/4 && j>=0 && j<=width/2) //body
+
+                    if (i < length - 1 && i >= (length / 4) * 2 - 1 + length / 4 && j >= 0 && j <= width / 2) //body
                     {
-                         kote[i, j] = c;
+                        kote[i, j] = character;
                     }
-                     if (i==s-1 && j>0 && j<(s*3)/4) //lower
+
+                    if (i == length - 1 && j > 0 && j < (length * 3) / 4) //lower
                     {
-                        kote[i, j] = c;
+                        kote[i, j] = character;
                     }
-                    if (i==s-2 && j>width/2+1 && j<(s*3)/4) //lower part of tail
+
+                    if (i == length - 2 && j > width / 2 + 1 && j < (length * 3) / 4) //lower part of tail
                     {
-                         kote[i, j] = c;
+                        kote[i, j] = character;
                     }
-                    if (i == s-2  &&  j==width/2+2) //tail dot
+
+                    if (i == length - 2 && j == width / 2 + 2) //tail dot
                     {
-                        kote[i, j] = c;
+                        kote[i, j] = character;
                     }
-                    if (i < s-1 && j==width/2+3 && i>=(s/4)*2+s/4-2)
+
+                    if (i < length - 1 && j == width / 2 + 3 && i >= (length / 4) * 2 + length / 4 - 2)
                     {
-                        kote[i, j] = c;
+                        kote[i, j] = character;
                     }
-                    if (i == (s/4)*2+s/4-2&& j>width/2+3 )
+
+                    if (i == (length / 4) * 2 + length / 4 - 2 && j > width / 2 + 3)
                     {
-                         kote[i, j] = c;
+                        kote[i, j] = character;
                     }
-                    
-                    if (j>width/2+2 && (i==s-1 || i==s-2))
+
+                    if (j > width / 2 + 2 && (i == length - 1 || i == length - 2))
                     {
                         kote[i, j] = ' ';
                     }
-                    if (j == width / 2 + 3 && i == s - 2)
+
+                    if (j == width / 2 + 3 && i == length - 2)
                     {
-                        kote[i, j] = c;
+                        kote[i, j] = character;
                     }
+
                     Console.Write(kote[i, j]);
                 }
-               
+
                 Console.WriteLine();
             }
-            
+
         }
     }
 }

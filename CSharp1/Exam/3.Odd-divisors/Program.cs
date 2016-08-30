@@ -10,19 +10,21 @@ namespace _3.Odd_divisors
     {
         static void Main(string[] args)
         {
-            int a = int.Parse(Console.ReadLine());
-            int b = int.Parse(Console.ReadLine());
-            int sum = 0;
-            for (int i = a; i <=b; i++)
+            var a = int.Parse(Console.ReadLine());
+            var b = int.Parse(Console.ReadLine());
+            var sum = 0;
+
+            for (var i = a; i <= b; i++)
             {
-                for (int j = 1; j <= i; j++)
+                for (var j = 1; j <= i; j++)
                 {
-                    if (i%j==0 && j%2==1)
+                    if (i % j == 0 && j % 2 == 1)
                     {
                         sum += j;
                     }
                 }
             }
+
             Console.WriteLine(sum);
         }
     }

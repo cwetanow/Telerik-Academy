@@ -10,73 +10,60 @@ namespace _2.Speeds
     {
         static void Main(string[] args)
         {
-           
-            int c = int.Parse(Console.ReadLine());
-            int[] s = new int[c];
-            
-            for (int i = 0; i < c; i++)
+            var carsCount = int.Parse(Console.ReadLine());
+            var speeds = new int[carsCount];
+
+            for (var i = 0; i < carsCount; i++)
             {
-                s[i] = int.Parse(Console.ReadLine());
+                speeds[i] = int.Parse(Console.ReadLine());
             }
-            
-            int maxGroup = 1;
-            int currentMaxGroup = 1;
-            int maxSum = 0;
-            int currentMaxSum = 0;
-            int currentCar=s[0];
-           
-            for (int i = 0; i < c; i++)
+
+            var maxGroup = 1;
+            var currentMaxGroup = 1;
+            var maxSum = 0;
+            var currentMaxSum = 0;
+            var currentCar = speeds[0];
+
+            for (var i = 0; i < carsCount; i++)
             {
-               // Console.WriteLine("the selecdet {0}, current is {1}", currentCar, s[i]);
-               
-                
-                if (currentCar>=s[i])
+                if (currentCar >= speeds[i])
                 {
-                    
-                    currentMaxGroup=1;
-                    currentMaxSum = s[i];
-                    currentCar = s[i];
-                  
-                    
+                    currentMaxGroup = 1;
+                    currentMaxSum = speeds[i];
+                    currentCar = speeds[i];
                 }
                 else
                 {
                     currentMaxGroup++;
-                    currentMaxSum += s[i];
-                    
-                    if (currentMaxGroup>=maxGroup)
+                    currentMaxSum += speeds[i];
+
+                    if (currentMaxGroup >= maxGroup)
                     {
-                        maxGroup = currentMaxGroup;                       
-                        
-                       //Console.WriteLine(i);
-                       // Console.WriteLine(maxGroup);
+                        maxGroup = currentMaxGroup;
+
                         if (maxSum <= currentMaxSum)
                         {
                             maxSum = currentMaxSum;
                         }
-                        
+
                     }
-                   
-                    
-                    
+
+
+
                 }
-               // Console.WriteLine("the current max {0}", currentMaxSum);
-                
-               //Console.WriteLine("max {0}", maxSum);
-               //Console.WriteLine();
             }
-            
-            if (maxGroup==1)
+
+            if (maxGroup == 1)
             {
-                for (int i = 0; i < c; i++)
+                for (var i = 0; i < carsCount; i++)
                 {
-                    if (maxSum<s[i])
+                    if (maxSum < speeds[i])
                     {
-                        maxSum = s[i];
+                        maxSum = speeds[i];
                     }
                 }
             }
-          // Console.WriteLine(maxGroup);
+
             Console.WriteLine(maxSum);
 
         }
