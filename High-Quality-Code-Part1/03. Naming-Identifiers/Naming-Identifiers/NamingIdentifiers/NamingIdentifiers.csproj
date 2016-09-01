@@ -40,7 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="class_123\ClassToPlayWith.cs" />
+    <Compile Include="class_123\Factory.cs" />
+    <Compile Include="class_123\Writer.cs" />
     <Compile Include="Make_Chuek\Enumerations\GenderType.cs" />
     <Compile Include="Make_Chuek\HumanCreator.cs" />
     <Compile Include="Make_Chuek\Models\Human.cs" />

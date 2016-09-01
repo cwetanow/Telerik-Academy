@@ -5,19 +5,19 @@ namespace Minesweeper
 {
     public class Mine
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            string command = string.Empty;
-            char[,] field = CreatePlayfield();
-            char[,] bombs = PlaceBombs();
-            int counter = 0;
-            bool boom = false;
-            List<Point> champions = new List<Point>(6);
-            int row = 0;
-            int col = 0;
-            bool firstFlag = true;
+            var command = string.Empty;
+            var field = CreatePlayfield();
+            var bombs = PlaceBombs();
+            var counter = 0;
+            var boom = false;
+            var champions = new List<Point>(6);
+            var row = 0;
+            var col = 0;
+            var firstFlag = true;
             const int max = 35;
-            bool secondFlag = false;
+            var secondFlag = false;
 
             do
             {
@@ -28,8 +28,10 @@ namespace Minesweeper
                     RenderField(field);
                     firstFlag = false;
                 }
+
                 Console.Write("Give a row and col : ");
                 command = Console.ReadLine().Trim();
+
                 if (command.Length >= 3)
                 {
                     if (int.TryParse(command[0].ToString(), out row) &&
@@ -39,6 +41,7 @@ namespace Minesweeper
                         command = "turn";
                     }
                 }
+
                 switch (command)
                 {
                     case "top":
@@ -80,13 +83,16 @@ namespace Minesweeper
                         Console.WriteLine("\nGreshka! nevalidna command\n");
                         break;
                 }
+
                 if (boom)
                 {
                     RenderField(bombs);
-                    Console.Write("\nHrrrrrr! Died with {0} Points. " +
-                        "Nickname: ", counter);
-                    string nick = Console.ReadLine();
-                    Point top = new Point(nick, counter);
+                    Console.Write($"\nHrrrrrr! Died with {counter} Points. " + "Nickname: ");
+
+                    var nickname = Console.ReadLine();
+
+                    var top = new Point(nickname, counter);
+
                     if (champions.Count < 5)
                     {
                         champions.Add(top);
@@ -103,6 +109,7 @@ namespace Minesweeper
                             }
                         }
                     }
+
                     champions.Sort((Point pointOne, Point pointSecond) => pointSecond.Name.CompareTo(pointOne.Name));
                     champions.Sort((Point pointOne, Point pointSecond) => pointSecond.Points.CompareTo(pointOne.Points));
                     Ranking(champions);
@@ -117,25 +124,30 @@ namespace Minesweeper
                 {
                     Console.WriteLine("\nGood job! You found 35 cells without mines.");
                     RenderField(bombs);
+
                     Console.WriteLine("Enter your name: ");
-                    string name = Console.ReadLine();
-                    Point point = new Point(name, counter);
+                    var name = Console.ReadLine();
+                    var point = new Point(name, counter);
                     champions.Add(point);
+
                     Ranking(champions);
+
                     field = CreatePlayfield();
                     bombs = PlaceBombs();
                     counter = 0;
+
                     secondFlag = false;
                     firstFlag = true;
                 }
             }
             while (command != "exit");
+
             Console.WriteLine("Made in Bulgaria - Uauahahahahaha!");
             Console.WriteLine("AREEEEEEeeeeeee.");
             Console.Read();
         }
 
-        private static void Ranking(List<Point> points)
+        private static void Ranking(IList<Point> points)
         {
             Console.WriteLine("\nPoints:");
 
@@ -143,8 +155,7 @@ namespace Minesweeper
             {
                 for (int i = 0; i < points.Count; i++)
                 {
-                    Console.WriteLine("{0}. {1} --> {2} boxes",
-                        i + 1, points[i].Name, points[i].Points);
+                    Console.WriteLine($"{i + 1}. {points[i].Name} --> {points[i].Points} boxes");
                 }
                 Console.WriteLine();
             }
@@ -157,35 +168,39 @@ namespace Minesweeper
         private static void ChangeTurn(char[,] field,
             char[,] bombs, int row, int column)
         {
-            char bombsCount = BombsCount(bombs, row, column);
+            var bombsCount = BombsCount(bombs, row, column);
             bombs[row, column] = bombsCount;
             field[row, column] = bombsCount;
         }
 
         private static void RenderField(char[,] board)
         {
-            int rows = board.GetLength(0);
-            int cols = board.GetLength(1);
+            var rows = board.GetLength(0);
+            var cols = board.GetLength(1);
             Console.WriteLine("\n    0 1 2 3 4 5 6 7 8 9");
             Console.WriteLine("   ---------------------");
+
             for (int i = 0; i < rows; i++)
             {
-                Console.Write("{0} | ", i);
+                Console.Write($"{i} | ");
+
                 for (int j = 0; j < cols; j++)
                 {
-                    Console.Write("{0} ", board[i, j]);
+                    Console.Write($"{board[i, j]} ");
                 }
+
                 Console.Write("|");
                 Console.WriteLine();
             }
+
             Console.WriteLine("   ---------------------\n");
         }
 
         private static char[,] CreatePlayfield()
         {
-            int boardRows = 5;
-            int boardColumns = 10;
-            char[,] board = new char[boardRows, boardColumns];
+            var boardRows = 5;
+            var boardColumns = 10;
+            var board = new char[boardRows, boardColumns];
 
             for (int i = 0; i < boardRows; i++)
             {
@@ -200,9 +215,9 @@ namespace Minesweeper
 
         private static char[,] PlaceBombs()
         {
-            int rows = 5;
-            int cols = 10;
-            char[,] playfield = new char[rows, cols];
+            var rows = 5;
+            var cols = 10;
+            var playfield = new char[rows, cols];
 
             for (int i = 0; i < rows; i++)
             {
@@ -212,7 +227,7 @@ namespace Minesweeper
                 }
             }
 
-            List<int> numbers = new List<int>();
+            var numbers = new List<int>();
             while (numbers.Count < 15)
             {
                 Random random = new Random();
@@ -223,10 +238,10 @@ namespace Minesweeper
                 }
             }
 
-            foreach (int i2 in numbers)
+            foreach (var i2 in numbers)
             {
-                int col = (i2 / cols);
-                int row = (i2 % cols);
+                var col = (i2 / cols);
+                var row = (i2 % cols);
                 if (row == 0 && i2 != 0)
                 {
                     col--;
@@ -244,16 +259,16 @@ namespace Minesweeper
 
         private static void Calculations(char[,] field)
         {
-            int col = field.GetLength(0);
-            int row = field.GetLength(1);
+            var col = field.GetLength(0);
+            var row = field.GetLength(1);
 
-            for (int i = 0; i < col; i++)
+            for (var i = 0; i < col; i++)
             {
-                for (int j = 0; j < row; j++)
+                for (var j = 0; j < row; j++)
                 {
                     if (field[i, j] != '*')
                     {
-                        char count = BombsCount(field, i, j);
+                        var count = BombsCount(field, i, j);
                         field[i, j] = count;
                     }
                 }
@@ -262,9 +277,9 @@ namespace Minesweeper
 
         private static char BombsCount(char[,] field, int row, int col)
         {
-            int count = 0;
-            int rows = field.GetLength(0);
-            int cols = field.GetLength(1);
+            var count = 0;
+            var rows = field.GetLength(0);
+            var cols = field.GetLength(1);
 
             if (row - 1 >= 0)
             {
