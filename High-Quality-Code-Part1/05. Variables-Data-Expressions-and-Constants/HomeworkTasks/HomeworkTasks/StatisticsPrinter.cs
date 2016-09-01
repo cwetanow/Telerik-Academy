@@ -11,7 +11,7 @@ namespace HomeworkTasks
         public void PrintStatistics(double[] arr, int count)
         {
             //Simplified finding min, max and average. Why cycle when there are built in methods 
-            double max = arr.Max();
+            var max = arr.Max();
             PrintMax(max);
 
             var min = arr.Min();
