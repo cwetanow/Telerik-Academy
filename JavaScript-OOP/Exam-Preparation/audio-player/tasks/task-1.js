@@ -268,46 +268,46 @@ function solve() {
             return null;
         }
 
-        // removePlayable(options) {
-        //     let idOfPlayable;
-        //     if (typeof options === 'number') {
-        //         idOfPlayable = options;
-        //     } else {
-        //         idOfPlayable = options.id;
-        //     }
+        removePlaylist(options) {
+            let idOfPlayable;
+            if (typeof options === 'number') {
+                idOfPlayable = options;
+            } else {
+                idOfPlayable = options.id;
+            }
 
-        //     for (var index = 0; index < this._playables.length; index += 1) {
-        //         if (this._playables[index].id === idOfPlayable) {
-        //             this._playables.splice(index, 1);
-        //             return this;
-        //         }
-        //     }
+            for (var index = 0; index < this._playlists.length; index += 1) {
+                if (this._playlists[index].id === idOfPlayable) {
+                    this._playlists.splice(index, 1);
+                    return this;
+                }
+            }
 
-        //     throw new Error();
-        // }
+            throw new Error();
+        }
 
-        // listPlayables(page, size) {
-        //     if (page * size > this._playables.length) {
-        //         throw new Error();
-        //     }
+        listPlaylists(page, size) {
+            if (page * size > this._playlists.length) {
+                throw new Error();
+            }
 
-        //     if (page < 0 || size <= 0) {
-        //         throw new Error();
-        //     }
+            if (page < 0 || size <= 0) {
+                throw new Error();
+            }
 
-        //     this._playables.sort(utils.sort);
+            this._playlists.sort(utils.sort);
 
-        //     let start = page * size;
-        //     let end = ((page + 1) * size - 1) < this._playables.length ? ((page + 1) * size - 1) + 1 : this._playables.length;
-        //     let result = [];
+            let start = page * size;
+            let end = ((page + 1) * size - 1) < this._playlists.length ? ((page + 1) * size - 1) + 1 : this._playlists.length;
+            let result = [];
 
-        //     for (var index = start; index < end; index++) {
-        //         var element = this._playables[index];
-        //         result.push(element);
-        //     }
+            for (var index = start; index < end; index++) {
+                var element = this._playlists[index];
+                result.push(element);
+            }
 
-        //     return result;
-        // }
+            return result;
+        }
     }
 
     return {
