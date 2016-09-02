@@ -1,5 +1,5 @@
 function solve() {
-    let idGenerator = {
+    let generator = {
         get: (function () {
             return (function () {
                 var lastId = 0;
@@ -9,8 +9,10 @@ function solve() {
                     }
                 };
             } ());
-        } ())
+        })
     };
+
+    let idGenerator = generator.get();
 
     let validation = {
         constants: {
@@ -31,7 +33,9 @@ function solve() {
             }
         },
         stringLengthValidator: function (str, min, max) {
-            return str.length <= max && str.length >= min;
+            return typeof (str) === 'string' &&
+                str.length >= min &&
+                str.length <= max;
         },
         stringIsExactlyLongValidator: function (str, len) {
             return str.length === len;
@@ -41,7 +45,7 @@ function solve() {
             if (max) {
                 result = num <= max && num >= min;
             } else {
-                result = num >= min;
+                result = num > min;
             }
             return result;
         },
@@ -57,22 +61,28 @@ function solve() {
                 validation.constants.nameConstants.nameLengthMax);
         },
         isbnValidator: function (isbn) {
-            return validation.stringIsExactlyLongValidator(isbn, validation.constants.bookConstants.isbnMinLength) &&
-                validation.stringIsExactlyLongValidator(isbn, validation.constants.bookConstants.isbnMaxLength) &&
-                validation.stringIsNumberValidator(isbn);
+            let isString = typeof (isbn) === 'string';
+            let hasCorrectLength = isbn.length === 10 || isbn.length === 13;
+            isbn.split('').forEach(function (digit) {
+                if (isNaN(+digit)) {
+                    return false;
+                }
+            });
+
+            return isString && hasCorrectLength;
         },
         nonEmptyStringValidator: function (str) {
             return str.length !== 0;
         },
         genreValidator: function (genre) {
-            return validation.stringLengthValidator(name,
-                validation.constants.nameConstants.genreMinLength,
-                validation.constants.nameConstants.genreMaxLength);
+            return typeof (genre) === 'string' &&
+                genre.length >= validation.constants.bookConstants.genreMinLength &&
+                genre.length <= validation.constants.bookConstants.genreMaxLength;
         },
         ratingValidator: function (num) {
             return validation.numberValidator(num,
                 validation.constants.mediaConstants.ratingMin,
-                validation.constants.mediaConstants.ratingMax);
+                validation.constants.mediaConstants.TratingMax);
         },
         durationValidator: function (num) {
             return validation.numberValidator(num,
@@ -93,7 +103,7 @@ function solve() {
 
         set name(value) {
             if (!validator.nameValidator(value)) {
-                throw "Name is not in the required range";
+                throw new Error();
             }
 
             this._name = value;
@@ -105,10 +115,10 @@ function solve() {
 
         set description(value) {
             if (!validator.nonEmptyStringValidator(value)) {
-                throw "Description cannot be empty";
+                throw new Error();
             }
 
-            this._name = value;
+            this._description = value;
         }
     }
 
@@ -125,7 +135,7 @@ function solve() {
 
         set genre(value) {
             if (!validator.genreValidator(value)) {
-                throw 'Genre is not valid';
+                throw new Error();
             }
 
             this._genre = value;
@@ -137,7 +147,7 @@ function solve() {
 
         set isbn(value) {
             if (!validator.isbnValidator(value)) {
-                throw 'ISBN is not valid';
+                throw new Error();
             }
 
             this._isbn = value;
@@ -157,10 +167,10 @@ function solve() {
 
         set rating(value) {
             if (!validator.ratingValidator(value)) {
-                throw 'Rating is not valid';
+                throw new Error();
             }
 
-            this._genre = value;
+            this._rating = value;
         }
 
         get duration() {
@@ -169,12 +179,75 @@ function solve() {
 
         set duration(value) {
             if (!validator.durationValidator(value)) {
-                throw 'Duration is not valid';
+                throw new Error();
             }
 
             this._duration = value;
         }
     }
+
+    class Catalog {
+        constructor(name) {
+            this.id = idGenerator.getNext();
+            this.name = name;
+            this.items = [];
+        }
+
+        get name() {
+            return this._name;
+        }
+
+        set name(value) {
+            if (!validator.nameValidator(value)) {
+                throw new Error();
+            }
+
+            this._name = value;
+        }
+
+        get items() {
+            return this._items;
+        }
+
+        set items(value) {
+            this._items = value;
+        }
+
+        add(...items) {
+            if (items[0] instanceof Array) {
+                let itemsToAdd = items[0];
+
+                if (itemsToAdd.length === 0) {
+                    throw new Error();
+                }
+            }
+
+            if (!itemsToAdd) {
+                throw new Error();
+            }
+
+            let areValid = itemsToAdd.forEach(function (element) {
+                if (!(element instanceof Item)) {
+                    throw new Error();
+                }
+            }, this);
+
+            itemsToAdd.forEach(function (item) {
+                this.items.push(element);
+            }, this);
+        }
+
+        find(id) {
+            if (typeof id !== 'number' || !id) {
+                throw new Error();
+            }
+
+
+        }
+    }
+
+
+
 
     return {
         getBook: function (name, isbn, genre, description) {
