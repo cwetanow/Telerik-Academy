@@ -80,9 +80,9 @@ function solve() {
                 genre.length <= validation.constants.bookConstants.genreMaxLength;
         },
         ratingValidator: function (num) {
-            return validation.numberValidator(num,
-                validation.constants.mediaConstants.ratingMin,
-                validation.constants.mediaConstants.TratingMax);
+            return typeof num === 'number' &&
+                num <= validation.constants.mediaConstants.ratingMax &
+                num >= validation.constants.mediaConstants.ratingMin;
         },
         durationValidator: function (num) {
             return validation.numberValidator(num,
@@ -214,8 +214,9 @@ function solve() {
         }
 
         add(...items) {
+            let itemsToAdd = items;
             if (items[0] instanceof Array) {
-                let itemsToAdd = items[0];
+                itemsToAdd = items[0];
 
                 if (itemsToAdd.length === 0) {
                     throw new Error();
@@ -233,16 +234,82 @@ function solve() {
             }, this);
 
             itemsToAdd.forEach(function (item) {
-                this.items.push(element);
+                this.items.push(item);
             }, this);
+
+            return this;
         }
 
-        find(id) {
-            if (typeof id !== 'number' || !id) {
+        find(options) {
+            if (typeof options === 'number') {
+                this._items.forEach(function (item) {
+                    if (item.id === options) {
+                        return item;
+                    }
+                });
+            } else if (typeof options === 'object') {
+                let result = this._items;
+                if (options.id) {
+                    result = [this.find(options.id)];
+                }
+
+                if (options.name) {
+                    result = result[0].name === options.name ? result : [];
+                }
+
+                return result;
+            } else {
                 throw new Error();
             }
+        }
 
+        search(pattern) {
+            let result = [];
+            pattern = pattern.toLowerCase();
 
+            this._items.forEach(function (item) {
+                if (item.name.toLowerCase().indexOf(pattern) >= 0) {
+                    result.push(item);
+                } else if (item.description.toLowerCase().indexOf(pattern) >= 0) {
+                    result.push(item);
+                }
+            });
+
+            return result;
+        }
+    }
+
+    class BookCatalog extends Catalog {
+        constructor(name) {
+            super(name);
+        }
+
+        add(...books) {
+            if (books[0].length) {
+                books[0].forEach(function (element) {
+                    if (!(element instanceof Book)) {
+                        throw new Error();
+                    }
+                }, this);
+            } else {
+                books.forEach(function (element) {
+                    if (!(element instanceof Book)) {
+                        throw new Error();
+                    }
+                }, this);
+            }
+            super.add(books);
+        }
+
+        getGenres() {
+            let genres = [];
+            this._items.forEach(function (param) {
+                if (genres.indexOf(param.genre < 0)) {
+                    genres.push(param.genre);
+                }
+            });
+
+            return genres;
         }
     }
 
@@ -257,7 +324,7 @@ function solve() {
             return new Media(name, description, duration, rating);
         },
         getBookCatalog: function (name) {
-
+            return new BookCatalog(name);
         },
         getMediaCatalog: function (name) {
 
