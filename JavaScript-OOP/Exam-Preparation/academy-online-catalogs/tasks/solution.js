@@ -145,7 +145,7 @@ function solve() {
     }
 
     class Media extends Item {
-        constructor(name, isbn, duration, rating) {
+        constructor(name, description, duration, rating) {
             super(name, description);
             this.duration = duration;
             this.rating = rating;
@@ -156,23 +156,23 @@ function solve() {
         }
 
         set rating(value) {
-            if (!validator.genreValidator(value)) {
-                throw 'Genre is not valid';
+            if (!validator.ratingValidator(value)) {
+                throw 'Rating is not valid';
             }
 
             this._genre = value;
         }
 
-        get isbn() {
-            return this._isbn;
+        get duration() {
+            return this._duration;
         }
 
-        set isbn(value) {
-            if (!validator.isbnValidator(value)) {
-                throw 'ISBN is not valid';
+        set duration(value) {
+            if (!validator.durationValidator(value)) {
+                throw 'Duration is not valid';
             }
 
-            this._isbn = value;
+            this._duration = value;
         }
     }
 
@@ -181,7 +181,7 @@ function solve() {
             return new Book(name, isbn, genre, description);
         },
         getMedia: function (name, rating, duration, description) {
-
+            return new Media(name, description, duration, rating);
         },
         getBookCatalog: function (name) {
 
