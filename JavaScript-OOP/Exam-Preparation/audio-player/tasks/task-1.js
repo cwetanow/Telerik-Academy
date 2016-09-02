@@ -40,7 +40,24 @@ function solve() {
         }
     };
 
+    let utils = {
+        sort: function (ob1, ob2) {
+            if (ob1.strength > ob2.strength) {
+                return 1;
+            } else if (ob1.strength < ob2.strength) {
+                return -1;
+            }
 
+            // Else go to the 2nd item
+            if (ob1.name < ob2.name) {
+                return -1;
+            } else if (ob1.name > ob2.name) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
+    };
 
     let idGenerator = generator.get();
 
@@ -170,13 +187,127 @@ function solve() {
 
             return null;
         }
+
+        removePlayable(options) {
+            let idOfPlayable;
+            if (typeof options === 'number') {
+                idOfPlayable = options;
+            } else {
+                idOfPlayable = options.id;
+            }
+
+            for (var index = 0; index < this._playables.length; index += 1) {
+                if (this._playables[index].id === idOfPlayable) {
+                    this._playables.splice(index, 1);
+                    return this;
+                }
+            }
+
+            throw new Error();
+        }
+
+        listPlayables(page, size) {
+            if (page * size > this._playables.length) {
+                throw new Error();
+            }
+
+            if (page < 0 || size <= 0) {
+                throw new Error();
+            }
+
+            this._playables.sort(utils.sort);
+
+            let start = page * size;
+            let end = ((page + 1) * size - 1) < this._playables.length ? ((page + 1) * size - 1) + 1 : this._playables.length;
+            let result = [];
+
+            for (var index = start; index < end; index++) {
+                var element = this._playables[index];
+                result.push(element);
+            }
+
+            return result;
+        }
     }
 
     class Player {
         constructor(name) {
             this.id = idGenerator.getNext();
             this.name = name;
+            this._playlists = [];
         }
+
+        get name() {
+            return this._name;
+        }
+
+        set name(value) {
+            if (!validator.validateString(value)) {
+                throw new Error();
+            }
+
+            this._name = value;
+        }
+
+        addPlaylist(playlist) {
+            if (playlist instanceof PlayList) {
+                this._playlists.push(playlist);
+                return this;
+            }
+
+            throw new Error();
+        }
+
+        getPlaylistById(id) {
+            for (var index = 0; index < this._playlists.length; index += 1) {
+                if (this._playlists[index].id === id) {
+                    return this._playlists[index];
+                }
+            }
+
+            return null;
+        }
+
+        // removePlayable(options) {
+        //     let idOfPlayable;
+        //     if (typeof options === 'number') {
+        //         idOfPlayable = options;
+        //     } else {
+        //         idOfPlayable = options.id;
+        //     }
+
+        //     for (var index = 0; index < this._playables.length; index += 1) {
+        //         if (this._playables[index].id === idOfPlayable) {
+        //             this._playables.splice(index, 1);
+        //             return this;
+        //         }
+        //     }
+
+        //     throw new Error();
+        // }
+
+        // listPlayables(page, size) {
+        //     if (page * size > this._playables.length) {
+        //         throw new Error();
+        //     }
+
+        //     if (page < 0 || size <= 0) {
+        //         throw new Error();
+        //     }
+
+        //     this._playables.sort(utils.sort);
+
+        //     let start = page * size;
+        //     let end = ((page + 1) * size - 1) < this._playables.length ? ((page + 1) * size - 1) + 1 : this._playables.length;
+        //     let result = [];
+
+        //     for (var index = start; index < end; index++) {
+        //         var element = this._playables[index];
+        //         result.push(element);
+        //     }
+
+        //     return result;
+        // }
     }
 
     return {
