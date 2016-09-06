@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^3.0.0"
+    "babel-preset-es2015": "^6.14.0",
+    "chai": "^3.0.0",
+    "install": "^0.8.1",
+    "npm": "^3.10.6"
   }
 }
