@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Task1_Class_chef.FoodsModels;
+﻿using Task1_Class_chef.FoodsModels;
 
 namespace Task2
 {
@@ -15,9 +10,10 @@ namespace Task2
 
             if (potato != null)
             {
-                if (!potato.HasNotBeenPeeled && !potato.IsRotten)
+                var potatoCanBeCooked = !potato.HasNotBeenPeeled && !potato.IsRotten;
+                if (potatoCanBeCooked)
                 {
-                    Cook(potato);
+                    this.Cook(potato);
                 }
             }
         }
@@ -28,9 +24,13 @@ namespace Task2
             var minY = 0;
             var maxX = 10;
             var maxY = 10;
-            var shouldNotVisitCell = canBeVisited;
+            var canVisitCell = canBeVisited;
 
-            if (x >= minX && (x <= maxX && ((maxY >= y && minY <= y) && !shouldNotVisitCell)))
+            var xIsInRange = (x >= minX && x <= maxX);
+            var yIsInRange = (y >= minY && y <= maxY);
+
+
+            if (canVisitCell && xIsInRange && yIsInRange)
             {
                 VisitCell();
             }
@@ -48,7 +48,7 @@ namespace Task2
 
         private void VisitCell()
         {
-            
+
         }
     }
 }
