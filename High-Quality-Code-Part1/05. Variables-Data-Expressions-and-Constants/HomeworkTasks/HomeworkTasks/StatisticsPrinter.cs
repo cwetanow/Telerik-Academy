@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 
 namespace HomeworkTasks
 {
@@ -12,13 +8,13 @@ namespace HomeworkTasks
         {
             //Simplified finding min, max and average. Why cycle when there are built in methods 
             var max = arr.Max();
-            PrintMax(max);
+            this.PrintMax(max);
 
             var min = arr.Min();
-            PrintMin(min);
+            this.PrintMin(min);
 
             var average = arr.Average();
-            PrintAvg(average);
+            this.PrintAvg(average);
         }
 
         private void PrintMax(double max)

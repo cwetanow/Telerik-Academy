@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using HomeworkTasks.Utils;
 
 namespace HomeworkTasks
 {
@@ -18,13 +14,13 @@ namespace HomeworkTasks
 
         public double Height { get; set; }
 
-        public static Size GetRotatedSize(Size s, double angleToRotate)
+        public static Size GetRotatedSize(Size size, double angleToRotate)
         {
-            var width = Math.Abs(Math.Cos(angleToRotate)) * s.Width +
-                        Math.Abs(Math.Sin(angleToRotate)) * s.Height;
+            var width = Calculator.AbsoluteCos(angleToRotate) * size.Width +
+                        Calculator.AbsoluteSin(angleToRotate) * size.Height;
 
-            var height = Math.Abs(Math.Sin(angleToRotate)) * s.Width +
-                    Math.Abs(Math.Cos(angleToRotate)) * s.Height;
+            var height = Calculator.AbsoluteSin(angleToRotate) * size.Width +
+                    Calculator.AbsoluteCos(angleToRotate) * size.Height;
 
             return new Size(width, height);
         }
