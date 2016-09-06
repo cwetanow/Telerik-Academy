@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="UtilsExamples.cs" />
-    <Compile Include="Utils.cs" />
+    <Compile Include="Utils\ThreeDimensionalCalculator.cs" />
+    <Compile Include="Utils\TwoDimensionalCalculator.cs" />
+    <Compile Include="Utils\FileNameHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
