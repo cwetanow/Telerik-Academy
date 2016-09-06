@@ -2,25 +2,80 @@
 
 namespace Abstraction
 {
-    abstract class Figure
+    public abstract class Figure
     {
-        public virtual double Width { get; set; }
-        public virtual double Height { get; set; }
-        public virtual double Radius { get; set; }
+        private double width;
+        private double height;
+        private double radius;
 
-        public Figure()
+        protected Figure()
         {
         }
 
-        public Figure(double radius)
+        protected Figure(double radius)
         {
             this.Radius = radius;
         }
 
-        public Figure(double width, double height)
+        protected Figure(double width, double height)
         {
             this.Width = width;
             this.Height = height;
+        }
+
+
+        public virtual double Width
+        {
+            get
+            {
+                return this.width;
+            }
+            set
+            {
+                this.IsSideValid(value);
+
+                this.width = value;
+            }
+        }
+
+        public virtual double Height
+        {
+            get
+            {
+                return this.height;
+            }
+            set
+            {
+                this.IsSideValid(value);
+
+                this.height = value;
+            }
+        }
+
+        public virtual double Radius
+        {
+            get
+            {
+                return this.radius;
+            }
+            set
+            {
+                this.IsSideValid(value);
+
+                this.radius = value;
+            }
+        }
+
+        public abstract double CalcPerimeter();
+
+        public abstract double CalcSurface();
+
+        protected void IsSideValid(double side)
+        {
+            if (side < 0)
+            {
+                throw new ArgumentOutOfRangeException();
+            }
         }
     }
 }

@@ -26,15 +26,15 @@ namespace Abstraction
             }
         }
 
-        public double CalcPerimeter()
+        public override double CalcPerimeter()
         {
-            double perimeter = 2 * (this.Width + this.Height);
+            var perimeter = 2 * (this.Width + this.Height);
             return perimeter;
         }
 
-        public double CalcSurface()
+        public override double CalcSurface()
         {
-            double surface = this.Width * this.Height;
+            var surface = this.Width * this.Height;
             return surface;
         }
     }

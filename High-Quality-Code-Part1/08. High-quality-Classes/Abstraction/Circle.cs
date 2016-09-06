@@ -2,17 +2,11 @@
 
 namespace Abstraction
 {
-    class Circle : Figure
+    public class Circle : Figure
     {
-        public double Radius { get; set; }
-
-        public Circle()
+        public Circle(double radius) : base(radius)
         {
-        }
 
-        public Circle(double radius)
-        {
-            this.Radius = radius;
         }
 
         public override double Width
@@ -39,15 +33,15 @@ namespace Abstraction
             }
         }
 
-        public double CalcPerimeter()
+        public override double CalcPerimeter()
         {
-            double perimeter = 2 * Math.PI * this.Radius;
+            var perimeter = 2 * Math.PI * this.Radius;
             return perimeter;
         }
 
-        public double CalcSurface()
+        public override double CalcSurface()
         {
-            double surface = Math.PI * this.Radius * this.Radius;
+            var surface = Math.PI * this.Radius * this.Radius;
             return surface;
         }
     }

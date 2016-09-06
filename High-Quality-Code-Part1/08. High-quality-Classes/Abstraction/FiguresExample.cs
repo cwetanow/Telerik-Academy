@@ -6,14 +6,13 @@ namespace Abstraction
     {
         static void Main()
         {
-            Circle circle = new Circle(5);
+            var circle = new Circle(5);
             Console.WriteLine("I am a circle. " +
-                "My perimeter is {0:f2}. My surface is {1:f2}.",
-                circle.CalcPerimeter(), circle.CalcSurface());
-            Rectangle rect = new Rectangle(2, 3);
+                              $"My perimeter is {circle.CalcPerimeter():f2}. My surface is {circle.CalcSurface():f2}.");
+
+            var rect = new Rectangle(2, 3);
             Console.WriteLine("I am a rectangle. " +
-                "My perimeter is {0:f2}. My surface is {1:f2}.",
-                rect.CalcPerimeter(), rect.CalcSurface());
+                              $"My perimeter is {rect.CalcPerimeter():f2}. My surface is {rect.CalcSurface():f2}.");
         }
     }
 }
