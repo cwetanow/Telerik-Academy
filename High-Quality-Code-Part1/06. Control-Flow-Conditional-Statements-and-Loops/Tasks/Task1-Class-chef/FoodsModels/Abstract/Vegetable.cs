@@ -2,7 +2,7 @@
 {
     public abstract class Vegetable
     {
-        public bool HasNotBeenPeeled { get; set; }
+        public bool IsPeeled { get; set; }
 
         public bool IsRotten { get; set; }
     }

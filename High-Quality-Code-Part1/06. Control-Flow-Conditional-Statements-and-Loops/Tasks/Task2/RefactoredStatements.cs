@@ -10,7 +10,8 @@ namespace Task2
 
             if (potato != null)
             {
-                var potatoCanBeCooked = !potato.HasNotBeenPeeled && !potato.IsRotten;
+                var potatoCanBeCooked = potato.IsPeeled && !potato.IsRotten;
+
                 if (potatoCanBeCooked)
                 {
                     this.Cook(potato);
@@ -28,7 +29,6 @@ namespace Task2
 
             var xIsInRange = (x >= minX && x <= maxX);
             var yIsInRange = (y >= minY && y <= maxY);
-
 
             if (canVisitCell && xIsInRange && yIsInRange)
             {
