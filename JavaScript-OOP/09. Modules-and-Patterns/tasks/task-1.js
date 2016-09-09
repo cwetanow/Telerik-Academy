@@ -45,22 +45,133 @@
 */
 
 function solve() {
-	var Course = {
-		init: function(title, presentations) {
-		},
-		addStudent: function(name) {
-		},
-		getAllStudents: function() {
-		},
-		submitHomework: function(studentID, homeworkID) {
-		},
-		pushExamResults: function(results) {
-		},
-		getTopStudents: function() {
-		}
-	};
+  let validator = {
+    checkLength: function (str) {
+      if (str.length < 1) {
+        throw new Error();
+      }
+    },
+    checkForSpaces: function (str) {
+      if (str.indexOf(" ") === 0 || str.endsWith(" ")) {
+        throw new Error();
+      }
+    },
+    checkStudentName: function (name) {
+      if (name[0].toLowerCase() === name[0]) {
+        throw new Error();
+      }
 
-	return Course;
+      if (name.substring(1).toLowerCase() !== name.substring(1)) {
+        throw new Error();
+      }
+    },
+    checkForConsecutiveSpaces: function (str) {
+      let splitted = str.split(' ');
+      if (splitted.length !== 2) {
+        throw new Error();
+      }
+    }
+  };
+
+  let generator = {
+    get: (function () {
+      return (function () {
+        var lastId = 0;
+        return {
+          getNext: function () {
+            return lastId += 1;
+          }
+        };
+      } ());
+    })
+  };
+
+  let idGenerator = generator.get();
+
+  let coursePresentations = [],
+    students = [];;
+
+
+  class Presentation {
+    constructor(title) {
+      this.title = title;
+    }
+
+    get title() {
+      return this._title;
+    }
+
+    set title(x) {
+      validator.checkLength(x);
+      validator.checkForSpaces(x);
+      validator.checkForConsecutiveSpaces(x);
+
+      this._title = x;
+    }
+  }
+
+  class Student {
+    constructor(name) {
+      this.id = idGenerator.getNext();
+      validator.checkForConsecutiveSpaces(name);
+
+      let names = name.split(' ');
+      validator.checkStudentName(names[0]);
+      validator.checkStudentName(names[1]);
+
+      this.firstname = names[0];
+      this.lastname = names[1];
+    }
+  }
+  let init = function (title, presentations) {
+
+    if (presentations.length === 0) {
+      throw new Error();
+    }
+
+    validator.checkForSpaces(title);
+    validator.checkLength(title);
+    validator.checkForConsecutiveSpaces(title);
+
+    presentations.forEach(function (element) {
+      let presentation = new Presentation(element);
+      coursePresentations.push(presentation);
+    }, this);
+  };
+
+
+
+  let addStudent = function (name) {
+    let newStudent = new Student(name);
+    students.push(newStudent);
+
+    return newStudent.id;
+  }
+
+  let getStudents = function () {
+    let result = [];
+
+    students.forEach(function (element) {
+      let student = { firstname: element.firstname, lastname: element.lastname, id: element.id };
+      result.push(student);
+    }, this);
+
+    return result;
+  }
+
+  let Course = {
+    init: init,
+    addStudent: addStudent,
+    getAllStudents: getStudents,
+    submitHomework: function (studentID, homeworkID) {
+    },
+    pushExamResults: function (results) {
+    },
+    getTopStudents: function () {
+    }
+  };
+
+  return Course;
 }
 
 
