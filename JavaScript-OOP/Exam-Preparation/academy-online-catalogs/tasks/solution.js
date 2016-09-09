@@ -264,6 +264,10 @@ function solve() {
         }
 
         search(pattern) {
+            if (pattern === undefined || pattern === null || pattern === '') {
+                throw new Error();
+            }
+
             let result = [];
             pattern = pattern.toLowerCase();
 
@@ -285,7 +289,7 @@ function solve() {
         }
 
         add(...books) {
-            if (books[0].length) {
+            if (books.length === 0) {
                 books[0].forEach(function (element) {
                     if (!(element instanceof Book)) {
                         throw new Error();
@@ -298,7 +302,12 @@ function solve() {
                     }
                 }, this);
             }
+
             super.add(books);
+        }
+
+        find(options) {
+            return super.find(options);
         }
 
         getGenres() {
@@ -313,8 +322,35 @@ function solve() {
         }
     }
 
+    class MediaCatalog extends Catalog {
+        constructor(name) {
+            super(name);
+        }
 
+        add(...media) {
+            if (media.length === 0) {
+                media[0].forEach(function (element) {
+                    if (!(element instanceof Book)) {
+                        throw new Error();
+                    }
+                }, this);
+            } else {
+                media.forEach(function (element) {
+                    if (!(element instanceof Book)) {
+                        throw new Error();
+                    }
+                }, this);
+            }
 
+            super.add(media);
+        }
+
+        getTop(count) {
+            if (count < 1 || (typeof count !== 'number')) {
+                throw new Error();
+            }
+        }
+    }
 
     return {
         getBook: function (name, isbn, genre, description) {
@@ -327,7 +363,7 @@ function solve() {
             return new BookCatalog(name);
         },
         getMediaCatalog: function (name) {
-
+            return new MediaCatalog(name);
         }
     };
 }
