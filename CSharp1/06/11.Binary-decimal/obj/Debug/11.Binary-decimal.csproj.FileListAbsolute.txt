@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\06\11.Binary-decimal\bin\Debug\11.Binary-decimal.exe.config
-D:\Coding\Telerik\CSharp1\06\11.Binary-decimal\bin\Debug\11.Binary-decimal.exe
-D:\Coding\Telerik\CSharp1\06\11.Binary-decimal\bin\Debug\11.Binary-decimal.pdb
-D:\Coding\Telerik\CSharp1\06\11.Binary-decimal\obj\Debug\11.Binary-decimal.exe
-D:\Coding\Telerik\CSharp1\06\11.Binary-decimal\obj\Debug\11.Binary-decimal.pdb

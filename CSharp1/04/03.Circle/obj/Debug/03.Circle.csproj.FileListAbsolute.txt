@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\04\03.Circle\bin\Debug\03.Circle.exe.config
-D:\Coding\Telerik\CSharp1\04\03.Circle\bin\Debug\03.Circle.exe
-D:\Coding\Telerik\CSharp1\04\03.Circle\bin\Debug\03.Circle.pdb
-D:\Coding\Telerik\CSharp1\04\03.Circle\obj\Debug\03.Circle.exe
-D:\Coding\Telerik\CSharp1\04\03.Circle\obj\Debug\03.Circle.pdb

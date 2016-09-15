@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\06\08.Catalan-numbers\bin\Debug\08.Catalan-numbers.exe.config
-D:\Coding\Telerik\CSharp1\06\08.Catalan-numbers\bin\Debug\08.Catalan-numbers.exe
-D:\Coding\Telerik\CSharp1\06\08.Catalan-numbers\bin\Debug\08.Catalan-numbers.pdb
-D:\Coding\Telerik\CSharp1\06\08.Catalan-numbers\obj\Debug\08.Catalan-numbers.exe
-D:\Coding\Telerik\CSharp1\06\08.Catalan-numbers\obj\Debug\08.Catalan-numbers.pdb

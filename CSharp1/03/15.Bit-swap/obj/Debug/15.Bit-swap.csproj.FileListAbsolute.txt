@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp1\03\15.Bit-swap\bin\Debug\15.Bit-swap.exe.config
-D:\Coding\Telerik\CSharp1\03\15.Bit-swap\bin\Debug\15.Bit-swap.exe
-D:\Coding\Telerik\CSharp1\03\15.Bit-swap\bin\Debug\15.Bit-swap.pdb
-D:\Coding\Telerik\CSharp1\03\15.Bit-swap\obj\Debug\15.Bit-swap.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp1\03\15.Bit-swap\obj\Debug\15.Bit-swap.exe
-D:\Coding\Telerik\CSharp1\03\15.Bit-swap\obj\Debug\15.Bit-swap.pdb

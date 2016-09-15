@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\04\01.Sum-of-3\bin\Debug\01.Sum-of-3.exe.config
-D:\Coding\Telerik\CSharp1\04\01.Sum-of-3\bin\Debug\01.Sum-of-3.exe
-D:\Coding\Telerik\CSharp1\04\01.Sum-of-3\bin\Debug\01.Sum-of-3.pdb
-D:\Coding\Telerik\CSharp1\04\01.Sum-of-3\obj\Debug\01.Sum-of-3.exe
-D:\Coding\Telerik\CSharp1\04\01.Sum-of-3\obj\Debug\01.Sum-of-3.pdb

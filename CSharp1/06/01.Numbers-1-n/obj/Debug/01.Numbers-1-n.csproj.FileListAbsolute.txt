@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp1\06\01.Numbers-1-n\bin\Debug\01.Numbers-1-n.exe.config
-D:\Coding\Telerik\CSharp1\06\01.Numbers-1-n\bin\Debug\01.Numbers-1-n.exe
-D:\Coding\Telerik\CSharp1\06\01.Numbers-1-n\bin\Debug\01.Numbers-1-n.pdb
-D:\Coding\Telerik\CSharp1\06\01.Numbers-1-n\obj\Debug\01.Numbers-1-n.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp1\06\01.Numbers-1-n\obj\Debug\01.Numbers-1-n.exe
-D:\Coding\Telerik\CSharp1\06\01.Numbers-1-n\obj\Debug\01.Numbers-1-n.pdb

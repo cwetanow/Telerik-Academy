@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\03\08.Prime-check\bin\Debug\08.Prime-check.exe.config
-D:\Coding\Telerik\CSharp1\03\08.Prime-check\bin\Debug\08.Prime-check.exe
-D:\Coding\Telerik\CSharp1\03\08.Prime-check\bin\Debug\08.Prime-check.pdb
-D:\Coding\Telerik\CSharp1\03\08.Prime-check\obj\Debug\08.Prime-check.exe
-D:\Coding\Telerik\CSharp1\03\08.Prime-check\obj\Debug\08.Prime-check.pdb

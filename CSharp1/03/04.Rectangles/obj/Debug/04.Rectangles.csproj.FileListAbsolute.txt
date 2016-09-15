@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\03\04.Rectangles\bin\Debug\04.Rectangles.exe.config
-D:\Coding\Telerik\CSharp1\03\04.Rectangles\bin\Debug\04.Rectangles.exe
-D:\Coding\Telerik\CSharp1\03\04.Rectangles\bin\Debug\04.Rectangles.pdb
-D:\Coding\Telerik\CSharp1\03\04.Rectangles\obj\Debug\04.Rectangles.exe
-D:\Coding\Telerik\CSharp1\03\04.Rectangles\obj\Debug\04.Rectangles.pdb

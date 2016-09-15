@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp1\03\01.Odd-or-even\bin\Debug\01.Odd-or-even.exe.config
-D:\Coding\Telerik\CSharp1\03\01.Odd-or-even\bin\Debug\01.Odd-or-even.exe
-D:\Coding\Telerik\CSharp1\03\01.Odd-or-even\bin\Debug\01.Odd-or-even.pdb
-D:\Coding\Telerik\CSharp1\03\01.Odd-or-even\obj\Debug\01.Odd-or-even.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp1\03\01.Odd-or-even\obj\Debug\01.Odd-or-even.exe
-D:\Coding\Telerik\CSharp1\03\01.Odd-or-even\obj\Debug\01.Odd-or-even.pdb

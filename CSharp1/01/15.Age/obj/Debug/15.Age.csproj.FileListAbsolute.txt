@@ -1,6 +1,0 @@
-D:\Coding\Intro-Programming-Homework\15.Age\bin\Debug\15.Age.exe.config
-D:\Coding\Intro-Programming-Homework\15.Age\bin\Debug\15.Age.exe
-D:\Coding\Intro-Programming-Homework\15.Age\bin\Debug\15.Age.pdb
-D:\Coding\Intro-Programming-Homework\15.Age\obj\Debug\15.Age.exe
-D:\Coding\Intro-Programming-Homework\15.Age\obj\Debug\15.Age.pdb
-D:\Coding\Intro-Programming-Homework\15.Age\obj\Debug\15.Age.csprojResolveAssemblyReference.cache

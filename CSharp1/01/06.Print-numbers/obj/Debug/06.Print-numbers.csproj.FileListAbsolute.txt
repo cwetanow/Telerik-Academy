@@ -1,5 +1,0 @@
-D:\Coding\Intro-Programming-Homework\06.Print-numbers\bin\Debug\06.Print-numbers.exe.config
-D:\Coding\Intro-Programming-Homework\06.Print-numbers\bin\Debug\06.Print-numbers.exe
-D:\Coding\Intro-Programming-Homework\06.Print-numbers\bin\Debug\06.Print-numbers.pdb
-D:\Coding\Intro-Programming-Homework\06.Print-numbers\obj\Debug\06.Print-numbers.exe
-D:\Coding\Intro-Programming-Homework\06.Print-numbers\obj\Debug\06.Print-numbers.pdb

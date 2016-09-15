@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\03\05.Third-digit\bin\Debug\05.Third-digit.exe.config
-D:\Coding\Telerik\CSharp1\03\05.Third-digit\bin\Debug\05.Third-digit.exe
-D:\Coding\Telerik\CSharp1\03\05.Third-digit\bin\Debug\05.Third-digit.pdb
-D:\Coding\Telerik\CSharp1\03\05.Third-digit\obj\Debug\05.Third-digit.exe
-D:\Coding\Telerik\CSharp1\03\05.Third-digit\obj\Debug\05.Third-digit.pdb

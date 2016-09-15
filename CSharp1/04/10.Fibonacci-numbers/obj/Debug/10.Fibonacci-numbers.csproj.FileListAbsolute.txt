@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\04\10.Fibonacci-numbers\bin\Debug\10.Fibonacci-numbers.exe.config
-D:\Coding\Telerik\CSharp1\04\10.Fibonacci-numbers\bin\Debug\10.Fibonacci-numbers.exe
-D:\Coding\Telerik\CSharp1\04\10.Fibonacci-numbers\bin\Debug\10.Fibonacci-numbers.pdb
-D:\Coding\Telerik\CSharp1\04\10.Fibonacci-numbers\obj\Debug\10.Fibonacci-numbers.exe
-D:\Coding\Telerik\CSharp1\04\10.Fibonacci-numbers\obj\Debug\10.Fibonacci-numbers.pdb

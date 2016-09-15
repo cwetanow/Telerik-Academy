@@ -1,6 +1,0 @@
-D:\Coding\Intro-Programming-Homework\16.Long-sequence\bin\Debug\16.Long-sequence.exe.config
-D:\Coding\Intro-Programming-Homework\16.Long-sequence\bin\Debug\16.Long-sequence.exe
-D:\Coding\Intro-Programming-Homework\16.Long-sequence\bin\Debug\16.Long-sequence.pdb
-D:\Coding\Intro-Programming-Homework\16.Long-sequence\obj\Debug\16.Long-sequence.csprojResolveAssemblyReference.cache
-D:\Coding\Intro-Programming-Homework\16.Long-sequence\obj\Debug\16.Long-sequence.exe
-D:\Coding\Intro-Programming-Homework\16.Long-sequence\obj\Debug\16.Long-sequence.pdb

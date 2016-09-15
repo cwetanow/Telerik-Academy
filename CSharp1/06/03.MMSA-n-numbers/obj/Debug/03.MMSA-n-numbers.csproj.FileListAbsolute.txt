@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\06\03.MMSA-n-numbers\bin\Debug\03.MMSA-n-numbers.exe.config
-D:\Coding\Telerik\CSharp1\06\03.MMSA-n-numbers\bin\Debug\03.MMSA-n-numbers.exe
-D:\Coding\Telerik\CSharp1\06\03.MMSA-n-numbers\bin\Debug\03.MMSA-n-numbers.pdb
-D:\Coding\Telerik\CSharp1\06\03.MMSA-n-numbers\obj\Debug\03.MMSA-n-numbers.exe
-D:\Coding\Telerik\CSharp1\06\03.MMSA-n-numbers\obj\Debug\03.MMSA-n-numbers.pdb

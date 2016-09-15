@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp1\06\12.Decimal-binary\bin\Debug\12.Decimal-binary.exe.config
-D:\Coding\Telerik\CSharp1\06\12.Decimal-binary\bin\Debug\12.Decimal-binary.exe
-D:\Coding\Telerik\CSharp1\06\12.Decimal-binary\bin\Debug\12.Decimal-binary.pdb
-D:\Coding\Telerik\CSharp1\06\12.Decimal-binary\obj\Debug\12.Decimal-binary.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp1\06\12.Decimal-binary\obj\Debug\12.Decimal-binary.exe
-D:\Coding\Telerik\CSharp1\06\12.Decimal-binary\obj\Debug\12.Decimal-binary.pdb

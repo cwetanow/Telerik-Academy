@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\04\08.Numbers-from-1-n\bin\Debug\08.Numbers-from-1-n.exe.config
-D:\Coding\Telerik\CSharp1\04\08.Numbers-from-1-n\bin\Debug\08.Numbers-from-1-n.exe
-D:\Coding\Telerik\CSharp1\04\08.Numbers-from-1-n\bin\Debug\08.Numbers-from-1-n.pdb
-D:\Coding\Telerik\CSharp1\04\08.Numbers-from-1-n\obj\Debug\08.Numbers-from-1-n.exe
-D:\Coding\Telerik\CSharp1\04\08.Numbers-from-1-n\obj\Debug\08.Numbers-from-1-n.pdb

@@ -1,5 +1,0 @@
-D:\Coding\Intro-Programming-Homework\09.Print-sequence\bin\Debug\09.Print-sequence.exe.config
-D:\Coding\Intro-Programming-Homework\09.Print-sequence\bin\Debug\09.Print-sequence.exe
-D:\Coding\Intro-Programming-Homework\09.Print-sequence\bin\Debug\09.Print-sequence.pdb
-D:\Coding\Intro-Programming-Homework\09.Print-sequence\obj\Debug\09.Print-sequence.exe
-D:\Coding\Intro-Programming-Homework\09.Print-sequence\obj\Debug\09.Print-sequence.pdb

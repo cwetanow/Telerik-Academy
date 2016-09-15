@@ -1,6 +1,0 @@
-D:\Coding\Intro-Programming-Homework\08.Square-root\bin\Debug\08.Square-root.exe.config
-D:\Coding\Intro-Programming-Homework\08.Square-root\bin\Debug\08.Square-root.exe
-D:\Coding\Intro-Programming-Homework\08.Square-root\bin\Debug\08.Square-root.pdb
-D:\Coding\Intro-Programming-Homework\08.Square-root\obj\Debug\08.Square-root.csprojResolveAssemblyReference.cache
-D:\Coding\Intro-Programming-Homework\08.Square-root\obj\Debug\08.Square-root.exe
-D:\Coding\Intro-Programming-Homework\08.Square-root\obj\Debug\08.Square-root.pdb

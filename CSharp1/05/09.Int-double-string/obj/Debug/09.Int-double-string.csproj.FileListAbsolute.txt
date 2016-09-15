@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp1\05\09.Int-double-string\bin\Debug\09.Int-double-string.exe.config
-D:\Coding\Telerik\CSharp1\05\09.Int-double-string\obj\Debug\09.Int-double-string.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp1\05\09.Int-double-string\bin\Debug\09.Int-double-string.exe
-D:\Coding\Telerik\CSharp1\05\09.Int-double-string\bin\Debug\09.Int-double-string.pdb
-D:\Coding\Telerik\CSharp1\05\09.Int-double-string\obj\Debug\09.Int-double-string.exe
-D:\Coding\Telerik\CSharp1\05\09.Int-double-string\obj\Debug\09.Int-double-string.pdb

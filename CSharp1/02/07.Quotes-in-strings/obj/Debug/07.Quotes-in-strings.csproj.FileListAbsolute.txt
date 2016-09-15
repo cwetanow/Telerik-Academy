@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\02\07.Quotes-in-strings\bin\Debug\07.Quotes-in-strings.exe.config
-D:\Coding\Telerik\CSharp1\02\07.Quotes-in-strings\bin\Debug\07.Quotes-in-strings.exe
-D:\Coding\Telerik\CSharp1\02\07.Quotes-in-strings\bin\Debug\07.Quotes-in-strings.pdb
-D:\Coding\Telerik\CSharp1\02\07.Quotes-in-strings\obj\Debug\07.Quotes-in-strings.exe
-D:\Coding\Telerik\CSharp1\02\07.Quotes-in-strings\obj\Debug\07.Quotes-in-strings.pdb
