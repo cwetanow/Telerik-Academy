@@ -6,6 +6,8 @@ class AssertionsHomework
 {
     public static void SelectionSort<T>(T[] arr) where T : IComparable<T>
     {
+        Debug.Assert(arr != null, "Array cannot be null!");
+
         for (int index = 0; index < arr.Length - 1; index++)
         {
             int minElementIndex = FindMinElementIndex(arr, index, arr.Length - 1);
@@ -16,14 +18,12 @@ class AssertionsHomework
     private static int FindMinElementIndex<T>(T[] arr, int startIndex, int endIndex)
         where T : IComparable<T>
     {
-        var checkIndexes = startIndex >= 0 &&
-            startIndex < arr.Length &&
-            endIndex >= 0 &&
-            endIndex < arr.Length &&
-            startIndex <= endIndex;
+        Debug.Assert(arr != null, "Array cannot be null!");
+        Debug.Assert(startIndex <= endIndex, "Start index should be smaller than end index");
 
-        Debug.Assert(checkIndexes, "Indexes are not in correct range");
-
+        Debug.Assert(startIndex >= 0 && startIndex < arr.Length - 1, "Start index should be in array range!");
+        Debug.Assert(endIndex >= 0 && endIndex < arr.Length - 1, "End index should be in array range!");
+        
         int minElementIndex = startIndex;
         for (int i = startIndex + 1; i <= endIndex; i++)
         {
@@ -50,7 +50,11 @@ class AssertionsHomework
     private static int BinarySearch<T>(T[] arr, T value, int startIndex, int endIndex)
         where T : IComparable<T>
     {
-        Debug.Assert(startIndex <= endIndex, "Start index must be smaller than end index");
+        Debug.Assert(arr != null, "Array cannot be null!");
+        Debug.Assert(startIndex <= endIndex, "Start index should be smaller than end index");
+
+        Debug.Assert(startIndex >= 0 && startIndex < arr.Length - 1, "Start index should be in array range!");
+        Debug.Assert(endIndex >= 0 && endIndex < arr.Length - 1, "End index should be in array range!");
 
         while (startIndex <= endIndex)
         {
