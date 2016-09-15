@@ -35,7 +35,7 @@ class ExceptionsHomework
         {
             if (number % divisor == 0)
             {
-                throw new Exception("The number is not prime!");
+                throw new InvalidOperationException("The number is not prime!");
             }
         }
     }
@@ -64,9 +64,9 @@ class ExceptionsHomework
             CheckPrime(23);
             Console.WriteLine("23 is prime.");
         }
-        catch (Exception ex)
+        catch (InvalidOperationException ex)
         {
-            Console.WriteLine("23 is not prime");
+            Console.WriteLine(ex.Message);
         }
 
         try
@@ -74,21 +74,77 @@ class ExceptionsHomework
             CheckPrime(33);
             Console.WriteLine("33 is prime.");
         }
-        catch (Exception ex)
+        catch (InvalidOperationException ex)
         {
-            Console.WriteLine("33 is not prime");
+            Console.WriteLine(ex.Message);
         }
 
-        List<Exam> peterExams = new List<Exam>()
+        List<Exam> peterExams = new List<Exam>();
+
+        try
         {
-            new SimpleMathExam(2),
-            new CSharpExam(55),
-            new CSharpExam(100),
-            new SimpleMathExam(1),
-            new CSharpExam(0),
-        };
-        Student peter = new Student("Peter", "Petrov", peterExams);
-        double peterAverageResult = peter.CalcAverageExamResultInPercents();
-        Console.WriteLine("Average results = {0:p0}", peterAverageResult);
+            peterExams.Add(new SimpleMathExam(2));
+        }
+        catch (ArgumentOutOfRangeException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+        try
+        {
+            peterExams.Add(new CSharpExam(55));
+        }
+        catch (ArgumentOutOfRangeException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+        try
+        {
+            peterExams.Add(new CSharpExam(100));
+        }
+        catch (ArgumentOutOfRangeException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+        try
+        {
+            peterExams.Add(new SimpleMathExam(1));
+        }
+        catch (ArgumentOutOfRangeException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+        try
+        {
+            peterExams.Add(new CSharpExam(0));
+        }
+        catch (ArgumentOutOfRangeException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+
+        Student peter;
+        try
+        {
+            peter = new Student("Peter", "Petrov", peterExams);
+            double peterAverageResult = peter.CalcAverageExamResultInPercents();
+            Console.WriteLine("Average results = {0:p0}", peterAverageResult);
+        }
+        catch (ArgumentNullException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        
+        catch (ArgumentException ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
     }
 }

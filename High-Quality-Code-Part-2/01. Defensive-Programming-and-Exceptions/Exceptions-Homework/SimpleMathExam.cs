@@ -8,11 +8,11 @@ public class SimpleMathExam : Exam
     {
         if (problemsSolved < 0)
         {
-            problemsSolved = 0;
+            throw new ArgumentOutOfRangeException("Problems solved cannot be negative");
         }
         if (problemsSolved > 10)
         {
-            problemsSolved = 10;
+            throw new ArgumentOutOfRangeException("Problems solved cannot be more than 10");
         }
 
         this.ProblemsSolved = problemsSolved;

@@ -11,19 +11,19 @@ public class ExamResult
     {
         if (grade < 0)
         {
-            throw new Exception();
+            throw new ArgumentOutOfRangeException();
         }
         if (minGrade < 0)
         {
-            throw new Exception();
+            throw new ArgumentOutOfRangeException();
         }
         if (maxGrade <= minGrade)
         {
-            throw new Exception();
+            throw new ArgumentOutOfRangeException();
         }
         if (comments == null || comments == "")
         {
-            throw new Exception();
+            throw new ArgumentOutOfRangeException();
         }
 
         this.Grade = grade;
