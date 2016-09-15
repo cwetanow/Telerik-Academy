@@ -21,7 +21,7 @@
 
     let createImage = (locations) => {
         let img = document.getElementById('map'),
-            imgSrc = `http://maps.googleapis.com/maps/api/staticmap?center=${locations.lat},${locations.long}&zoom=13&size=500x500&sensor=false`;
+            imgSrc = `http://maps.googleapis.com/maps/api/staticmap?center=${locations.lat},${locations.long}&zoom=17&size=500x500&sensor=false`;
 
         img.setAttribute('src', imgSrc);
     };
