@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\03\11.Adding-polynomials\bin\Debug\11.Adding-polynomials.exe.config
-D:\Coding\Telerik\CSharp2\03\11.Adding-polynomials\bin\Debug\11.Adding-polynomials.exe
-D:\Coding\Telerik\CSharp2\03\11.Adding-polynomials\bin\Debug\11.Adding-polynomials.pdb
-D:\Coding\Telerik\CSharp2\03\11.Adding-polynomials\obj\Debug\11.Adding-polynomials.exe
-D:\Coding\Telerik\CSharp2\03\11.Adding-polynomials\obj\Debug\11.Adding-polynomials.pdb

@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\06\04.Sub-string-text\bin\Debug\04.Sub-string-text.exe.config
-D:\Coding\Telerik\CSharp2\06\04.Sub-string-text\bin\Debug\04.Sub-string-text.exe
-D:\Coding\Telerik\CSharp2\06\04.Sub-string-text\bin\Debug\04.Sub-string-text.pdb
-D:\Coding\Telerik\CSharp2\06\04.Sub-string-text\obj\Debug\04.Sub-string-text.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\06\04.Sub-string-text\obj\Debug\04.Sub-string-text.exe
-D:\Coding\Telerik\CSharp2\06\04.Sub-string-text\obj\Debug\04.Sub-string-text.pdb

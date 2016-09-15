@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\07\01.Square-root\bin\Debug\01.Square-root.exe.config
-D:\Coding\Telerik\CSharp2\07\01.Square-root\bin\Debug\01.Square-root.exe
-D:\Coding\Telerik\CSharp2\07\01.Square-root\bin\Debug\01.Square-root.pdb
-D:\Coding\Telerik\CSharp2\07\01.Square-root\obj\Debug\01.Square-root.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\07\01.Square-root\obj\Debug\01.Square-root.exe
-D:\Coding\Telerik\CSharp2\07\01.Square-root\obj\Debug\01.Square-root.pdb

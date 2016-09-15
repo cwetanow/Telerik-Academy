@@ -1,1 +1,0 @@
-D:\Coding\Telerik\CSharp2\01\18.Remove-elements-from-array\bin\Debug\18.Remove-elements-from-array.exe.config

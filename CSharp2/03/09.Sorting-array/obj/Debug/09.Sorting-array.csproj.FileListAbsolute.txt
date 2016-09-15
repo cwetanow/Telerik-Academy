@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\03\09.Sorting-array\bin\Debug\09.Sorting-array.exe.config
-D:\Coding\Telerik\CSharp2\03\09.Sorting-array\bin\Debug\09.Sorting-array.exe
-D:\Coding\Telerik\CSharp2\03\09.Sorting-array\bin\Debug\09.Sorting-array.pdb
-D:\Coding\Telerik\CSharp2\03\09.Sorting-array\obj\Debug\09.Sorting-array.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\03\09.Sorting-array\obj\Debug\09.Sorting-array.exe
-D:\Coding\Telerik\CSharp2\03\09.Sorting-array\obj\Debug\09.Sorting-array.pdb

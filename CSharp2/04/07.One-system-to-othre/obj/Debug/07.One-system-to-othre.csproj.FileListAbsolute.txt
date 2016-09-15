@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\04\07.One-system-to-othre\bin\Debug\07.One-system-to-othre.exe.config
-D:\Coding\Telerik\CSharp2\04\07.One-system-to-othre\bin\Debug\07.One-system-to-othre.exe
-D:\Coding\Telerik\CSharp2\04\07.One-system-to-othre\bin\Debug\07.One-system-to-othre.pdb
-D:\Coding\Telerik\CSharp2\04\07.One-system-to-othre\obj\Debug\07.One-system-to-othre.exe
-D:\Coding\Telerik\CSharp2\04\07.One-system-to-othre\obj\Debug\07.One-system-to-othre.pdb

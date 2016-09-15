@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\02\07.Largest-area-matrix\bin\Debug\07.Largest-area-matrix.exe.config
-D:\Coding\Telerik\CSharp2\02\07.Largest-area-matrix\bin\Debug\07.Largest-area-matrix.exe
-D:\Coding\Telerik\CSharp2\02\07.Largest-area-matrix\bin\Debug\07.Largest-area-matrix.pdb
-D:\Coding\Telerik\CSharp2\02\07.Largest-area-matrix\obj\Debug\07.Largest-area-matrix.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\02\07.Largest-area-matrix\obj\Debug\07.Largest-area-matrix.exe
-D:\Coding\Telerik\CSharp2\02\07.Largest-area-matrix\obj\Debug\07.Largest-area-matrix.pdb

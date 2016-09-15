@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\06\12.Parse-url\bin\Debug\12.Parse-url.exe.config
-D:\Coding\Telerik\CSharp2\06\12.Parse-url\bin\Debug\12.Parse-url.exe
-D:\Coding\Telerik\CSharp2\06\12.Parse-url\bin\Debug\12.Parse-url.pdb
-D:\Coding\Telerik\CSharp2\06\12.Parse-url\obj\Debug\12.Parse-url.exe
-D:\Coding\Telerik\CSharp2\06\12.Parse-url\obj\Debug\12.Parse-url.pdb

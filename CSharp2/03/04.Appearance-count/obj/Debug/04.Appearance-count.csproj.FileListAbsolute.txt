@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\03\04.Appearance-count\bin\Debug\04.Appearance-count.exe.config
-D:\Coding\Telerik\CSharp2\03\04.Appearance-count\bin\Debug\04.Appearance-count.exe
-D:\Coding\Telerik\CSharp2\03\04.Appearance-count\bin\Debug\04.Appearance-count.pdb
-D:\Coding\Telerik\CSharp2\03\04.Appearance-count\obj\Debug\04.Appearance-count.exe
-D:\Coding\Telerik\CSharp2\03\04.Appearance-count\obj\Debug\04.Appearance-count.pdb

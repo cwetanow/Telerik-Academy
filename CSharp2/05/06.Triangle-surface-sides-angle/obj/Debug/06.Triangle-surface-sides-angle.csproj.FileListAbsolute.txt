@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\05\06.Triangle-surface-sides-angle\bin\Debug\06.Triangle-surface-sides-angle.exe.config
-D:\Coding\Telerik\CSharp2\05\06.Triangle-surface-sides-angle\bin\Debug\06.Triangle-surface-sides-angle.exe
-D:\Coding\Telerik\CSharp2\05\06.Triangle-surface-sides-angle\bin\Debug\06.Triangle-surface-sides-angle.pdb
-D:\Coding\Telerik\CSharp2\05\06.Triangle-surface-sides-angle\obj\Debug\06.Triangle-surface-sides-angle.exe
-D:\Coding\Telerik\CSharp2\05\06.Triangle-surface-sides-angle\obj\Debug\06.Triangle-surface-sides-angle.pdb

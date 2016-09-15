@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\04\04.Hex-dec\bin\Debug\04.Hex-dec.exe.config
-D:\Coding\Telerik\CSharp2\04\04.Hex-dec\bin\Debug\04.Hex-dec.exe
-D:\Coding\Telerik\CSharp2\04\04.Hex-dec\bin\Debug\04.Hex-dec.pdb
-D:\Coding\Telerik\CSharp2\04\04.Hex-dec\obj\Debug\04.Hex-dec.exe
-D:\Coding\Telerik\CSharp2\04\04.Hex-dec\obj\Debug\04.Hex-dec.pdb

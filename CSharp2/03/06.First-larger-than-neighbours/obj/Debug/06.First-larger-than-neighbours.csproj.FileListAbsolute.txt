@@ -1,1 +1,0 @@
-D:\Coding\Telerik\CSharp2\03\06.First-larger-than-neighbours\bin\Debug\06.First-larger-than-neighbours.exe.config

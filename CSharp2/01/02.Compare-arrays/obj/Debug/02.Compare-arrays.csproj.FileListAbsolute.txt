@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\01\02.Compare-arrays\bin\Debug\02.Compare-arrays.exe.config
-D:\Coding\Telerik\CSharp2\01\02.Compare-arrays\bin\Debug\02.Compare-arrays.exe
-D:\Coding\Telerik\CSharp2\01\02.Compare-arrays\bin\Debug\02.Compare-arrays.pdb
-D:\Coding\Telerik\CSharp2\01\02.Compare-arrays\obj\Debug\02.Compare-arrays.exe
-D:\Coding\Telerik\CSharp2\01\02.Compare-arrays\obj\Debug\02.Compare-arrays.pdb

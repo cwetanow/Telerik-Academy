@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\01\14.Quick-sort\bin\Debug\14.Quick-sort.exe.config
-D:\Coding\Telerik\CSharp2\01\14.Quick-sort\bin\Debug\14.Quick-sort.exe
-D:\Coding\Telerik\CSharp2\01\14.Quick-sort\bin\Debug\14.Quick-sort.pdb
-D:\Coding\Telerik\CSharp2\01\14.Quick-sort\obj\Debug\14.Quick-sort.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\01\14.Quick-sort\obj\Debug\14.Quick-sort.exe
-D:\Coding\Telerik\CSharp2\01\14.Quick-sort\obj\Debug\14.Quick-sort.pdb

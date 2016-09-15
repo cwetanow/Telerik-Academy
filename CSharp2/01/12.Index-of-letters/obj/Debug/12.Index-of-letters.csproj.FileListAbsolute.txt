@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\01\12.Index-of-letters\bin\Debug\12.Index-of-letters.exe.config
-D:\Coding\Telerik\CSharp2\01\12.Index-of-letters\bin\Debug\12.Index-of-letters.exe
-D:\Coding\Telerik\CSharp2\01\12.Index-of-letters\bin\Debug\12.Index-of-letters.pdb
-D:\Coding\Telerik\CSharp2\01\12.Index-of-letters\obj\Debug\12.Index-of-letters.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\01\12.Index-of-letters\obj\Debug\12.Index-of-letters.exe
-D:\Coding\Telerik\CSharp2\01\12.Index-of-letters\obj\Debug\12.Index-of-letters.pdb

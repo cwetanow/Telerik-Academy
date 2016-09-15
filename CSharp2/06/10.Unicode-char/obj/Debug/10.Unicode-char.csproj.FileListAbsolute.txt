@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\06\10.Unicode-char\bin\Debug\10.Unicode-char.exe.config
-D:\Coding\Telerik\CSharp2\06\10.Unicode-char\bin\Debug\10.Unicode-char.exe
-D:\Coding\Telerik\CSharp2\06\10.Unicode-char\bin\Debug\10.Unicode-char.pdb
-D:\Coding\Telerik\CSharp2\06\10.Unicode-char\obj\Debug\10.Unicode-char.exe
-D:\Coding\Telerik\CSharp2\06\10.Unicode-char\obj\Debug\10.Unicode-char.pdb

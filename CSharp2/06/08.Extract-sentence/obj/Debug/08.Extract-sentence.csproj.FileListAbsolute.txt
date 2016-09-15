@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\06\08.Extract-sentence\bin\Debug\08.Extract-sentence.exe.config
-D:\Coding\Telerik\CSharp2\06\08.Extract-sentence\bin\Debug\08.Extract-sentence.exe
-D:\Coding\Telerik\CSharp2\06\08.Extract-sentence\bin\Debug\08.Extract-sentence.pdb
-D:\Coding\Telerik\CSharp2\06\08.Extract-sentence\obj\Debug\08.Extract-sentence.exe
-D:\Coding\Telerik\CSharp2\06\08.Extract-sentence\obj\Debug\08.Extract-sentence.pdb
-D:\Coding\Telerik\CSharp2\06\08.Extract-sentence\obj\Debug\08.Extract-sentence.csprojResolveAssemblyReference.cache

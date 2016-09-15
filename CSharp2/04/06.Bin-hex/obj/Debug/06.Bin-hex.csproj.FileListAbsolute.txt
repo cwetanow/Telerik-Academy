@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\04\06.Bin-hex\bin\Debug\06.Bin-hex.exe.config
-D:\Coding\Telerik\CSharp2\04\06.Bin-hex\bin\Debug\06.Bin-hex.exe
-D:\Coding\Telerik\CSharp2\04\06.Bin-hex\bin\Debug\06.Bin-hex.pdb
-D:\Coding\Telerik\CSharp2\04\06.Bin-hex\obj\Debug\06.Bin-hex.exe
-D:\Coding\Telerik\CSharp2\04\06.Bin-hex\obj\Debug\06.Bin-hex.pdb

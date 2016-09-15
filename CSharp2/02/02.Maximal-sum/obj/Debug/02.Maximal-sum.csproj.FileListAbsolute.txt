@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\02\02.Maximal-sum\bin\Debug\02.Maximal-sum.exe.config
-D:\Coding\Telerik\CSharp2\02\02.Maximal-sum\bin\Debug\02.Maximal-sum.exe
-D:\Coding\Telerik\CSharp2\02\02.Maximal-sum\bin\Debug\02.Maximal-sum.pdb
-D:\Coding\Telerik\CSharp2\02\02.Maximal-sum\obj\Debug\02.Maximal-sum.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\02\02.Maximal-sum\obj\Debug\02.Maximal-sum.exe
-D:\Coding\Telerik\CSharp2\02\02.Maximal-sum\obj\Debug\02.Maximal-sum.pdb

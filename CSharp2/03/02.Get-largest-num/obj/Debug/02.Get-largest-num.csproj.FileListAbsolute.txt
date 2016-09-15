@@ -1,1 +1,0 @@
-D:\Coding\Telerik\CSharp2\03\02.Get-largest-num\bin\Debug\02.Get-largest-num.exe.config

@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\04\08.Binary-short\bin\Debug\08.Binary-short.exe.config
-D:\Coding\Telerik\CSharp2\04\08.Binary-short\bin\Debug\08.Binary-short.exe
-D:\Coding\Telerik\CSharp2\04\08.Binary-short\bin\Debug\08.Binary-short.pdb
-D:\Coding\Telerik\CSharp2\04\08.Binary-short\obj\Debug\08.Binary-short.exe
-D:\Coding\Telerik\CSharp2\04\08.Binary-short\obj\Debug\08.Binary-short.pdb

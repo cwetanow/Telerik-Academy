@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\05\01.Leap-year\bin\Debug\01.Leap-year.exe.config
-D:\Coding\Telerik\CSharp2\05\01.Leap-year\obj\Debug\01.Leap-year.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\05\01.Leap-year\bin\Debug\01.Leap-year.exe
-D:\Coding\Telerik\CSharp2\05\01.Leap-year\bin\Debug\01.Leap-year.pdb
-D:\Coding\Telerik\CSharp2\05\01.Leap-year\obj\Debug\01.Leap-year.exe
-D:\Coding\Telerik\CSharp2\05\01.Leap-year\obj\Debug\01.Leap-year.pdb

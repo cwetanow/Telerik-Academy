@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\01\11.Binary-search\bin\Debug\11.Binary-search.exe.config
-D:\Coding\Telerik\CSharp2\01\11.Binary-search\obj\Debug\11.Binary-search.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\01\11.Binary-search\bin\Debug\11.Binary-search.exe
-D:\Coding\Telerik\CSharp2\01\11.Binary-search\bin\Debug\11.Binary-search.pdb
-D:\Coding\Telerik\CSharp2\01\11.Binary-search\obj\Debug\11.Binary-search.exe
-D:\Coding\Telerik\CSharp2\01\11.Binary-search\obj\Debug\11.Binary-search.pdb

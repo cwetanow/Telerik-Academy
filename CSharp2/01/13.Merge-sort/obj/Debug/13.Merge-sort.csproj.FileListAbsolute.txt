@@ -1,1 +1,0 @@
-D:\Coding\Telerik\CSharp2\01\13.Merge-sort\bin\Debug\13.Merge-sort.exe.config

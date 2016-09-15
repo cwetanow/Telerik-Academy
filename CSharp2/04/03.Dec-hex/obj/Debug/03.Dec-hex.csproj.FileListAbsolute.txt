@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\04\03.Dec-hex\bin\Debug\03.Dec-hex.exe.config
-D:\Coding\Telerik\CSharp2\04\03.Dec-hex\bin\Debug\03.Dec-hex.exe
-D:\Coding\Telerik\CSharp2\04\03.Dec-hex\bin\Debug\03.Dec-hex.pdb
-D:\Coding\Telerik\CSharp2\04\03.Dec-hex\obj\Debug\03.Dec-hex.exe
-D:\Coding\Telerik\CSharp2\04\03.Dec-hex\obj\Debug\03.Dec-hex.pdb

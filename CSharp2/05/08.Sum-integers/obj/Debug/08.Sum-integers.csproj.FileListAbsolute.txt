@@ -1,1 +1,0 @@
-D:\Coding\Telerik\CSharp2\05\08.Sum-integers\bin\Debug\08.Sum-integers.exe.config

@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp2\01\15.Prime-numbers\bin\Debug\15.Prime-numbers.exe.config
-D:\Coding\Telerik\CSharp2\01\15.Prime-numbers\bin\Debug\15.Prime-numbers.exe
-D:\Coding\Telerik\CSharp2\01\15.Prime-numbers\bin\Debug\15.Prime-numbers.pdb
-D:\Coding\Telerik\CSharp2\01\15.Prime-numbers\obj\Debug\15.Prime-numbers.exe
-D:\Coding\Telerik\CSharp2\01\15.Prime-numbers\obj\Debug\15.Prime-numbers.pdb
