@@ -1,6 +1,0 @@
-D:\Coding\Telerik\OOP\Homework03\Homework03\bin\Debug\Homework03.exe.config
-D:\Coding\Telerik\OOP\Homework03\Homework03\bin\Debug\Homework03.exe
-D:\Coding\Telerik\OOP\Homework03\Homework03\bin\Debug\Homework03.pdb
-D:\Coding\Telerik\OOP\Homework03\Homework03\obj\Debug\Homework03.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\OOP\Homework03\Homework03\obj\Debug\Homework03.exe
-D:\Coding\Telerik\OOP\Homework03\Homework03\obj\Debug\Homework03.pdb
