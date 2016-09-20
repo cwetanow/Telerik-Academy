@@ -29,46 +29,46 @@ namespace Task_2.Compare_simple_maths.Operations
 
         public static void SubtractIntegers()
         {
-            int sum = 10000000;
+            int result = 10000000;
             for (int i = 0; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum -= i;
+                result -= i;
             }
         }
 
         public static void SubtractLong()
         {
-            var sum = 10000000L;
+            var result = 10000000L;
             for (var i = 0L; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum -= i;
+                result -= i;
             }
         }
 
         public static void SubtractFloat()
         {
-            var sum = 10000000f;
+            var result = 10000000f;
             for (var i = 0f; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum -= i;
+                result -= i;
             }
         }
 
         public static void SubtractDouble()
         {
-            var sum = 10000000.0;
+            var result = 10000000.0;
             for (var i = 0.0; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum -= i;
+                result -= i;
             }
         }
 
         public static void SubtractDecimal()
         {
-            var sum = 10000000m;
+            var result = 10000000m;
             for (var i = 0m; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum -= i;
+                result -= i;
             }
         }
     }

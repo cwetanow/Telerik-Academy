@@ -29,46 +29,46 @@ namespace Task_2.Compare_simple_maths.Operations
 
         public static void AddIntegers()
         {
-            int sum = 0;
+            int result = 0;
             for (int i = 0; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum += i;
+                result += i;
             }
         }
 
         public static void AddLong()
         {
-            var sum = 0L;
+            var result = 0L;
             for (var i = 0L; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum += i;
+                result += i;
             }
         }
 
         public static void AddFloat()
         {
-            var sum = 0f;
+            var result = 0f;
             for (var i = 0f; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum += i;
+                result += i;
             }
         }
 
         public static void AddDouble()
         {
-            var sum = 0.0;
+            var result = 0.0;
             for (var i = 0.0; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum += i;
+                result += i;
             }
         }
 
         public static void AddDecimal()
         {
-            var sum = 0m;
+            var result = 0m;
             for (var i = 0m; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum += i;
+                result += i;
             }
         }
     }

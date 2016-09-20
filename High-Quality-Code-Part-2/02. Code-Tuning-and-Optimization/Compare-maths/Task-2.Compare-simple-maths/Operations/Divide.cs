@@ -29,46 +29,46 @@ namespace Task_2.Compare_simple_maths.Operations
 
         public static void DivideIntegers()
         {
-            int sum = 1;
+            int result = 1;
             for (int i = 1; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum /= 1;
+                result /= 1;
             }
         }
 
         public static void DivideLong()
         {
-            var sum = 1L;
+            var result = 1L;
             for (var i = 1L; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum /= 1;
+                result /= 1;
             }
         }
 
         public static void DivideFloat()
         {
-            var sum = 1f;
+            var result = 1f;
             for (var i = 1f; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum /= 1;
+                result /= 1;
             }
         }
 
         public static void DivideDouble()
         {
-            var sum = 1.0;
+            var result = 1.0;
             for (var i = 1.0; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum /= 1;
+                result /= 1;
             }
         }
 
         public static void DivideDecimal()
         {
-            var sum = 1m;
+            var result = 1m;
             for (var i = 1m; i < Helper.ActionExecutionTimesCount; i++)
             {
-                sum /= 1;
+                result /= 1;
             }
         }
     }
