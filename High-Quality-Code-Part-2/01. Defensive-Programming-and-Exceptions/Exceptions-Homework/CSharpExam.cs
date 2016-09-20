@@ -8,7 +8,7 @@ public class CSharpExam : Exam
     {
         if (score < 0)
         {
-            throw new ArgumentOutOfRangeException("Score cannot be negative");
+            throw new ArgumentOutOfRangeException($"Score cannot be negative");
         }
 
         this.Score = score;
@@ -18,7 +18,7 @@ public class CSharpExam : Exam
     {
         if (Score < 0 || Score > 100)
         {
-            throw new InvalidOperationException("Exam score must be between 0 and 100");
+            throw new ArgumentOutOfRangeException($"Exam score must be between 0 and 100");
         }
         else
         {

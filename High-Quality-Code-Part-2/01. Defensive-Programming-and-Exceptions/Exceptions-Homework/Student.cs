@@ -12,12 +12,12 @@ public class Student
     {
         if (firstName == null)
         {
-            throw new ArgumentException("Invalid first name");
+            throw new ArgumentNullException("Invalid first name");
         }
 
         if (lastName == null)
         {
-            throw new ArgumentException("Invalid last name");
+            throw new ArgumentNullException("Invalid last name");
         }
 
         this.FirstName = firstName;

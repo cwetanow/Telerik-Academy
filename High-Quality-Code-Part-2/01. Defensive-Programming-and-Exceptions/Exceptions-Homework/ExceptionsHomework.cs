@@ -18,7 +18,7 @@ class ExceptionsHomework
     {
         if (count > str.Length)
         {
-            return "Invalid count!";
+            throw new ArgumentOutOfRangeException("Invalid count!");
         }
 
         StringBuilder result = new StringBuilder();
@@ -26,6 +26,7 @@ class ExceptionsHomework
         {
             result.Append(str[i]);
         }
+
         return result.ToString();
     }
 
