@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Workshop: Simple Forum with jQuery and Promises</title>
@@ -10,17 +11,31 @@
       height: 200px;
       margin: 1.5%;
     }
-      .gallery-item img {
-        width: 100%;
-      }
-
-      .gallery-item .gallery-item-title {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-      }
+    
+    .gallery-item img {
+      width: 100%;
+    }
+    
+    .gallery-item .gallery-item-title {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
   </style>
+  <script src="./bower_components/jquery/dist/jquery.js"></script>
+
+
+  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+
+  <script src="./node_modules/systemjs/dist/system.js"></script>
+  <script src="./scripts/system-config.js"></script>
+
+  <script src="./node_modules/navigo/lib/navigo.js"></script>
+  <script>
+    System.import('./scripts/main.js');
+  </script>
 </head>
+
 <body>
   <div id="root" class="container">
     <header class="row">
@@ -29,8 +44,8 @@
       </div>
       <nav class="navbar navbar-default navbar-collapse collapse">
         <ul id="main-nav" class="nav navbar-nav">
-          <li><a href="#" id="btn-threads">Threads</a></li>
-          <li><a href="#" id="btn-gallery">Gallery</a></li>
+          <li><a href="#/threads" id="btn-threads">Threads</a></li>
+          <li><a href="#/gallery" id="btn-gallery">Gallery</a></li>
         </ul>
         <ul class="nav nav navbar-nav navbar-right">
           <li><a href="#">Chat <span class="badge">42</span></a></li>
@@ -162,8 +177,7 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
 
   <!-- app code -->
-  <script src="./scripts/data.js"></script>
-  <script src="./scripts/main.js"></script>
 
 </body>
+
 </html>

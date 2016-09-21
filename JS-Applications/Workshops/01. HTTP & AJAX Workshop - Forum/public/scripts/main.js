@@ -1,4 +1,7 @@
-﻿$(() => { // on document ready
+﻿import { data } from './data.js';
+import { router } from './routing.js';
+
+$(() => { // on document ready
   const GLYPH_UP = 'glyphicon-chevron-up',
     GLYPH_DOWN = 'glyphicon-chevron-down',
     root = $('#root'),
@@ -10,6 +13,8 @@
     usernameSpan = $('#span-username'),
     usernameInput = $('#login input'),
     alertTemplate = $($('#alert-template').text());
+
+  router.init();
 
   (function checkForLoggedUser() {
     data.users.current()
