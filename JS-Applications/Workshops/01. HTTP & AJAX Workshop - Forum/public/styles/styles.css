@@ -1,0 +1,15 @@
+.gallery-item {
+      padding: 20px;
+      height: 200px;
+      margin: 1.5%;
+    }
+    
+.gallery-item img {
+      width: 100%;
+}
+    
+.gallery-item .gallery-item-title {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+}

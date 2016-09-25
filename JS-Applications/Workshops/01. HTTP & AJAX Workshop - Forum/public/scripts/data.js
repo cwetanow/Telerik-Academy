@@ -16,7 +16,7 @@ var data = (function () {
     return Promise.resolve(localStorage.getItem(USERNAME_STORAGE_KEY));
   }
   // end users
-  let url = 'api/threads';
+  const url = 'api/threads';
 
   // start threads
   function threadsGet() {
