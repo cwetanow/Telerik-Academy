@@ -3,10 +3,12 @@
     <li class="cookie">
         <h2>{{text}}</h2>
         <img src="{{img}}">
-        <p>Likes <strong>{{likes}}</strong> | Dislikes <strong>{{dislikes}}</strong></p>
+        <p> <a href="#/like/{{id}}" class="btn"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+            <strong>{{likes}}</strong> |
+            <a href="#/dislike/{{id}}" class="btn"><span class="glyphicon glyphicon-thumbs-down"></span></a>
+            <strong>{{dislikes}}</strong></p>
         <p>Shared on {{shareDate}}</p>
-        <span>Category {{category}}</span>
+        <span> Category <a href="#/home?category={{category}}">{{category}}</a></span>
     </li>
-    <hr>
-    {{/result}}
+    <hr> {{/result}}
 </ul>

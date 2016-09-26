@@ -87,5 +87,12 @@ let controllers = {
     },
     logout: () => {
         dataService.logout();
+    },
+    like: (param) => {
+        dataService.like(param.id);
+    },
+    dislike: (param) => {
+        dataService.dislike(param.id);
     }
+
 };

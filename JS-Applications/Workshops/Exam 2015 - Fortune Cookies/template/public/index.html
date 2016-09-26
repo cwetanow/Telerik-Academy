@@ -5,28 +5,33 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" type="" href="./styles/styles.css">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
 
 <body>
-    <header>
-        <h1>The Fortune Cookies</h1>
-        <nav>
-            <ul class="nav nav-pills">
-                <li id="home"><a href="#/home">Home</a></li>
-                <li id="hourly-cookie"><a href="#/my-cookie">Hourly Cookie</a></li>
-                <li id="login"><a href="#/login">Login</a></li>
-                <li id="logout"><a href="#/logout">Logout</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="col-md-12">
 
-    <div id="container">
+        <header>
+            <h1>The Fortune Cookies</h1>
+            <nav>
+                <ul class="nav nav-pills">
+                    <li id="home"><a href="#/home" id="btn-home" class="btn btn-default">Home</a></li>
+                    <li id="hourly-cookie"><a href="#/my-cookie" class="btn btn-default">Hourly Cookie</a></li>
+                    <li id="login"><a href="#/login" class="btn btn-default">Login</a></li>
+                    <li id="logout"><a href="#/logout" class="btn btn-default">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <div id="container">
+
+        </div>
 
     </div>
-
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
     <script src="./bower_components/navigo/lib/navigo.js"></script>
     <script src="./bower_components/handlebars/handlebars.js"></script>
-    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
     <script src="./scripts/templates.js"></script>
     <script src="./scripts/requester.js"></script>

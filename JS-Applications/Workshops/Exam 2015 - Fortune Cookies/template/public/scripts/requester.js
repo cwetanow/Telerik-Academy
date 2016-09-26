@@ -17,13 +17,15 @@ let requester = {
 
         return promise;
     },
-    put: (url, body) => {
+    put: (url, options) => {
+        options = options || {};
         let promise = new Promise((resolve, reject) => {
             $.ajax({
                 url,
                 method: 'PUT',
+                headers: options.headers,
                 contentType: 'application/json',
-                data: JSON.stringify(body),
+                data: JSON.stringify(options.data),
                 success(response) {
                     resolve(response);
                 }
