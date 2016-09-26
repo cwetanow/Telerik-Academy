@@ -5,6 +5,8 @@ let dataService = {
         return requester.get('/api/cookies');
     },
     login: (user) => {
+        window.location = "";
+
         return requester.put('/api/auth', user)
             .then((response) => {
                 localStorage.setItem("username", response.result.username);
@@ -20,5 +22,22 @@ let dataService = {
         }
 
         return true;
+    },
+    hourlyCookie: () => {
+        var options = {
+            headers: {
+                'x-auth-key': localStorage.getItem("authKey")
+            }
+        };
+        return requester.get('api/my-cookie', options)
+            .then(function (res) {
+                return res.result;
+            });
+    },
+    logout: () => {
+        localStorage.removeItem("username");
+        localStorage.removeItem("authKey");
+
+        window.location = "";
     }
 };

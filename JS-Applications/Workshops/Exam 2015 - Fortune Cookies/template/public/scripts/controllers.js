@@ -1,7 +1,20 @@
 /* globals dataService console templates */
 
+let checkForUser = () => {
+    if (dataService.isLoggedIn()) {
+        $('#login').hide();
+        $('#logout').show();
+        $('#hourly-cookie').show();
+    } else {
+        $('#login').show();
+        $('#logout').hide();
+        $('#hourly-cookie').hide();
+    }
+};
+
 let controllers = {
     home: () => {
+        checkForUser();
         let cookies;
         dataService.cookies()
             .then((cookiesResponse) => {
@@ -18,7 +31,19 @@ let controllers = {
             });
     },
     myCookie: () => {
-        console.log('my cookie');
+        checkForUser();
+        dataService.hourlyCookie()
+            .then((cookiesResponse) => {
+                cookies = cookiesResponse;
+                return templates.get('hourly-cookie');
+            })
+            .then((templateHtml) => {
+                let template = Handlebars.compile(templateHtml);
+
+                let html = template(cookies);
+
+                $('#container').html(html);
+            });
     },
     login: () => {
         if (dataService.isLoggedIn()) {
@@ -38,11 +63,7 @@ let controllers = {
                         passHash: $('#password').val()
                     };
 
-                    dataService.login(user)
-                        .then((respUser) => {
-                            localStorage.setItem("username", respUser.result.username);
-                            localStorage.setItem("authKey", respUser.result.authKey);
-                        });
+                    dataService.login(user);
 
                     ev.preventDefault();
                     return false;
@@ -63,5 +84,8 @@ let controllers = {
                     return false;
                 });
             });
+    },
+    logout: () => {
+        dataService.logout();
     }
 };

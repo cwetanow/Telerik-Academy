@@ -79,6 +79,102 @@
       "usernameToLower": "magadisho123",
       "id": "a01eb852-3b4d-4a7c-97ac-4b679235b337",
       "authKey": "a01eb852-3b4d-4a7c-97ac-4b679235b337ycFqrraStrbmlOHGEHmLysKs"
+    },
+    {
+      "username": "asd123",
+      "passHash": "123456",
+      "usernameToLower": "asd123",
+      "id": "f78b7a1e-39fc-4754-82be-062f16ff27d9",
+      "authKey": "f78b7a1e-39fc-4754-82be-062f16ff27d9pZPpsJLijHLcAqVdTxtmVYcP"
+    },
+    {
+      "username": "register",
+      "passHash": "bazinga",
+      "usernameToLower": "register",
+      "id": "f38d7cbb-9f60-4ada-bf20-fa9bfc3eb209",
+      "authKey": "f38d7cbb-9f60-4ada-bf20-fa9bfc3eb209qJystEyfbnSPhTCogLrwuRdA"
+    },
+    {
+      "username": "asdasdasd",
+      "passHash": "asdasd",
+      "usernameToLower": "asdasdasd",
+      "id": "9ecb3184-718c-41e4-8aa5-a2bdf95266a5",
+      "authKey": "9ecb3184-718c-41e4-8aa5-a2bdf95266a5ZvXHKuOySzrkDuSynNYKGGuu"
+    },
+    {
+      "username": "pesho",
+      "passHash": "pesho1",
+      "usernameToLower": "pesho",
+      "id": "a2a2d982-b62b-48f1-93a4-a47ab3696622",
+      "authKey": "a2a2d982-b62b-48f1-93a4-a47ab3696622TVUslCxztGYXntkuafxATLCf",
+      "myCookies": [
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 15,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 0
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 15,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 0
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 15,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 0
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 15,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 0
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 15,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 0
+        },
+        {
+          "text": "Test",
+          "category": "Home",
+          "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+          "likes": 10,
+          "dislikes": 15,
+          "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+          "shareDate": "2015-09-09T14:53:30.290Z",
+          "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+          "hours": 0
+        }
+      ]
     }
   ],
   "cookies": [
@@ -90,7 +186,8 @@
       "dislikes": 15,
       "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
       "shareDate": "2015-09-09T14:53:30.290Z",
-      "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9"
+      "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9",
+      "hours": 0
     },
     {
       "text": "May the Force with you",

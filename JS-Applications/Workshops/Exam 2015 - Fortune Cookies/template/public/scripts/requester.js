@@ -1,12 +1,15 @@
 /* globals $ */
 
 let requester = {
-    get: (url) => {
+    get: (url, options) => {
+        options = options || {};
         let promise = new Promise((resolve, reject) =>
             $.ajax({
                 url,
                 method: 'GET',
                 contentType: 'application/json',
+                headers: options.headers,
+                data: JSON.stringify(options.data),
                 success(response) {
                     resolve(response);
                 }
