@@ -1,56 +1,54 @@
 ﻿using System;
+using System.Text;
 
 namespace GameFifteen
 {
-    public class WalkInMatrica
+    public class Matrix
     {
-        public static void Change(ref int dx, ref int dy)
-        {
-            int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
-            int[] dirY = { 1, 0, -1, -1, -1, 0, 1, 1 };
+        public static int[] DeltaX = { 1, 1, 1, 0, -1, -1, -1, 0 };
+        public static int[] DeltaY = { 1, 0, -1, -1, -1, 0, 1, 1 };
 
-            int cd = 0;
-            for (int count = 0; count < 8; count++)
+        public static void Change(ref int dimensionX, ref int dimensionY)
+        {
+            var counter = 0;
+            for (var index = 0; index < 8; index++)
             {
-                if (dirX[count] == dx && dirY[count] == dy)
+                if (DeltaX[index] == dimensionX && DeltaY[index] == dimensionY)
                 {
-                    cd = count;
+                    counter = index;
                     break;
                 }
             }
 
-            if (cd == 7)
+            if (counter == 7)
             {
-                dx = dirX[0];
-                dy = dirY[0];
+                dimensionX = DeltaX[0];
+                dimensionY = DeltaY[0];
                 return;
             }
 
-            dx = dirX[cd + 1];
-
-            dy = dirY[cd + 1];
+            dimensionX = DeltaX[counter + 1];
+            dimensionY = DeltaY[counter + 1];
         }
 
         public static bool Check(int[,] arr, int x, int y)
         {
-            int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
-            int[] dirY = { 1, 0, -1, -1, -1, 0, 1, 1 };
+            for (var i = 0; i < 8; i++)
+            {
+                if (x + DeltaX[i] >= arr.GetLength(0) || x + DeltaX[i] < 0)
+                {
+                    DeltaX[i] = 0;
+                }
+
+                if (y + DeltaY[i] >= arr.GetLength(0) || y + DeltaY[i] < 0)
+                {
+                    DeltaY[i] = 0;
+                }
+            }
 
             for (var i = 0; i < 8; i++)
             {
-                if (x + dirX[i] >= arr.GetLength(0) || x + dirX[i] < 0)
-                {
-                    dirX[i] = 0;
-                }
-                
-                if (y + dirY[i] >= arr.GetLength(0) || y + dirY[i] < 0)
-                {
-                    dirY[i] = 0;
-                }
-            }
-            for (var i = 0; i < 8; i++)
-            {
-                if (arr[x + dirX[i], y + dirY[i]] == 0)
+                if (arr[x + DeltaX[i], y + DeltaY[i]] == 0)
                 {
                     return true;
                 }
@@ -58,7 +56,7 @@ namespace GameFifteen
             return false;
         }
 
-        static void FindCell(int[,] arr, out int x, out int y)
+        public static void FindCell(int[,] arr, out int x, out int y)
         {
             x = 0;
             y = 0;
@@ -79,6 +77,11 @@ namespace GameFifteen
 
         }
 
+        public static int[,] GetMatrixByDimensions(int dimensions)
+        {
+            return new int[dimensions, dimensions];
+        }
+
         public static void Main(string[] args)
         {
             //Console.WriteLine( "Enter a positive number " );
@@ -89,88 +92,81 @@ namespace GameFifteen
             //    Console.WriteLine( "You haven't entered a correct positive number" );
             //    input = Console.ReadLine(  );
             //}
-            var n = 3;
-            var matrix = new int[n, n];
-            var step = n;
-            var k = 1;
-            var i = 0;
-            var j = 0;
-            var dx = 1;
-            var dy = 1;
-            while (true)
-            { //malko e kofti tova uslovie, no break-a raboti 100% : )
-                matrix[i, j] = k;
-                if (!Check(matrix, i, j))
-                {
-                    break;
-                }// prekusvame ako sme se zadunili
 
-                if (i + dx >= n ||
-                    i + dx < 0 ||
-                    j + dy >= n ||
-                    j + dy < 0 ||
-                    matrix[i + dx, j + dy] != 0)
+            var dimensions = 3;
+            var matrix = GetMatrixByDimensions(dimensions);
+
+            var counter = 1;
+            var row = 0;
+            var col = 0;
+            PlaceMatrixNumbers(ref matrix, ref row, ref col, ref counter, dimensions);
+
+            var printedMatrix = GetFinalMatrix(matrix, dimensions);
+
+            Console.WriteLine(printedMatrix);
+
+            FindCell(matrix, out row, out col);
+
+            if (row != 0 && col != 0)
+            {
+                PlaceMatrixNumbers(ref matrix, ref row, ref col, ref counter, dimensions);
+            }
+
+            printedMatrix = GetFinalMatrix(matrix, dimensions);
+
+            Console.WriteLine(printedMatrix);
+        }
+
+        public static void PlaceMatrixNumbers(ref int[,] matrix, ref int row, ref int col, ref int counter, int n)
+        {
+            var dimensionX = 1;
+            var dimensionY = 1;
+            matrix[row, col] = counter;
+
+            while (Check(matrix, row, col))
+            {
+                if (row + dimensionX >= n ||
+                    row + dimensionX < 0 ||
+                    col + dimensionY >= n ||
+                    col + dimensionY < 0 ||
+                    matrix[row + dimensionX, col + dimensionY] != 0)
                 {
-                    while ((i + dx >= n ||
-                        i + dx < 0 ||
-                        j + dy >= n ||
-                        j + dy < 0 ||
-                        matrix[i + dx, j + dy] != 0))
+                    while ((row + dimensionX >= n ||
+                        row + dimensionX < 0 ||
+                        col + dimensionY >= n ||
+                        col + dimensionY < 0 ||
+                        matrix[row + dimensionX, col + dimensionY] != 0))
                     {
-                        Change(ref dx, ref dy);
-
+                        Change(ref dimensionX, ref dimensionY);
                     }
                 }
 
-                i += dx; j += dy; k++;
+                row += dimensionX;
+                col += dimensionY;
+                counter++;
+
+                matrix[row, col] = counter;
             }
-            for (var p = 0; p < n; p++)
+        }
+
+        public static string GetFinalMatrix(int[,] array, int dimension)
+        {
+            var result = new StringBuilder();
+
+            for (var i = 0; i < dimension; i++)
             {
-                for (var q = 0; q < n; q++)
+                for (var j = 0; j < dimension; j++)
                 {
-                    Console.Write($"{matrix[p, q],3}");
+                    result.Append($"{array[i, j],3}");
                 }
 
-                Console.WriteLine();
-            }
-
-            FindCell(matrix, out i, out j);
-
-            if (i != 0 && j != 0)
-            { // taka go napravih, zashtoto funkciqta ne mi davashe da ne si definiram out parametrite
-                dx = 1;
-                dy = 1;
-
-                while (true)
-                { //malko e kofti tova uslovie, no break-a raboti 100% : )
-                    matrix[i, j] = k;
-                    if (!Check(matrix, i, j))
-                    {
-                        break;
-                    }// prekusvame ako sme se zadunili
-
-                    if (i + dx >= n || i + dx < 0 || j + dy >= n || j + dy < 0 || matrix[i + dx, j + dy] != 0)
-                    {
-                        while ((i + dx >= n || i + dx < 0 || j + dy >= n || j + dy < 0 || matrix[i + dx, j + dy] != 0))
-                        {
-                            Change(ref dx, ref dy);
-
-                        }
-                    }
-
-                    i += dx; j += dy; k++;
-                }
-            }
-
-            for (var pp = 0; pp < n; pp++)
-            {
-                for (var qq = 0; qq < n; qq++)
+                if (i < dimension - 1)
                 {
-                    Console.Write($"{matrix[pp, qq],3}");
-
+                    result.AppendLine();
                 }
-                Console.WriteLine();
             }
+
+            return result.ToString();
         }
     }
 }
