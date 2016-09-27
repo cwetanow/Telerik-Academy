@@ -91,7 +91,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\03. Refactoring\Matrica.csproj">
+    <ProjectReference Include="..\Matrica.csproj">
       <Project>{4d520899-7061-4eaa-b67e-d14ee8b30462}</Project>
       <Name>Matrica</Name>
     </ProjectReference>

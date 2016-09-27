@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrica", "Matrica.csproj", "{4D520899-7061-4EAA-B67E-D14EE8B30462}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrica.Tests", "..\Matrica.Tests\Matrica.Tests.csproj", "{65AA5D97-D3E8-4B05-A086-C4E51F700DCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrica.Tests", "Matrica.Tests\Matrica.Tests.csproj", "{65AA5D97-D3E8-4B05-A086-C4E51F700DCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
