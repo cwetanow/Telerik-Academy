@@ -1,0 +1,13 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ output extension=".cs" #>
+public class Month
+{
+<# for(int i = 0; i < 12; i++) { #>
+
+    public int <#=  DateTime.Now.AddMonths(i).ToString("MMM")#> { get; set; }
+
+<# } #>
+}
