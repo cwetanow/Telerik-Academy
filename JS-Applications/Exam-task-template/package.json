@@ -1,0 +1,18 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "jquery": "^3.1.1",
+    "navigo": "^3.0.0",
+    "systemjs": "^0.19.39",
+    "systemjs-plugin-babel": "0.0.15"
+  }
+}

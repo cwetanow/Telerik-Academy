@@ -1,0 +1,7 @@
+let dataService = {
+
+};
+
+export {
+    dataService
+};
