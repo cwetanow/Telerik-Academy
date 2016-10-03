@@ -1,4 +1,26 @@
 let controllers = {
+    home: () => {
+        templates.get('home')
+            .then((templateHtml) => {
+                let templateFunc = Handlebars.compile(templateHtml);
+                let html = templateFunc();
+
+                $("#container").html(html);
+            });
+    },
+    events: () => {
+        dataService.isLoggedIn()
+            .then((isLogged) => {
+                if (!isLogged) {
+                    window.location = '#/login';
+                }
+
+                dataService.events()
+                    .then((events) => {
+                        console.log(events);
+                    });
+            });
+    },
     login: () => {
         dataService.isLoggedIn()
             .then(isLoggedIn => {

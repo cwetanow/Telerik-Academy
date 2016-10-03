@@ -32,11 +32,14 @@ let requester = {
         });
         return promise;
     },
-    getJSON: (url) => {
+    getJSON: (url, body) => {
+        body = body || undefined;
+
         let promise = new Promise((resolve, reject) => {
             $.ajax({
                 url,
                 method: "GET",
+                data: JSON.stringify(body),
                 contentType: "application/json",
                 success: (response) => {
                     resolve(response);
@@ -46,4 +49,3 @@ let requester = {
         return promise;
     }
 };
-

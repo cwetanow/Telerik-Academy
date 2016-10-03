@@ -3,10 +3,10 @@ var express = require('express'),
 
 require('../polyfills/array');
 
-module.exports = function(db) {
+module.exports = function (db) {
   var router = express.Router();
 
-  router.get('/', function(req, res) {
+  router.get('/', function (req, res) {
       var user = req.user;
       if (!user) {
         res.status(401)
@@ -18,24 +18,24 @@ module.exports = function(db) {
       var indicesToRemove = [];
       user.events = user.events || [];
 
-      user.events.forEach(function(event, index) {
+      user.events.forEach(function (event, index) {
         var date = new Date(event.date);
         if (date - now <= 0) {
           indicesToRemove.push(index);
         }
       });
 
-      indicesToRemove.forEach(function(indexToRemove) {
+      indicesToRemove.forEach(function (indexToRemove) {
         user.events.splice(indexToRemove, 1);
       });
       db.save();
 
-      user.events.sort(function(e1, e2) {
+      user.events.sort(function (e1, e2) {
         return new Date(e1.date) - new Date(e2.date);
       });
 
       var events = user.events || [];
-      events = events.map(function(dbEvent) {
+      events = events.map(function (dbEvent) {
         var event = {
           id: dbEvent.id,
           title: dbEvent.title,
@@ -45,7 +45,7 @@ module.exports = function(db) {
           creator: db('users').find({
             id: dbEvent.creatorId
           }).username,
-          users: dbEvent.users.map(function(userId) {
+          users: dbEvent.users.map(function (userId) {
             return {
               id: userId,
               username: db('users').find({
@@ -61,7 +61,7 @@ module.exports = function(db) {
         result: events
       });
     })
-    .post('/', function(req, res) {
+    .post('/', function (req, res) {
       var user = req.user;
       if (!user) {
         res.status(401)
@@ -71,11 +71,11 @@ module.exports = function(db) {
 
       var usersUsernames = req.body.users || [];
 
-      var users = usersUsernames.map(function(username) {
+      var users = usersUsernames.map(function (username) {
         return db('users').find({
           usernameLower: username.toLowerCase()
         });
-      }).filter(function(user) {
+      }).filter(function (user) {
         return !!user;
       });
       if (users.length !== usersUsernames.length) {
@@ -95,12 +95,12 @@ module.exports = function(db) {
         description: req.body.description,
         date: new Date(req.body.date),
         creatorId: user.id,
-        users: users.map(function(user) {
+        users: users.map(function (user) {
           return user.id;
         })
       };
 
-      users.forEach(function(user) {
+      users.forEach(function (user) {
         user.events = user.events || [];
         user.events.push(event);
       });

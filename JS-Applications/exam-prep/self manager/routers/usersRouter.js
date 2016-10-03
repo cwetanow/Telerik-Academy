@@ -21,7 +21,6 @@ module.exports = function(db) {
     })
     .post('/', function(req, res) {
       var user = req.body;
-      console.log(user);
       user.usernameLower = user.username.toLowerCase();
       user.authKey = authKeyGenerator.get(user.id);
       if (db('users').find({
