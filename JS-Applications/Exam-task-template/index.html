@@ -5,17 +5,60 @@
     <meta charset="UTF-8">
     <title>Document</title>
 
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
-
-    <script src="./node_modules/systemjs/dist/system.js"></script>
-    <script src="./node_modules/navigo/lib/navigo.js"></script>
-
-    <script src="./scripts/system-config.js"></script>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#/home">X E-Library</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/products/books">Books</a></li>
 
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="visible-when-not-logged-in">
+                            <a href="#/login">Login</a>
+                        </li>
+                        <li class="hidden-when-not-logged-in">
+                            <a class="btn-nav-logout" href="#/logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        
+    </header>
+
+    <div id="container">
+
+    </div>
+
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/handlebars/handlebars.js"></script>
+
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./bower_components/navigo/lib/navigo.js"></script>
+
+    <script src="./bower_components/navigo/lib/navigo.js"></script>
+
+    <script src="./scripts/requester.js"></script>
+    <script src="./scripts/templater.js"></script>
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/controllers.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>

@@ -47,6 +47,3 @@ let requester = {
     }
 };
 
-export {
-    requester
-};
