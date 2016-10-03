@@ -1,0 +1,23 @@
+{
+  "name": "template",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ivan <madritistaaa@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/cwetanow/Telerik",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "handlebars": "^4.0.5",
+    "navigo": "^3.0.0",
+    "bootstrap": "^3.3.7"
+  }
+}
