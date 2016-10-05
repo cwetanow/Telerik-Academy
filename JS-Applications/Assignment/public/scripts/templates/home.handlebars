@@ -1,0 +1,20 @@
+<ul class="list">
+    {{#each result}}
+    <li>
+        <h3><a href="#/materials/{{id}}">{{title}}</a> </h3>
+        <span>Comments: <strong>{{commentsCount}}</strong></span>
+             <br />
+        <br />
+        <img src="{{img}}" id="img"/>
+        <br />
+        
+        {{#if description}}
+        <h4>Description:</h4>
+        <span>{{description}}</span>
+        {{/if}}
+        
+        <hr>
+        <p>Created on {{createdOn}} by <a href="#/profiles/{{user.username}}">{{user.username}}</a></p>
+    </li>
+    {{/each}}
+</ul>

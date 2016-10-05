@@ -1,0 +1,24 @@
+<div>
+    <h2>{{username}}</h2>
+    <hr>
+    <h4>Materials:</h4>
+    <ul class="list" id='materials'>
+    {{#if userMaterials}}
+    {{#each userMaterials}}
+    <li>
+        <h3><a href="#/materials/{{id}}">{{title}}</a> </h3>
+        <h4>Category <a href="#/my-materials/{{category}}">{{category}}</a></h4>
+        
+    </li>
+    {{/each}}
+    {{else}}
+        <h3>No materials</h3>
+    {{/if}}
+</ul>
+   <hr>
+   <div>
+        <a href="#/my-materials/watching" class="btn btn-default">Watching</a>
+         <a href="#/my-materials/watched" class="btn btn-default">Watched</a>
+          <a href="#/my-materials/want-to-watch" class="btn btn-default">Want to watch</a>
+     </div>
+</div>

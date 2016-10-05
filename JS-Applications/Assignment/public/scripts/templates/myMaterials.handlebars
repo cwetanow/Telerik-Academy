@@ -1,0 +1,19 @@
+<ul class="list">
+    {{#if result}}
+    {{#each result}}
+    <li>
+        <h3><a href="#/materials/{{id}}">{{title}}</a> </h3>
+        <h4>Category <a href="#/my-materials/{{category}}">{{category}}</a></h4>
+          {{#if description}}
+        <h4>Description:</h4>
+        <span>{{description}}</span>
+        {{/if}}
+        
+        <hr>
+        <p>Created on {{createdOn}} by <a href="#/profiles/{{user.username}}">{{user.username}}</a></p>
+    </li>
+    {{/each}}
+    {{else}}
+        <h3>No materials</h3>
+    {{/if}}
+</ul>

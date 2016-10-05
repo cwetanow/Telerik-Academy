@@ -1,0 +1,37 @@
+<div>
+     <div id="errors"></div>
+     <div class="hidden-when-not-logged-in">
+         <button id="watch">Watch</button>
+          <button id="watched">Watched</button>
+           <button id="want-to-watch">Want to watch</button>
+     </div>
+     <h3>{{title}}</h3>
+        
+             <br />
+        <br />
+        <img src="{{img}}" id="img"/>
+        <hr>
+        <span>{{description}}</span>
+       <p>Created on {{createdOn}} by <a href="#/profiles/{{user.username}}">{{user.username}}</a></p>
+       <div id="comments">
+       <span>Comments: <strong>{{commentsCount}}</strong></span>
+        <ul class='list'>
+        {{#each comments}}
+        <li>
+            <span>
+                <a href="#/profiles/{{user.username}}">
+                {{user.username}}
+                </a>
+                </span>
+            <p>{{text}}</p>
+        </li>
+        {{/each}}
+        </ul>
+        <div class="hidden-when-not-logged-in">
+            <textarea name="" id="comment" cols="50" rows="10"></textarea>
+
+            <br>
+            <button type="button" class="btn btn-large btn-default" id="btn-comment">Post comment</button>            
+        </div>
+        </div>
+</div>

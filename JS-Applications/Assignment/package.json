@@ -1,0 +1,25 @@
+{
+  "name": "learning-resources",
+  "version": "1.0.0",
+  "description": " Application for sharing, recomending and browsing learning resources",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "debug": "./node_modules/.bin/nodemon app.js"
+  },
+  "author": "Doncho Minkov (donchominkov@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-list-routes": "^0.1.4",
+    "lodash": "^4.16.2",
+    "lowdb": "^0.13.1",
+    "underscore-db": "^0.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.2"
+  }
+}

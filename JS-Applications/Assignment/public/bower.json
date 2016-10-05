@@ -1,0 +1,22 @@
+{
+  "name": "learning-resources",
+  "description": "Application for sharing, recomending and browsing learning resources",
+  "main": "app.js",
+  "authors": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "handlebars": "^4.0.5",
+    "navigo": "^3.0.0",
+    "bootstrap": "^3.3.7",
+    "mocha": "^3.1.0",
+    "chai": "^3.5.0"
+  }
+}

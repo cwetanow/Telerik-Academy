@@ -1,0 +1,294 @@
+{
+  "users": [
+    {
+      "username": "Doncho",
+      "password": "1234",
+      "usernameToLower": "doncho",
+      "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+      "authKey": "1miUIcFiq4_gueIE6QT5kHYK0woshtAKMGpqAi1H",
+      "userMaterials": [
+        {
+          "id": "dd707118-fbb0-45e7-b95f-c4ee9c90a6c9",
+          "title": "book #1",
+          "category": "watching"
+        },
+        {
+          "id": "bde2acbc-0bc2-43d2-a46a-4d3deb0eb7b3",
+          "title": "book #2",
+          "category": "want-to-watch"
+        },
+        {
+          "id": "3660109c-4833-4af5-a33d-b07942571a7d",
+          "title": "Batman",
+          "category": "want-to-watch"
+        },
+        {
+          "id": "bbf49e27-44c3-4ed8-8947-bee30cf9f5de",
+          "title": "asdasd",
+          "category": "want-to-watch"
+        },
+        {
+          "id": "ffafd855-f6e8-480f-87f8-1ed61fb202fa",
+          "title": "book #10",
+          "category": "watching"
+        },
+        {
+          "id": "47f3ae36-6dac-44ce-8684-5a73c9eb1611",
+          "title": "It works!",
+          "category": "watching"
+        },
+        {
+          "id": "15925669-ac41-4183-a84b-1bead97d7f49",
+          "title": "book #8",
+          "category": "watching"
+        }
+      ]
+    },
+    {
+      "username": "Doncho3",
+      "password": "1123123234",
+      "usernameToLower": "doncho3",
+      "id": "9b7cce23-db27-43ed-9711-02af4d5c69da",
+      "authKey": "jshreZOsrR77qYjma_dKZb1E9vuy6UzQRl86ZXW1"
+    },
+    {
+      "username": "johnnybravo",
+      "password": "mypass123",
+      "usernameToLower": "johnnybravo",
+      "id": "eb02cdd1-8df6-4288-9ea6-4de841cc7057"
+    },
+    {
+      "username": "konnyk",
+      "password": "1234567",
+      "usernameToLower": "konnyk",
+      "id": "2caa8881-302c-45e0-a68e-f3f20414b4cc"
+    },
+    {
+      "username": "asdasdads",
+      "password": "asdasdasd",
+      "usernameToLower": "asdasdads",
+      "id": "94e9101b-c1e0-47d4-870d-49147a618ad3"
+    }
+  ],
+  "materials": [
+    {
+      "title": "book #1",
+      "description": "The name of the wind",
+      "createdOn": "2016-09-28T12:50:13.612Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "dd707118-fbb0-45e7-b95f-c4ee9c90a6c9"
+    },
+    {
+      "title": "book #2",
+      "description": "JavaScript: The good parts",
+      "createdOn": "2016-09-28T12:50:13.679Z",
+      "rating": 0,
+      "comments": [
+        {
+          "text": "asd",
+          "user": {
+            "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+            "username": "Doncho"
+          }
+        },
+        {
+          "text": "pesho",
+          "user": {
+            "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+            "username": "Doncho"
+          }
+        },
+        {
+          "text": "comment",
+          "user": {
+            "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+            "username": "Doncho"
+          }
+        }
+      ],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "bde2acbc-0bc2-43d2-a46a-4d3deb0eb7b3"
+    },
+    {
+      "title": "The The tHE...",
+      "description": "description of book #$i",
+      "createdOn": "2016-09-28T12:50:14.271Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "669158cb-63d3-4237-b29f-e7448f65c87f"
+    },
+    {
+      "title": "book #4",
+      "description": "description of book #$i",
+      "createdOn": "2016-09-28T12:50:14.365Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "The poet"
+      },
+      "id": "c042961f-0661-4381-9be9-5de824af2766"
+    },
+    {
+      "title": "book #5",
+      "description": "description of book #$i",
+      "createdOn": "2016-09-28T12:50:14.406Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "cec2f5a5-d79e-41f7-9b5b-fcc364f776f7"
+    },
+    {
+      "title": "book #6",
+      "description": "description of book #$i",
+      "createdOn": "2016-09-28T12:50:14.992Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "cb87a57d-8a7e-4ad6-8594-2b1c9a87cb84"
+    },
+    {
+      "title": "book #7",
+      "description": "description of book #$i",
+      "createdOn": "2016-09-28T12:50:15.055Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "55105362-00ab-4f8c-9d72-eea1d3a28fd3"
+    },
+    {
+      "title": "book #8",
+      "description": "description of book #$i",
+      "createdOn": "2016-09-28T12:50:15.683Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "15925669-ac41-4183-a84b-1bead97d7f49"
+    },
+    {
+      "title": "book #9",
+      "description": "description of book #$i",
+      "createdOn": "2016-09-28T12:50:15.763Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "4d7cc2dd-ef6c-4d26-939b-345ea9874a7f"
+    },
+    {
+      "title": "book #10",
+      "description": "description of book #$i",
+      "createdOn": "2016-09-28T12:50:15.808Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "ffafd855-f6e8-480f-87f8-1ed61fb202fa"
+    },
+    {
+      "title": "It works!",
+      "description": "Should be ok",
+      "createdOn": "2016-10-04T07:43:03.286Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "47f3ae36-6dac-44ce-8684-5a73c9eb1611"
+    },
+    {
+      "title": "It works!",
+      "description": "",
+      "createdOn": "2016-10-04T07:43:20.148Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "17890fff-e311-4196-8346-0d8a57d81e02"
+    },
+    {
+      "title": "It works",
+      "description": "",
+      "createdOn": "2016-10-04T07:43:29.803Z",
+      "rating": 0,
+      "comments": [
+        {
+          "text": "1234",
+          "user": {
+            "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+            "username": "Doncho"
+          }
+        },
+        {
+          "text": "123",
+          "user": {
+            "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+            "username": "Doncho"
+          }
+        }
+      ],
+      "user": {
+        "id": "73a58989-5107-46e8-b781-4380f6c1c0b1",
+        "username": "Doncho"
+      },
+      "id": "c4333e8b-cf11-44cb-bc44-bd9e7a5bf1dd"
+    },
+    {
+      "title": "asdasd",
+      "description": "aaaaaaaa",
+      "img": "",
+      "createdOn": "2016-10-04T13:22:31.315Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "9b7cce23-db27-43ed-9711-02af4d5c69da",
+        "username": "Doncho3"
+      },
+      "id": "bbf49e27-44c3-4ed8-8947-bee30cf9f5de"
+    },
+    {
+      "title": "Batman",
+      "description": "NANANANANANANANANA",
+      "img": "http://static.srcdn.com/wp-content/uploads/Joker-Batman-DC-Movie-Universe.jpg",
+      "createdOn": "2016-10-04T13:28:32.876Z",
+      "rating": 0,
+      "comments": [],
+      "user": {
+        "id": "9b7cce23-db27-43ed-9711-02af4d5c69da",
+        "username": "Doncho3"
+      },
+      "id": "3660109c-4833-4af5-a33d-b07942571a7d"
+    }
+  ]
+}
