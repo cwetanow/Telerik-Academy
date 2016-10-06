@@ -30,7 +30,7 @@ namespace Computers.Common.Models.Abstract
             this.motherboard = motherboard;
         }
 
-        public void GenerateRandom(int maxValue, int minValue)
+        public void GenerateRandom(int minValue, int maxValue)
         {
             var randomNumber = Cpu.randomGenerator.Next(minValue, maxValue + 1);
             this.motherboard.SaveRamValue(randomNumber);
@@ -48,10 +48,12 @@ namespace Computers.Common.Models.Abstract
             {
                 this.motherboard.DrawOnVideoCard(GlobalConstants.NumberTooHighMessage);
             }
+            else
+            {
+                var square = data * data;
 
-            var square = data * data;
-
-            this.motherboard.DrawOnVideoCard(string.Format(SquareInfoString, data, square));
+                this.motherboard.DrawOnVideoCard(string.Format(SquareInfoString, data, square));
+            }
         }
     }
 }

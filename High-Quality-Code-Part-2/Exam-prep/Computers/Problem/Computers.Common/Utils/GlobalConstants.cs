@@ -23,5 +23,8 @@ namespace Computers.Common.Utils
         public const string WinMessage = "You win!";
 
         public const string BatteryStatusStringFormat = "Battery status: {0}%";
+
+        public const string HpName = "HP";
+        public const string DellName = "Dell";
     }
 }

@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{91EC507A-1311-431C-9AF5-FD0EB05484B1}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{FAACD70B-CC8B-4758-A660-8C2A3FB44A9E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Computers.Common</RootNamespace>
-    <AssemblyName>Computers.Common</AssemblyName>
+    <RootNamespace>Console.UI</RootNamespace>
+    <AssemblyName>Console.UI</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,39 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contracts\IComputerManufacturer.cs" />
-    <Compile Include="Contracts\IBattery.cs" />
-    <Compile Include="Contracts\ICpu.cs" />
-    <Compile Include="Contracts\IHardDrive.cs" />
-    <Compile Include="Contracts\IMotherboard.cs" />
-    <Compile Include="Contracts\IRam.cs" />
-    <Compile Include="Contracts\IVideoCard.cs" />
-    <Compile Include="Exceptions\InvalidArgumentException.cs" />
-    <Compile Include="Manufacturers\DellManufacturer.cs" />
-    <Compile Include="Manufacturers\HpManufacturer.cs" />
-    <Compile Include="Models\Abstract\Computer.cs" />
-    <Compile Include="Models\Abstract\Cpu.cs" />
-    <Compile Include="Models\Abstract\HardDrive.cs" />
-    <Compile Include="Models\Abstract\VideoCard.cs" />
-    <Compile Include="Models\Batteries\LaptopBattery.cs" />
-    <Compile Include="Models\Components\Ram.cs" />
-    <Compile Include="Models\ComputerManufacturerFactory.cs" />
-    <Compile Include="Models\Computers\Laptop.cs" />
-    <Compile Include="Models\Computers\PersonalComputer.cs" />
-    <Compile Include="Models\Computers\Server.cs" />
-    <Compile Include="Models\Cpus\Cpu128.cs" />
-    <Compile Include="Models\Cpus\Cpu32.cs" />
-    <Compile Include="Models\Cpus\Cpu64.cs" />
-    <Compile Include="Models\HardDrives\RaidArray.cs" />
-    <Compile Include="Models\HardDrives\SingleHardDrive.cs" />
-    <Compile Include="Models\Motherboard.cs" />
-    <Compile Include="Models\VideoCards\ColorfulVideoCard.cs" />
-    <Compile Include="Models\VideoCards\MonochromeVideoCard.cs" />
+    <Compile Include="CommandEngine.cs" />
+    <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utils\GlobalConstants.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Enums\" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Computers.Common\Computers.Common.csproj">
+      <Project>{91ec507a-1311-431c-9af5-fd0eb05484b1}</Project>
+      <Name>Computers.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
