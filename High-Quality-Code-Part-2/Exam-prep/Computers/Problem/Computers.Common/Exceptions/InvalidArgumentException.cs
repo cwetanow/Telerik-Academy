@@ -7,7 +7,6 @@ namespace Computers.Common.Exceptions
         public InvalidArgumentException(string message) 
             : base(message)
         {
-            
         }
     }
 }

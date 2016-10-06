@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
@@ -7,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Computers.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Telerik Academy")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Computers.Tests")]
-[assembly: AssemblyCopyright("Telerik Academy © 2014")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -19,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3eb9c548-543c-44ff-ad7b-78f254acadee")]
+[assembly: Guid("84c2ed5a-f631-457a-9525-4c95a5e30b5d")]
 
 // Version information for an assembly consists of the following four values:
 //
