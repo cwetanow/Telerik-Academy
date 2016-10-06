@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\4.Persian-rugs\bin\Debug\4.Persian-rugs.exe.config
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\4.Persian-rugs\bin\Debug\4.Persian-rugs.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\4.Persian-rugs\bin\Debug\4.Persian-rugs.pdb
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\4.Persian-rugs\obj\Debug\4.Persian-rugs.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\4.Persian-rugs\obj\Debug\4.Persian-rugs.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\4.Persian-rugs\obj\Debug\4.Persian-rugs.pdb

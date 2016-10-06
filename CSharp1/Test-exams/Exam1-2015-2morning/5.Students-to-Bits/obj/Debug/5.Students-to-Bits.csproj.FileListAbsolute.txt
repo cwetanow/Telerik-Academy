@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\5.Students-to-Bits\bin\Debug\5.Students-to-Bits.exe.config
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\5.Students-to-Bits\bin\Debug\5.Students-to-Bits.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\5.Students-to-Bits\bin\Debug\5.Students-to-Bits.pdb
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\5.Students-to-Bits\obj\Debug\5.Students-to-Bits.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-2morning\5.Students-to-Bits\obj\Debug\5.Students-to-Bits.pdb

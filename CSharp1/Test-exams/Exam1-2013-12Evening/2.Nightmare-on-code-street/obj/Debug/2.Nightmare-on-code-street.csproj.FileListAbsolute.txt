@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\2.Nightmare-on-code-street\bin\Debug\2.Nightmare-on-code-street.exe.config
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\2.Nightmare-on-code-street\bin\Debug\2.Nightmare-on-code-street.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\2.Nightmare-on-code-street\bin\Debug\2.Nightmare-on-code-street.pdb
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\2.Nightmare-on-code-street\obj\Debug\2.Nightmare-on-code-street.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\2.Nightmare-on-code-street\obj\Debug\2.Nightmare-on-code-street.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\2.Nightmare-on-code-street\obj\Debug\2.Nightmare-on-code-street.pdb

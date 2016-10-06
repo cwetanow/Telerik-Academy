@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\03.Tron-3d\bin\Debug\03.Tron-3d.exe.config
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\03.Tron-3d\bin\Debug\03.Tron-3d.exe
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\03.Tron-3d\bin\Debug\03.Tron-3d.pdb
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\03.Tron-3d\obj\Debug\03.Tron-3d.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\03.Tron-3d\obj\Debug\03.Tron-3d.exe
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\03.Tron-3d\obj\Debug\03.Tron-3d.pdb

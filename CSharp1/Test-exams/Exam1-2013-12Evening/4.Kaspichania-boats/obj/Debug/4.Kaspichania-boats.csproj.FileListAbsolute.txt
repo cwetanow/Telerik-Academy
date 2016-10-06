@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\4.Kaspichania-boats\bin\Debug\4.Kaspichania-boats.exe.config
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\4.Kaspichania-boats\bin\Debug\4.Kaspichania-boats.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\4.Kaspichania-boats\bin\Debug\4.Kaspichania-boats.pdb
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\4.Kaspichania-boats\obj\Debug\4.Kaspichania-boats.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\4.Kaspichania-boats\obj\Debug\4.Kaspichania-boats.pdb

@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\4.Decode-decryph\bin\Debug\4.Decode-decryph.exe.config
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\4.Decode-decryph\bin\Debug\4.Decode-decryph.exe
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\4.Decode-decryph\bin\Debug\4.Decode-decryph.pdb
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\4.Decode-decryph\obj\Debug\4.Decode-decryph.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\4.Decode-decryph\obj\Debug\4.Decode-decryph.exe
-D:\Coding\Telerik\CSharp2\Exams\14-sept-2013-morning\4.Decode-decryph\obj\Debug\4.Decode-decryph.pdb

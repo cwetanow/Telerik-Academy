@@ -1,6 +1,0 @@
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\5.Game-of-page\bin\Debug\5.Game-of-page.exe.config
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\5.Game-of-page\bin\Debug\5.Game-of-page.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\5.Game-of-page\bin\Debug\5.Game-of-page.pdb
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\5.Game-of-page\obj\Debug\5.Game-of-page.csprojResolveAssemblyReference.cache
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\5.Game-of-page\obj\Debug\5.Game-of-page.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2013-12Evening\5.Game-of-page\obj\Debug\5.Game-of-page.pdb

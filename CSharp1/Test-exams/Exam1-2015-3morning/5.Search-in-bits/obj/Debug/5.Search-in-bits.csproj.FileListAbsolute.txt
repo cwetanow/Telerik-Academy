@@ -1,5 +1,0 @@
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\5.Search-in-bits\bin\Debug\5.Search-in-bits.exe.config
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\5.Search-in-bits\bin\Debug\5.Search-in-bits.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\5.Search-in-bits\bin\Debug\5.Search-in-bits.pdb
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\5.Search-in-bits\obj\Debug\5.Search-in-bits.exe
-D:\Coding\Telerik\CSharp1\Test-exams\Exam1-2015-3morning\5.Search-in-bits\obj\Debug\5.Search-in-bits.pdb
