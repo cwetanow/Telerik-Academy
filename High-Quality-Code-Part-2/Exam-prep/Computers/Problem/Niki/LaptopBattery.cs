@@ -9,6 +9,10 @@
             if (Percentage > 100) Percentage = 100;
             if (Percentage < 0) Percentage = 0;
         }
-        internal LaptopBattery() { this.Percentage = 100 / 2; }
+
+        internal LaptopBattery()
+        {
+            this.Percentage = 100 / 2;
+        }
     }
 }

@@ -1,19 +1,23 @@
-﻿
-using Computers1;using Computers11;using System;
-using Computers8;namespace Computers4
+﻿using System;
+using Computers.Common.Models.Components;
+using Computers11;
+using Computers8;
+namespace Computers4
 {
 
     class Cpu
     {
         private readonly byte numberOfBits;
 
-        private readonly Rammstein ram;
+
+        private readonly Ram ram;
 
         private readonly HardDriver videoCard;
 
         static readonly Random Random = new Random();
 
-        internal Cpu(byte numberOfCores, byte numberOfBits, Rammstein ram, HardDriver videoCard) {
+        internal Cpu(byte numberOfCores, byte numberOfBits, Ram ram, HardDriver videoCard)
+        {
             this.numberOfBits = numberOfBits;
             this.ram = ram;
             this.NumberOfCores = numberOfCores;
@@ -23,8 +27,14 @@ using Computers8;namespace Computers4
 
         public void SquareNumber()
         {
-            if (this.numberOfBits == 32) SquareNumber32();
-            if (this.numberOfBits == 64) SquareNumber64();
+            if (this.numberOfBits == 32)
+            {
+                SquareNumber32();
+            }
+            if (this.numberOfBits == 64)
+            {
+                SquareNumber64();
+            }
         }
 
         void SquareNumber32()

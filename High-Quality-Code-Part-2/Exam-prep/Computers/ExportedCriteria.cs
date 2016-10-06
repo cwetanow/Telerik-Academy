@@ -117,7 +117,9 @@
                         new Option("Частично (0.25)", 0.25m),
                         new Option("Не (0)", 0),
                     }),
-                new Criteria("SquareNumber32 и SquareNumber64 или са обединени заедно в 1 метод или са разделени в отделни класове", 
+                new Criteria("Squar" +
+                             "eNum" +
+                             "ber32 и SquareNumber64 или са обединени заедно в 1 метод или са разделени в отделни класове", 
                     "1 общ базов метод или класове Cpu32Bit и Cpu64Bit например", new List<Option>
                     {
                         new Option("Да (0.5)", 0.5m),
