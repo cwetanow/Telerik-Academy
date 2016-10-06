@@ -102,7 +102,7 @@ namespace Computers.UI
 
                 pc.PlayGame(guess);
             }
-            catch (FormatException e)
+            catch (FormatException)
             {
                 Console.WriteLine("Invalid number");
             }
@@ -116,7 +116,7 @@ namespace Computers.UI
 
                 server.ProcessRequest(data);
             }
-            catch (FormatException e)
+            catch (FormatException)
             {
                 Console.WriteLine("Invalid number");
             }
@@ -130,7 +130,7 @@ namespace Computers.UI
 
                 laptop.ChargeBattery(percentage);
             }
-            catch (FormatException e)
+            catch (FormatException)
             {
                 Console.WriteLine("Invalid number");
             }
