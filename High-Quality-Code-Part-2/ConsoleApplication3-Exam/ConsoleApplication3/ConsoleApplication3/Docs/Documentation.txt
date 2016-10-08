@@ -1,0 +1,16 @@
+﻿Bottleneck description: --------------------
+#1: The bottle neck is the WriteLine method in the Engine class. First it splits the message and joins it after that. String operations
+wich are very slow and useless. After that is an unused variable c. The for cycle goest through the whole string a character at a time
+and does not write the whole string together, which is also slow. It goes a fixed number of times (261 to be exact) through the cycle 
+surrounding the Console.WriteLine method with try-catch block to catch a exception which will be thrown by the index of the array.
+And finally there is a Thread.Sleep to slow down the process even more.
+
+
+Bug reports: --------------------
+Format: #Bug number - Class name - Bug description
+Example: #1 - PartnerBankingService - The variable "money" at line 36 overflows when you try to add more than 2.1 billion dollars.
+--------
+#1 - CreateStudentCommand - Class does not implement ICommand interface
+#2 - Student.ListMarks - Not implemented a result when no marks available
+#3 - Does not have validation
+#4 - CreateStudentCommand - Enum type Grade can be outside the boundaries
