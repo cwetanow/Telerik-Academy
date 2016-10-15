@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<students>
+<students xmlns:students="urn:students">
 	<student number="1">
 		<name>
 			Pesho
