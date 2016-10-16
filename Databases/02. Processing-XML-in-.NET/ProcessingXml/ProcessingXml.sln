@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetArtistsDom", "GetArtists
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetArtistsXPath", "GetArtistsXPath\GetArtistsXPath.csproj", "{568CF2D1-724C-48FE-B722-01DEACA39452}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateXmlWithSchema", "ValidateXmlWithSchema\ValidateXmlWithSchema.csproj", "{6ABA0ABF-FE16-4646-9312-4D4FF6B26513}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{568CF2D1-724C-48FE-B722-01DEACA39452}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{568CF2D1-724C-48FE-B722-01DEACA39452}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{568CF2D1-724C-48FE-B722-01DEACA39452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ABA0ABF-FE16-4646-9312-4D4FF6B26513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ABA0ABF-FE16-4646-9312-4D4FF6B26513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ABA0ABF-FE16-4646-9312-4D4FF6B26513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ABA0ABF-FE16-4646-9312-4D4FF6B26513}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
