@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalogue>
+  <album id="1">
+    <name>TheMonstericanDream</name>
+    <artist>Lordi</artist>
+    <year>2004</year>
+    <producer>HiiliHiilesmaa</producer>
+    <price>22</price>
+    <songs>
+      <song>
+        <title>BloodRedSandman</title>
+        <duration>4:35</duration>
+      </song>
+      <song>
+        <title>PettheDestroyer</title>
+        <duration>3:41</duration>
+      </song>
+      <song>
+        <title>ShotgunDivorce</title>
+        <duration>5:01</duration>
+      </song>
+    </songs>
+  </album>
+  <album id="2">
+    <name>Master of Puppets</name>
+    <artist>Metallica</artist>
+    <year>1986</year>
+    <producer>Flemming Rasmussen</producer>
+    <price>47</price>
+    <songs>
+      <song>
+        <title>Master of Puppets</title>
+        <duration>5:12</duration>
+      </song>
+      <song>
+        <title>Disposable Heroes</title>
+        <duration>8:12</duration>
+      </song>
+      <song>
+        <title>Battery</title>
+        <duration>5:12</duration>
+      </song>
+      <song>
+        <title></title>
+        <duration></duration>
+      </song>
+      <song>
+        <title>The Thing That Should Not Be</title>
+        <duration>6:37</duration>
+      </song>
+    </songs>
+  </album>
+  <album id="3">
+    <name>Indestructible</name>
+    <artist>Disturbed</artist>
+    <year>2008</year>
+    <producer>Dan Donegan</producer>
+    <price>23</price>
+    <songs>
+      <song>
+        <title>Indestructible</title>
+        <duration>4:38</duration>
+      </song>
+      <song>
+        <title>Haunted</title>
+        <duration>4:42</duration>
+      </song>
+      <song>
+        <title>Divide</title>
+        <duration>3:36</duration>
+      </song>
+      <song>
+        <title>Criminal</title>
+        <duration>4:16</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>
