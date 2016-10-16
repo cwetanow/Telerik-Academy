@@ -17,9 +17,7 @@ namespace GetArtistsXPath
             var doc = new XmlDocument();
             doc.Load(path);
 
-            var catalog = doc.DocumentElement;
-
-            var uniqueArtists = ExtractArtists(catalog);
+            var uniqueArtists = ExtractArtists(doc);
 
             foreach (var artist in uniqueArtists.Keys)
             {
@@ -29,11 +27,26 @@ namespace GetArtistsXPath
             }
         }
 
-        public static Hashtable ExtractArtists(XmlElement catalog)
+        public static Hashtable ExtractArtists(XmlDocument document)
         {
             var artistsPath = "catalogue/album/artist";
+            var allArtists = document.SelectNodes(artistsPath);
 
             var artists = new Hashtable();
+
+            foreach (XmlNode artist in allArtists)
+            {
+                var currentArtist = artist.InnerText;
+
+                if (artists.ContainsKey(currentArtist))
+                {
+                    artists[currentArtist] = (int)artists[currentArtist] + 1;
+                }
+                else
+                {
+                    artists[currentArtist] = 1;
+                }
+            }
 
             return artists;
         }
