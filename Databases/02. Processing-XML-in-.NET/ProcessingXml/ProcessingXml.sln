@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteAlbumsDOM", "DeleteAl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTitlesXmlReader", "ExtractTitlesXmlReader\ExtractTitlesXmlReader.csproj", "{65B7AE43-F7FC-40DC-A207-27C7F51101D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTitlesXDocument", "ExtractTitlesXDocument\ExtractTitlesXDocument.csproj", "{FC2E2D78-E5B0-4288-B3EB-350897AAB0BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{65B7AE43-F7FC-40DC-A207-27C7F51101D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65B7AE43-F7FC-40DC-A207-27C7F51101D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65B7AE43-F7FC-40DC-A207-27C7F51101D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC2E2D78-E5B0-4288-B3EB-350897AAB0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC2E2D78-E5B0-4288-B3EB-350897AAB0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC2E2D78-E5B0-4288-B3EB-350897AAB0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC2E2D78-E5B0-4288-B3EB-350897AAB0BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
