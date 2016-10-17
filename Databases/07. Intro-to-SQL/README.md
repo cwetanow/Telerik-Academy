@@ -1,14 +1,14 @@
 ## Structured Query Language (SQL)
 ### _Homework_
 
-1.	What is SQL? What is DML? What is DDL? Recite the most important SQL commands.
-- SQL - Structured Query Language
-- DML - Data Manipulation Language, commands for Manipulation of data
-- DDL - Data Definition Language, commands for Manipulation of tables
-- SELECT, UPDATE, ALTER, DROP, DELETE, CREATE
+1.	What is SQL? What is DML? What is DDL? Recite the most important SQL commands.  
+SQL - Structured Query Language
+DML - Data Manipulation Language, commands for Manipulation of data  
+DDL - Data Definition Language, commands for Manipulation of tables  
+SELECT, UPDATE, ALTER, DROP, DELETE, CREATE  
 
-2.	What is Transact-SQL (T-SQL)?
-- T-SQL is Microsoft's addition to SQL adding more functionality
+2.	What is Transact-SQL (T-SQL)?  
+T-SQL is Microsoft's addition to SQL adding more functionality
 
 3.	Start SQL Management Studio and connect to the database TelerikAcademy. Examine the major tables in the "TelerikAcademy" database.
 1.	Write a SQL query to find all information about all departments (use "TelerikAcademy" database).
