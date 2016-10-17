@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateXmlWithSchema", "Va
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteAlbumsDOM", "DeleteAlbumsDOM\DeleteAlbumsDOM.csproj", "{798F0299-100D-46F8-BB23-1B60092BCE20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTitlesXmlReader", "ExtractTitlesXmlReader\ExtractTitlesXmlReader.csproj", "{65B7AE43-F7FC-40DC-A207-27C7F51101D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{798F0299-100D-46F8-BB23-1B60092BCE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{798F0299-100D-46F8-BB23-1B60092BCE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{798F0299-100D-46F8-BB23-1B60092BCE20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65B7AE43-F7FC-40DC-A207-27C7F51101D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65B7AE43-F7FC-40DC-A207-27C7F51101D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65B7AE43-F7FC-40DC-A207-27C7F51101D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65B7AE43-F7FC-40DC-A207-27C7F51101D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

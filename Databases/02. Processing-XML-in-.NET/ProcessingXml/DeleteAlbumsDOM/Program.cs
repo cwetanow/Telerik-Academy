@@ -17,7 +17,7 @@ namespace DeleteAlbumsDOM
                 .Cast<XmlNode>()
                 .Where(x => double.Parse(x["price"].InnerText) > 20);
 
-            foreach (XmlNode costyAlbum in costyAlbums)
+            foreach (var costyAlbum in costyAlbums)
             {
                 doc.RemoveChild(costyAlbum);
             }
