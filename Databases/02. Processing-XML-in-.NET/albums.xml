@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Albums>
+	<album>
+		<name>TheMonstericanDream</name>
+		<artist>Lordi</artist>
+	</album>
+	<album>
+		<name>Master of Puppets</name>
+		<artist>Metallica</artist>
+	</album>
+	<album>
+		<name>Indestructible</name>
+		<artist>Disturbed</artist>
+	</album>
+</Albums>

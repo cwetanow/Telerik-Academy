@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetArtistsDom", "GetArtistsDom\GetArtistsDom.csproj", "{1929F68A-16B3-4012-BDF0-15CBCD6DBEB2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.GetArtistsDom", "GetArtistsDom\02.GetArtistsDom.csproj", "{1929F68A-16B3-4012-BDF0-15CBCD6DBEB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetArtistsXPath", "GetArtistsXPath\GetArtistsXPath.csproj", "{568CF2D1-724C-48FE-B722-01DEACA39452}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.GetArtistsXPath", "GetArtistsXPath\03.GetArtistsXPath.csproj", "{568CF2D1-724C-48FE-B722-01DEACA39452}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateXmlWithSchema", "ValidateXmlWithSchema\ValidateXmlWithSchema.csproj", "{6ABA0ABF-FE16-4646-9312-4D4FF6B26513}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16.ValidateXmlWithSchema", "ValidateXmlWithSchema\16.ValidateXmlWithSchema.csproj", "{6ABA0ABF-FE16-4646-9312-4D4FF6B26513}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteAlbumsDOM", "DeleteAlbumsDOM\DeleteAlbumsDOM.csproj", "{798F0299-100D-46F8-BB23-1B60092BCE20}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.DeleteAlbumsDOM", "DeleteAlbumsDOM\04.DeleteAlbumsDOM.csproj", "{798F0299-100D-46F8-BB23-1B60092BCE20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTitlesXmlReader", "ExtractTitlesXmlReader\ExtractTitlesXmlReader.csproj", "{65B7AE43-F7FC-40DC-A207-27C7F51101D0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.ExtractTitlesXmlReader", "ExtractTitlesXmlReader\05.ExtractTitlesXmlReader.csproj", "{65B7AE43-F7FC-40DC-A207-27C7F51101D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractTitlesXDocument", "ExtractTitlesXDocument\ExtractTitlesXDocument.csproj", "{FC2E2D78-E5B0-4288-B3EB-350897AAB0BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.ExtractTitlesXDocument", "ExtractTitlesXDocument\06.ExtractTitlesXDocument.csproj", "{FC2E2D78-E5B0-4288-B3EB-350897AAB0BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonFromTxtFile", "PersonFromTxtFile\PersonFromTxtFile.csproj", "{00575186-5B49-4C4E-BBBE-1B869F9C85FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.PersonFromTxtFile", "PersonFromTxtFile\07.PersonFromTxtFile.csproj", "{00575186-5B49-4C4E-BBBE-1B869F9C85FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.CreateAlbums", "08.CreateAlbums\08.CreateAlbums.csproj", "{21FCE120-ACB7-49C6-9E7E-B96A4A6E4575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.ExtractAlbumsOlder5YearsXpath", "11.ExtractAlbumsOlder5YearsXpath\11.ExtractAlbumsOlder5YearsXpath.csproj", "{864E12C6-9D51-4507-A6D8-4C836693112E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,14 @@ Global
 		{00575186-5B49-4C4E-BBBE-1B869F9C85FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00575186-5B49-4C4E-BBBE-1B869F9C85FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00575186-5B49-4C4E-BBBE-1B869F9C85FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21FCE120-ACB7-49C6-9E7E-B96A4A6E4575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21FCE120-ACB7-49C6-9E7E-B96A4A6E4575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21FCE120-ACB7-49C6-9E7E-B96A4A6E4575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21FCE120-ACB7-49C6-9E7E-B96A4A6E4575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864E12C6-9D51-4507-A6D8-4C836693112E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864E12C6-9D51-4507-A6D8-4C836693112E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864E12C6-9D51-4507-A6D8-4C836693112E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864E12C6-9D51-4507-A6D8-4C836693112E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
