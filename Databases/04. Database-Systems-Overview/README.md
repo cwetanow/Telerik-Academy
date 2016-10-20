@@ -4,7 +4,10 @@
 ### Answer following questions in Markdown format (`.md` file)
 
 # 1.  What database models do you know?
- - Relational and Non-Relational
+ - Hierarchical (tree)
+ - Network / graph
+ - Relational (table)
+ - Object-oriented
 
 # 2.  Which are the main functions performed by a Relational Database Management System (RDBMS)?
  - Creating / altering / deleting tables and relationships between them (database schema)
