@@ -94,9 +94,9 @@ SELECT CONVERT(NVARCHAR(50),GETDATE(),104) + ' '
 --15. Write a SQL statement to create a table Users. Users should have username, password, full name and last login time.
 CREATE TABLE Users(
 UserId int  NOT NULL IDENTITY(1,1),
-Username nvarchar(50),
-Pass nvarchar(20),
-Fullname nvarchar(50),
+Username nvarchar(150),
+Pass nvarchar(120),
+Fullname nvarchar(150),
 LastLogin datetime
 )
 
@@ -149,8 +149,8 @@ WHERE GroupId=1
 GO
 
 --22. Write SQL statements to insert in the Users table the names of all employees from the Employees table.
-INSERT INTO Users(Username)
-SELECT FirstName
+INSERT INTO Users(Fullname,Username,Pass)
+SELECT FirstName+' '+LastName,LOWER(SUBSTRING(FirstName,1,1)+MiddleName+LastName), LOWER(SUBSTRING(FirstName,1,1)+MiddleName+LastName)
 FROM dbo.Employees 
 
 --23. Write a SQL statement that changes the password to NULL for all users that have not been in the system since 10.03.2010.
