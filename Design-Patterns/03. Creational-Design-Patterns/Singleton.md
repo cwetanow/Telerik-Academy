@@ -25,6 +25,9 @@ The "static member function accessor" approach will not support subclassing of t
 
 Deleting a Singleton class/instance is a non-trivial design problem.
 
+## Structure
+Make the class of the single instance responsible for access and "initialization on first use". The single instance is a private static attribute. The accessor function is a public static method.
+
 ## Issues
 - Singletons violate the Single Responsibility principle - they are responsible for at least 2 roles: creating themselves and fullfiling their other responsibilities
 - Use of Singletons might break the Open/Closed principle - if a singleton doesn't allow inheritance, it's not open. If it allows inheritance, it no longer enforces the single instance rule.
