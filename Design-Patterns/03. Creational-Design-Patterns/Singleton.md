@@ -1,6 +1,7 @@
 # Singleton 
 The Singleton class is a class that is guaranteed to have only a single instance and provides global point of acces to it
 
+![Singleton](./media/singleton.gif)
 
 ## Intent
 - Ensure a class has only one instance, and provide a global point of access to it.
