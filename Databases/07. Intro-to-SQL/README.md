@@ -2,13 +2,15 @@
 ### _Homework_
 
 1.	What is SQL? What is DML? What is DDL? Recite the most important SQL commands.  
-SQL - Structured Query Language
-DML - Data Manipulation Language, commands for Manipulation of data  
-DDL - Data Definition Language, commands for Manipulation of tables  
-SELECT, UPDATE, ALTER, DROP, DELETE, CREATE  
+- SQL - Structured Query Language is a special-purpose programming language designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS).
+- DML - A data manipulation language (DML) is a family of syntax elements similar to a computer programming language used for selecting, inserting, deleting and updating data in a database. Performing read-only queries of data is sometimes also considered a component of DML.
+- DDL - A data definition language or data description language (DDL) is a syntax similar to a computer programming language for defining data structures, especially database schemas.  
+- SQL Commands : SELECT, UPDATE, ALTER, DROP, DELETE, CREATE  
 
 2.	What is Transact-SQL (T-SQL)?  
-T-SQL is Microsoft's addition to SQL adding more functionality
+- Transact-SQL (T-SQL) is Microsoft's and Sybase's proprietary extension to the SQL (Structured Query Language) used to interact with relational databases.
+- T-SQL expands on the SQL standard to include procedural programming, local variables, various support functions for string processing, date processing, mathematics, etc. and changes to the DELETE and UPDATE statements.
+- Transact-SQL is central to using Microsoft SQL Server. All applications that communicate with an instance of SQL Server do so by sending Transact-SQL statements to the server, regardless of the user interface of the application.
 
 3.	Start SQL Management Studio and connect to the database TelerikAcademy. Examine the major tables in the "TelerikAcademy" database.
 1.	Write a SQL query to find all information about all departments (use "TelerikAcademy" database).
