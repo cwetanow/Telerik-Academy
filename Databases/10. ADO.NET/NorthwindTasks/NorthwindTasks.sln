@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.ExtractCategoriesCount", "01.ExtractCategoriesCount\01.ExtractCategoriesCount.csproj", "{A8F301DE-3BA0-4F1A-9799-EF1A96F3C8E2}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.ExtractProductsWithCategories", "03.ExtractProductsWithCategories\03.ExtractProductsWithCategories.csproj", "{5A49DC29-EC4D-4718-B99A-CEEB5BF56D1F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.AddNewProduct", "04.AddNewProduct\04.AddNewProduct.csproj", "{AD4A6571-1F38-4467-AA1F-FB3930857DE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.StoreImages", "05.StoreImages\05.StoreImages.csproj", "{EAEF3B75-BEDF-48CB-B6B0-6F2C7CBD6898}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AD4A6571-1F38-4467-AA1F-FB3930857DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD4A6571-1F38-4467-AA1F-FB3930857DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD4A6571-1F38-4467-AA1F-FB3930857DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEF3B75-BEDF-48CB-B6B0-6F2C7CBD6898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEF3B75-BEDF-48CB-B6B0-6F2C7CBD6898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEF3B75-BEDF-48CB-B6B0-6F2C7CBD6898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEF3B75-BEDF-48CB-B6B0-6F2C7CBD6898}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
