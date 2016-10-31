@@ -67,11 +67,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\FriendshipXmlModel.cs" />
+    <Compile Include="Models\ImageXmlModel.cs" />
+    <Compile Include="Models\MessageXmlModel.cs" />
+    <Compile Include="Models\PostXmlModel.cs" />
+    <Compile Include="Models\UserXmlModel.cs" />
     <Compile Include="Searcher\ISocialNetworkService.cs" />
     <Compile Include="Searcher\Searcher.cs" />
     <Compile Include="Searcher\SocialNetworkService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XmlImporter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
