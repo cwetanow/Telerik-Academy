@@ -8,7 +8,6 @@ namespace SocialNetwork.Data
         public SocialNetworkEntities()
             : base("SocialNetwork")
         {
-            Database.SetInitializer<SocialNetworkEntities>(new CreateDatabaseIfNotExists<SocialNetworkEntities>());
         }
 
         public DbSet<Friendship> Friendships { get; set; }

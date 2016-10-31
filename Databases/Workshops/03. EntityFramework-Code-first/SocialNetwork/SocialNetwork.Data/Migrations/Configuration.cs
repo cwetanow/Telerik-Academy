@@ -5,11 +5,11 @@ namespace SocialNetwork.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<SocialNetwork.Data.SocialNetworkEntities>
+    public sealed class Configuration : DbMigrationsConfiguration<SocialNetwork.Data.SocialNetworkEntities>
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            this.AutomaticMigrationsEnabled = true;
             this.AutomaticMigrationDataLossAllowed = true;
         }
 

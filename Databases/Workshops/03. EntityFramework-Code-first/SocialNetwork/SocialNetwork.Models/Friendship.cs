@@ -17,7 +17,7 @@ namespace SocialNetwork.Models
 
         public User FirstUser { get; set; }
 
-        public User SeconduUser { get; set; }
+        public User SecondUser { get; set; }
 
         [Index]
         public bool Approved { get; set; }

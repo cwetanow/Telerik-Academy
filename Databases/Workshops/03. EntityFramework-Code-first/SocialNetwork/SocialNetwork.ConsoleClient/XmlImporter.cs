@@ -19,11 +19,11 @@ namespace SocialNetwork.ConsoleClient
 
         public void Import()
         {
-            var friendshipsLocation = "XmlFiles/Friendships-Test.xml";
+            var friendshipsLocation = "XmlFiles/Friendships.xml";
             var friendships = this.Deserialize<FriendshipXmlModel>(friendshipsLocation, "Friendships");
             this.ProcessFriendships(friendships);
 
-            var postsLocation = "XmlFiles/Posts-Test.xml";
+            var postsLocation = "XmlFiles/Posts.xml";
             var posts = this.Deserialize<PostXmlModel>(postsLocation, "Posts");
             this.ProcessPosts(posts);
         }
@@ -42,7 +42,7 @@ namespace SocialNetwork.ConsoleClient
                     Approved = friendshipXmlModel.Approved,
                     FriendsSince = friendshipXmlModel.FriendsSince,
                     FirstUser = firstUser,
-                    SeconduUser = secondUser
+                    SecondUser = secondUser
                 };
 
                 foreach (var messageXmlModel in friendshipXmlModel.Messages)
