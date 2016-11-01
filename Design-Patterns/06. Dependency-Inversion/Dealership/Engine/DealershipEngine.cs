@@ -1,5 +1,4 @@
-﻿using Dealership.Common;
-using Dealership.Common.Enums;
+﻿using Dealership.Common.Enums;
 using Dealership.Contracts;
 using Dealership.Factories;
 using System;
@@ -36,25 +35,21 @@ namespace Dealership.Engine
         private const string CommentDoesNotExist = "The comment does not exist!";
         private const string VehicleDoesNotExist = "The vehicle does not exist!";
 
-        private static readonly IEngine SingleInstance = new DealershipEngine();
-
         private IDealershipFactory factory;
         private ICollection<IUser> users;
         private IUser loggedUser;
 
-        private DealershipEngine()
+        private readonly IWriter writer;
+        private readonly IReader reader;
+
+        public DealershipEngine(IWriter writer, IReader reader)
         {
+            this.writer = writer;
+            this.reader = reader;
+
             this.factory = new DealershipFactory();
             this.users = new List<IUser>();
             this.loggedUser = null;
-        }
-
-        public static IEngine Instance
-        {
-            get
-            {
-                return SingleInstance;
-            }
         }
 
         public void Start()
@@ -79,14 +74,14 @@ namespace Dealership.Engine
         {
             var commands = new List<ICommand>();
 
-            var currentLine = Console.ReadLine();
+            var currentLine = this.reader.ReadLine();
 
             while (!string.IsNullOrEmpty(currentLine))
             {
                 var currentCommand = new Command(currentLine);
                 commands.Add(currentCommand);
 
-                currentLine = Console.ReadLine();
+                currentLine = this.reader.ReadLine();
             }
 
             return commands;
@@ -122,7 +117,7 @@ namespace Dealership.Engine
                 output.AppendLine(new string('#', 20));
             }
 
-            Console.Write(output.ToString());
+            this.writer.Write(output.ToString());
         }
 
         private string ProcessSingleCommand(ICommand command)
@@ -333,7 +328,7 @@ namespace Dealership.Engine
             var counter = 1;
             foreach (var user in this.users)
             {
-                builder.AppendLine(string.Format("{0}. {1}", counter, user.ToString()));
+                builder.AppendLine($"{counter}. {user.ToString()}");
                 counter++;
             }
 
