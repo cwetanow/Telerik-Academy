@@ -56,12 +56,12 @@ namespace Dealership.Engine
             }
         }
 
-        private void TranslateInput(string input)
+        public void TranslateInput(string input)
         {
             var indexOfFirstSeparator = input.IndexOf(SplitCommandSymbol);
-            var indexOfOpenComment = input.IndexOf(CommentOpenSymbol);
-            var indexOfCloseComment = input.IndexOf(CommentCloseSymbol);
-            Regex regex = new Regex("{{.+(?=}})}}");
+            var indexOfOpenComment = input.IndexOf(CommentOpenSymbol, StringComparison.Ordinal);
+            var indexOfCloseComment = input.IndexOf(CommentCloseSymbol, StringComparison.Ordinal);
+            var regex = new Regex("{{.+(?=}})}}");
 
             if (indexOfFirstSeparator < 0)
             {

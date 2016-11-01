@@ -3,6 +3,7 @@ using Dealership.Contracts;
 using Dealership.Factories;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 
@@ -35,20 +36,20 @@ namespace Dealership.Engine
         private const string CommentDoesNotExist = "The comment does not exist!";
         private const string VehicleDoesNotExist = "The vehicle does not exist!";
 
-        private IDealershipFactory factory;
         private ICollection<IUser> users;
         private IUser loggedUser;
 
         private readonly IWriter writer;
         private readonly IReader reader;
+        private readonly IDealershipFactory factory;
 
-        public DealershipEngine(IWriter writer, IReader reader)
+        public DealershipEngine(IWriter writer, IReader reader, IDealershipFactory factory)
         {
             this.writer = writer;
             this.reader = reader;
+            this.factory = factory;
 
-            this.factory = new DealershipFactory();
-            this.users = new List<IUser>();
+            this.users = new Collection<IUser>();
             this.loggedUser = null;
         }
 
@@ -58,17 +59,6 @@ namespace Dealership.Engine
             var commandResult = this.ProcessCommands(commands);
             this.PrintReports(commandResult);
         }
-
-        public void Reset()
-        {
-            this.factory = new DealershipFactory();
-            this.users = new List<IUser>();
-            this.loggedUser = null;
-            var commands = new List<ICommand>();
-            var commandResult = new List<string>();
-            this.PrintReports(commandResult);
-        }
-
 
         private IList<ICommand> ReadCommands()
         {

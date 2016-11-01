@@ -34,10 +34,10 @@ namespace Dealership.Models
         {
             var builder = new StringBuilder();
 
-            builder.AppendLine(string.Format("{0}", CommentHeader));
+            builder.AppendLine($"{CommentHeader}");
             builder.AppendLine(CommentIndentation + this.Content);
             builder.AppendLine(AuthorHeader + this.Author);
-            builder.Append(string.Format("{0}", CommentHeader));
+            builder.Append($"{CommentHeader}");
 
             return builder.ToString();
         }

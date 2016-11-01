@@ -133,7 +133,7 @@ namespace Dealership.Models
             {
                 foreach (var vehicle in this.Vehicles)
                 {
-                    builder.AppendLine(string.Format("{0}. {1}", counter, vehicle.ToString()));
+                    builder.AppendLine($"{counter}. {vehicle.ToString()}");
                     counter++;
                 }
             }

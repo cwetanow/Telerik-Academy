@@ -7,5 +7,7 @@
         string Name { get; }
 
         List<string> Parameters { get; }
+
+        void TranslateInput(string input);
     }
 }

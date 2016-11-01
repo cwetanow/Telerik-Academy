@@ -20,7 +20,7 @@ namespace Dealership.Models
         private readonly decimal price;
         private readonly int wheels;
 
-        public Vehicle(string make, string model, decimal price, VehicleType type)
+        protected Vehicle(string make, string model, decimal price, VehicleType type)
         {
             this.make = make;
             this.model = model;
@@ -72,11 +72,11 @@ namespace Dealership.Models
         {
             var builder = new StringBuilder();
 
-            builder.AppendLine(string.Format("{0}:", this.GetType().Name));
-            builder.AppendLine(string.Format("  {0}: {1}", MakeProperty, this.Make));
-            builder.AppendLine(string.Format("  {0}: {1}", ModelProperty, this.Model));
-            builder.AppendLine(string.Format("  {0}: {1}", WheelsProperty, this.Wheels));
-            builder.AppendLine(string.Format("  {0}: ${1}", PriceProperty, this.Price));
+            builder.AppendLine($"{this.GetType().Name}:");
+            builder.AppendLine($"  {MakeProperty}: {this.Make}");
+            builder.AppendLine($"  {ModelProperty}: {this.Model}");
+            builder.AppendLine($"  {WheelsProperty}: {this.Wheels}");
+            builder.AppendLine($"  {PriceProperty}: ${this.Price}");
             builder.AppendLine(this.PrintAdditionalInfo());
             builder.AppendLine(this.PrintComments());
             return builder.ToString().TrimEnd();
@@ -90,18 +90,18 @@ namespace Dealership.Models
 
             if (this.Comments.Count <= 0)
             {
-                builder.AppendLine(string.Format("{0}", NoCommentsHeader));
+                builder.AppendLine($"{NoCommentsHeader}");
             }
             else
             {
-                builder.AppendLine(string.Format("{0}", CommentsHeader));
+                builder.AppendLine($"{CommentsHeader}");
 
                 foreach (var comment in this.Comments)
                 {
                     builder.AppendLine(comment.ToString());
                 }
 
-                builder.AppendLine(string.Format("{0}", CommentsHeader));
+                builder.AppendLine($"{CommentsHeader}");
             }
 
             return builder.ToString().TrimEnd();
