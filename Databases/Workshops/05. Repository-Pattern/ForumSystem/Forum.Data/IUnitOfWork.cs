@@ -2,7 +2,7 @@
 
 namespace Forum.Data
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
         void Commit();
     }

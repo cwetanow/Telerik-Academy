@@ -10,6 +10,11 @@ namespace Forum.Data.Repositories
     {
         public EfRepository(ForumEntities dbContext)
         {
+            if (dbContext == null)
+            {
+                throw new ArgumentNullException("Context cannot be null");
+            }
+
             this.dbContext = dbContext;
             this.DbSet = this.dbContext.Set<T>();
         }
