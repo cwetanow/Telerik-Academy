@@ -3,7 +3,7 @@ using Forum.Models;
 
 namespace Forum.Data
 {
-    public class ForumEntities : DbContext
+    public class ForumEntities : DbContext, IDbContext
     {
         public ForumEntities()
             : base("ForumDb")
@@ -17,5 +17,15 @@ namespace Forum.Data
         public DbSet<Post> Posts { get; set; }
 
         public DbSet<Tag> Tags { get; set; }
+
+        public new DbSet<T> Set<T>() where T : class
+        {
+            return base.Set<T>();
+        }
+
+        public new void SaveChanges()
+        {
+            base.SaveChanges();
+        }
     }
 }
