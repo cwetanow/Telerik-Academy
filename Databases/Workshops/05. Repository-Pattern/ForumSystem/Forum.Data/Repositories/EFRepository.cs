@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 
 namespace Forum.Data.Repositories
 {
@@ -36,17 +37,23 @@ namespace Forum.Data.Repositories
 
         public IEnumerable<T> GetAll(System.Linq.Expressions.Expression<Func<T, bool>> filterExpression)
         {
-            throw new NotImplementedException();
+            return this.DbSet
+                .Where(filterExpression);
         }
 
         public IEnumerable<T> GetAll<T1>(System.Linq.Expressions.Expression<Func<T, bool>> filterExpression, System.Linq.Expressions.Expression<Func<T, T1>> sortExpression)
         {
-            throw new NotImplementedException();
+            return this.DbSet
+                .Where(filterExpression)
+                .OrderBy(sortExpression);
         }
 
         public IEnumerable<T2> GetAll<T1, T2>(System.Linq.Expressions.Expression<Func<T, bool>> filterExpression, System.Linq.Expressions.Expression<Func<T, T1>> sortExpression, System.Linq.Expressions.Expression<Func<T, T2>> selectExpression)
         {
-            throw new NotImplementedException();
+            return this.DbSet
+                .Where(filterExpression)
+                .OrderBy(sortExpression)
+                .Select(selectExpression);
         }
 
         public T GetById(object id)
