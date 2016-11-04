@@ -50,6 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ForumEntities.cs" />
+    <Compile Include="Migrations\201611041005316_Initial.cs" />
+    <Compile Include="Migrations\201611041005316_Initial.Designer.cs">
+      <DependentUpon>201611041005316_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +66,11 @@
       <Project>{9db5f846-20b1-45a8-9747-6fa846fc36d7}</Project>
       <Name>Forum.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201611041005316_Initial.resx">
+      <DependentUpon>201611041005316_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

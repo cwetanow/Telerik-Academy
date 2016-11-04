@@ -19,7 +19,6 @@ namespace Forum.Models
         [MaxLength(20)]
         public string Name { get; set; }
 
-        [ForeignKey("Category")]
         public int ParentCategoryId { get; set; }
 
         public virtual Category ParentCategory { get; set; }
