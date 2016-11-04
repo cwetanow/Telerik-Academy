@@ -3,7 +3,7 @@ using Forum.Models;
 
 namespace Forum.Data
 {
-    public class ForumEntities : DbContext, IDbContext
+    public class ForumEntities : DbContext
     {
         public ForumEntities()
             : base("ForumDb")
