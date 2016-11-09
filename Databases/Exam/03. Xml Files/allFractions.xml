@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<fractions>
+  <fraction id="1" membersCount="2">
+    <name>Justice League</name>
+    <planets>
+      <planet>Earth</planet>
+      <planet>Saturn</planet>
+    </planets>
+  </fraction>
+  <fraction id="2" membersCount="2">
+    <name>The Bat Family</name>
+    <planets>
+      <planet>Earth</planet>
+    </planets>
+  </fraction>
+  <fraction id="3" membersCount="3">
+    <name>Avengers</name>
+    <planets>
+      <planet>Earth</planet>
+      <planet>Saturn</planet>
+    </planets>
+  </fraction>
+  <fraction id="4" membersCount="1">
+    <name>Illuminati</name>
+    <planets>
+      <planet>Earth</planet>
+    </planets>
+  </fraction>
+  <fraction id="5" membersCount="2">
+    <name>Green Lantern Corps</name>
+    <planets>
+      <planet>Saturn</planet>
+    </planets>
+  </fraction>
+  <fraction id="6" membersCount="1">
+    <name>Guardians of the Universe</name>
+    <planets>
+      <planet>Saturn</planet>
+    </planets>
+  </fraction>
+  <fraction id="7" membersCount="1">
+    <name>X-Men</name>
+    <planets>
+      <planet>Saturn</planet>
+    </planets>
+  </fraction>
+</fractions>

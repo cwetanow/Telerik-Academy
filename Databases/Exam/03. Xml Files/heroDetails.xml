@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<superhero id="1">
+  <name>Batman</name>
+  <secretIdentity>Bruce Wayne</secretIdentity>
+  <alignment>good</alignment>
+  <powers>
+    <power>Utility belt</power>
+    <power>Intelligence</power>
+    <power>Martial arts</power>
+  </powers>
+  <fractions>
+    <fraction>Justice League</fraction>
+    <fraction>The Bat Family</fraction>
+  </fractions>
+  <city>Gotham, USA, Earth</city>
+  <story>After losing his parents...</story>
+</superhero>

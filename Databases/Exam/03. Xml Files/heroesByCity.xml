@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<superheroes>
+  <superhero id="1">
+    <name>Batman</name>
+    <secretIdentity>Bruce Wayne</secretIdentity>
+    <alignment>good</alignment>
+    <city>Gotham, USA, Earth</city>
+    <powers>
+      <power>Utility belt</power>
+      <power>Intelligence</power>
+      <power>Martial arts</power>
+    </powers>
+  </superhero>
+  <superhero id="2">
+    <name>Nightwing</name>
+    <secretIdentity>Dick Grayson</secretIdentity>
+    <alignment>good</alignment>
+    <city>Gotham, USA, Earth</city>
+    <powers>
+      <power>Martial arts</power>
+      <power>Acrobatics</power>
+    </powers>
+  </superhero>
+  <superhero id="5">
+    <name>The Joker</name>
+    <secretIdentity>Unknown</secretIdentity>
+    <alignment>evil</alignment>
+    <city>Gotham, USA, Earth</city>
+    <powers>
+      <power>Crazy</power>
+      <power>Much evil</power>
+    </powers>
+  </superhero>
+</superheroes>

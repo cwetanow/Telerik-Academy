@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperheroesUniverse.Models", "SuperheroesUniverse.Models\SuperheroesUniverse.Models.csproj", "{E10FDB8D-26C2-477C-9792-6C65DC3318EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperheroesUniverse.Data", "SuperheroesUniverse.Data\SuperheroesUniverse.Data.csproj", "{CD22ABBF-62B6-441C-B49F-82F0B9417960}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperheroesUniverse.ConsoleInterface", "SuperheroesUniverse.ConsoleInterface\SuperheroesUniverse.ConsoleInterface.csproj", "{8C4C0E31-3204-4D10-8FF3-3C8626E43722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperheroesUniverse.XmlExporter", "SuperheroesUniverse.XmlExporter\SuperheroesUniverse.XmlExporter.csproj", "{928ECA9F-1A98-4B23-8D8A-18E166AC822A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperheroesUniverse.JsonImporter", "SuperheroesUniverse.JsonImporter\SuperheroesUniverse.JsonImporter.csproj", "{BCFF859B-BEDF-4603-9D95-F4C39452031A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperheroesUniverse.Services", "SuperheroesUniverse.Services\SuperheroesUniverse.Services.csproj", "{146A7C40-8E67-4F40-A67A-BE5304409ED1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E10FDB8D-26C2-477C-9792-6C65DC3318EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E10FDB8D-26C2-477C-9792-6C65DC3318EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E10FDB8D-26C2-477C-9792-6C65DC3318EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E10FDB8D-26C2-477C-9792-6C65DC3318EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD22ABBF-62B6-441C-B49F-82F0B9417960}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD22ABBF-62B6-441C-B49F-82F0B9417960}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD22ABBF-62B6-441C-B49F-82F0B9417960}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD22ABBF-62B6-441C-B49F-82F0B9417960}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4C0E31-3204-4D10-8FF3-3C8626E43722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4C0E31-3204-4D10-8FF3-3C8626E43722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4C0E31-3204-4D10-8FF3-3C8626E43722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4C0E31-3204-4D10-8FF3-3C8626E43722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928ECA9F-1A98-4B23-8D8A-18E166AC822A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928ECA9F-1A98-4B23-8D8A-18E166AC822A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928ECA9F-1A98-4B23-8D8A-18E166AC822A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928ECA9F-1A98-4B23-8D8A-18E166AC822A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCFF859B-BEDF-4603-9D95-F4C39452031A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCFF859B-BEDF-4603-9D95-F4C39452031A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCFF859B-BEDF-4603-9D95-F4C39452031A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCFF859B-BEDF-4603-9D95-F4C39452031A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{146A7C40-8E67-4F40-A67A-BE5304409ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{146A7C40-8E67-4F40-A67A-BE5304409ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{146A7C40-8E67-4F40-A67A-BE5304409ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{146A7C40-8E67-4F40-A67A-BE5304409ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

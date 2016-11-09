@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fdca6f6928bf4ca9b383df25c08f1949" Name="Diagram1">
+        <EntityTypeShape EntityType="ComputersModel.Computer" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputersModel.Cpu" Width="1.5" PointX="3" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputersModel.Gpu" Width="1.5" PointX="7.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputersModel.StorageDevice" Width="1.5" PointX="10.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ComputersModel.Vendor" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <AssociationConnector Association="ComputersModel.FK_Computers_Cpus" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputersModel.FK_Computers_Vendors" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputersModel.FK_Cpus_Vendors" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputersModel.FK_Gpus_Vendors" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputersModel.FK_StorageDevices_Vendors" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputersModel.Computers_Gpus" ManuallyRouted="false" />
+        <AssociationConnector Association="ComputersModel.Computers_StorageDevices" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

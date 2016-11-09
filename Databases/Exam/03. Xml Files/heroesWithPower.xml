@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<superheroes>
+  <superhero id="1">
+    <name>Batman</name>
+    <secretIdentity>Bruce Wayne</secretIdentity>
+    <alignment>good</alignment>
+    <powers>
+      <power>Utility belt</power>
+      <power>Intelligence</power>
+      <power>Martial arts</power>
+    </powers>
+    <city>Gotham, USA, Earth</city>
+  </superhero>
+</superheroes>

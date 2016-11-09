@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<superheroes>
+  <superhero id="1">
+    <name>Batman</name>
+    <secretIdentity>Bruce Wayne</secretIdentity>
+    <alignment>good</alignment>
+    <powers>
+      <power>Utility belt</power>
+      <power>Intelligence</power>
+      <power>Martial arts</power>
+    </powers>
+    <city>Gotham, USA, Earth</city>
+  </superhero>
+  <superhero id="2">
+    <name>Nightwing</name>
+    <secretIdentity>Dick Grayson</secretIdentity>
+    <alignment>good</alignment>
+    <powers>
+      <power>Martial arts</power>
+      <power>Acrobatics</power>
+    </powers>
+    <city>Gotham, USA, Earth</city>
+  </superhero>
+  <superhero id="3">
+    <name>Ironman</name>
+    <secretIdentity>Tonny Stark</secretIdentity>
+    <alignment>good</alignment>
+    <powers>
+      <power>Intelligence</power>
+      <power>Big robot suit</power>
+    </powers>
+    <city>New York, USA, Earth</city>
+  </superhero>
+  <superhero id="4">
+    <name>Dr. Stephen Strange</name>
+    <secretIdentity>Dr. Stephen Strange</secretIdentity>
+    <alignment>good</alignment>
+    <powers>
+      <power>Martial arts</power>
+      <power>Magic</power>
+      <power>Dimensional travel</power>
+    </powers>
+    <city>New York, USA, Earth</city>
+  </superhero>
+  <superhero id="5">
+    <name>The Joker</name>
+    <secretIdentity>Unknown</secretIdentity>
+    <alignment>evil</alignment>
+    <powers>
+      <power>Crazy</power>
+      <power>Much evil</power>
+    </powers>
+    <city>Gotham, USA, Earth</city>
+  </superhero>
+  <superhero id="6">
+    <name>Thanos</name>
+    <secretIdentity>Thanos</secretIdentity>
+    <alignment>evil</alignment>
+    <powers>
+      <power>Super strength</power>
+      <power>Telekinesis</power>
+      <power>Telepathy</power>
+      <power>Matter manipulation</power>
+    </powers>
+    <city>Unknown, Titan, Saturn</city>
+  </superhero>
+  <superhero id="7">
+    <name>Deadpool</name>
+    <secretIdentity>Wade Wilson</secretIdentity>
+    <alignment>evil</alignment>
+    <powers>
+      <power>Martial arts</power>
+      <power>Healing</power>
+    </powers>
+    <city>Detroit, USA, Earth</city>
+  </superhero>
+  <superhero id="8">
+    <name>Green Lantern</name>
+    <secretIdentity>Hal Jordan</secretIdentity>
+    <alignment>good</alignment>
+    <powers>
+      <power>Powerful ring</power>
+    </powers>
+    <city>Unknown, Titan, Saturn</city>
+  </superhero>
+  <superhero id="9">
+    <name>Kilowog</name>
+    <secretIdentity>Kilowog</secretIdentity>
+    <alignment>good</alignment>
+    <powers>
+      <power>Powerful ring</power>
+    </powers>
+    <city>Unknown, Titan, Saturn</city>
+  </superhero>
+  <superhero id="10">
+    <name>Wolverine</name>
+    <secretIdentity>James Howlett</secretIdentity>
+    <alignment>good</alignment>
+    <powers>
+      <power>Healing</power>
+      <power>Mutant</power>
+      <power>Metallic skeleton</power>
+      <power>Strong</power>
+      <power>Has claws</power>
+    </powers>
+    <city>Unknown, Titan, Saturn</city>
+  </superhero>
+</superheroes>

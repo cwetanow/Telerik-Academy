@@ -1,0 +1,127 @@
+﻿{
+  "data": [
+    {
+      "name": "Batman",
+      "secretIdentity": "Bruce Wayne",
+      "city": {
+        "name": "Gotham",
+        "country": "USA",
+        "planet": "Earth"
+      },
+      "alignment": "good",
+      "story": "After losing his parents...",
+      "powers": [
+        "Utility belt",
+        "Intelligence",
+        "Martial arts"
+      ],
+      "fractions": [
+        "Justice League",
+        "The Bat Family"
+      ]
+    },
+    {
+      "name": "Nightwing",
+      "secretIdentity": "Dick Grayson",
+      "city": {
+        "name": "Gotham",
+        "country": "USA",
+        "planet": "Earth"
+      },
+      "alignment": "good",
+      "story": "Coming from an acrobatic family...",
+      "powers": [
+        "Acrobatics",
+        "Martial arts"
+      ],
+      "fractions": [
+        "The Bat Family"
+      ]
+    },
+    {
+      "name": "Ironman",
+      "secretIdentity": "Tonny Stark",
+      "city": {
+        "name": "New York",
+        "country": "USA",
+        "planet": "Earth"
+      },
+      "alignment": "good",
+      "story": "Smart",
+      "powers": [
+        "Intelligence",
+        "Big robot suit"
+      ],
+      "fractions": [
+        "Avengers"
+      ]
+    },
+    {
+      "name": "Dr. Stephen Strange",
+      "secretIdentity": "Dr. Stephen Strange",
+      "city": {
+        "name": "New York",
+        "country": "USA",
+        "planet": "Earth"
+      },
+      "alignment": "good",
+      "story": ".....",
+      "powers": [
+        "Magic",
+        "Dimensional travel",
+        "Martial arts"
+      ],
+      "fractions": [
+        "Avengers",
+        "Illuminati"
+      ]
+    },
+    {
+      "name": "The Joker",
+      "secretIdentity": "Unknown",
+      "city": {
+        "name": "Gotham",
+        "country": "USA",
+        "planet": "Earth"
+      },
+      "alignment": "evil",
+      "story": "Unknown",
+      "powers": [
+        "Crazy",
+        "Much evil"
+      ]
+    },
+    {
+      "name": "Thanos",
+      "secretIdentity": "Thanos",
+      "city": {
+        "name": "Unknown",
+        "country": "Titan",
+        "planet": "Saturn"
+      },
+      "alignment": "evil",
+      "story": "Collects the infinity gems and creates the Infinity Gauntlet",
+      "powers": [
+        "Super strength",
+        "Telekinesis",
+        "Telepathy",
+        "Matter manipulation"
+      ]
+    },
+    {
+      "name": "Deadpool",
+      "secretIdentity": "Wade Wilson",
+      "city": {
+        "name": "Detroit",
+        "country": "USA",
+        "planet": "Earth"
+      },
+      "alignment": "evil",
+      "story": "Collects the infinity gems and creates the Infinity Gauntlet",
+      "powers": [
+        "Martial arts",
+        "Healing"
+      ]
+    }
+  ]
+}

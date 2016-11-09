@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<fraction id="1" membersCount="2">
+  <name>Justice League</name>
+  <planets>
+    <planet>Earth</planet>
+    <planet>Saturn</planet>
+  </planets>
+  <members>
+    <member id="1">Batman</member>
+    <member id="8">Green Lantern</member>
+  </members>
+</fraction>
