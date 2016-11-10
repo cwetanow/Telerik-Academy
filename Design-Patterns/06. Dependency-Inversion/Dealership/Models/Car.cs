@@ -1,7 +1,6 @@
 ﻿using Dealership.Common;
 using Dealership.Common.Enums;
 using Dealership.Contracts;
-using System.Text;
 
 namespace Dealership.Models
 {

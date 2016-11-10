@@ -36,18 +36,27 @@ namespace Dealership.Engine
         private const string CommentDoesNotExist = "The comment does not exist!";
         private const string VehicleDoesNotExist = "The vehicle does not exist!";
 
-        private ICollection<IUser> users;
+        private readonly ICollection<IUser> users;
         private IUser loggedUser;
 
-        private readonly IWriter writer;
-        private readonly IReader reader;
-        private readonly IDealershipFactory factory;
+        private readonly ICommentFactory commentFactory;
+        private readonly IUserFactory userFactory;
+        private readonly ICommandFactory commandFactory;
+        private readonly IInputOutputProvider provider;
+        private readonly IVehicleFactory vehicleFactory;
 
-        public DealershipEngine(IWriter writer, IReader reader, IDealershipFactory factory)
+        public DealershipEngine(
+            IInputOutputProvider provider,
+            ICommentFactory commentFactory,
+            ICommandFactory commandFactory,
+            IUserFactory userFactory,
+            IVehicleFactory vehicleFactory)
         {
-            this.writer = writer;
-            this.reader = reader;
-            this.factory = factory;
+            this.provider = provider;
+            this.commentFactory = commentFactory;
+            this.commandFactory = commandFactory;
+            this.userFactory = userFactory;
+            this.vehicleFactory = vehicleFactory;
 
             this.users = new Collection<IUser>();
             this.loggedUser = null;
@@ -60,24 +69,24 @@ namespace Dealership.Engine
             this.PrintReports(commandResult);
         }
 
-        private IList<ICommand> ReadCommands()
+        private IEnumerable<ICommand> ReadCommands()
         {
             var commands = new List<ICommand>();
 
-            var currentLine = this.reader.ReadLine();
+            var input = this.provider.ReadLine();
 
-            while (!string.IsNullOrEmpty(currentLine))
+            while (!string.IsNullOrEmpty(input))
             {
-                var currentCommand = new Command(currentLine);
+                var currentCommand = this.commandFactory.CreateCommand(input);
                 commands.Add(currentCommand);
 
-                currentLine = this.reader.ReadLine();
+                input = this.provider.ReadLine();
             }
 
             return commands;
         }
 
-        private IList<string> ProcessCommands(IList<ICommand> commands)
+        private IList<string> ProcessCommands(IEnumerable<ICommand> commands)
         {
             var reports = new List<string>();
 
@@ -107,7 +116,7 @@ namespace Dealership.Engine
                 output.AppendLine(new string('#', 20));
             }
 
-            this.writer.Write(output.ToString());
+            this.provider.Write(output.ToString());
         }
 
         private string ProcessSingleCommand(ICommand command)
@@ -202,7 +211,7 @@ namespace Dealership.Engine
                 return string.Format(UserAlreadyExist, username);
             }
 
-            var user = this.factory.CreateUser(username, firstName, lastName, password, role.ToString());
+            var user = this.userFactory.CreateUser(username, firstName, lastName, password, role);
             this.loggedUser = user;
             this.users.Add(user);
 
@@ -235,20 +244,7 @@ namespace Dealership.Engine
 
         private string AddVehicle(VehicleType type, string make, string model, decimal price, string additionalParam)
         {
-            IVehicle vehicle = null;
-
-            if (type == VehicleType.Car)
-            {
-                vehicle = this.factory.CreateCar(make, model, price, int.Parse(additionalParam));
-            }
-            else if (type == VehicleType.Motorcycle)
-            {
-                vehicle = this.factory.CreateMotorcycle(make, model, price, additionalParam);
-            }
-            else if (type == VehicleType.Truck)
-            {
-                vehicle = this.factory.CreateTruck(make, model, price, int.Parse(additionalParam));
-            }
+            var vehicle = this.vehicleFactory.CreateVehicle(type, make, model, price, additionalParam);
 
             this.loggedUser.AddVehicle(vehicle);
 
@@ -268,7 +264,7 @@ namespace Dealership.Engine
 
         private string AddComment(string content, int vehicleIndex, string author)
         {
-            var comment = this.factory.CreateComment(content);
+            var comment = this.commentFactory.CreateComment(content);
             comment.Author = this.loggedUser.Username;
             var user = this.users.FirstOrDefault(u => u.Username == author);
 

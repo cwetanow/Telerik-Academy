@@ -3,7 +3,7 @@ using Dealership.Contracts;
 
 namespace Dealership.Core
 {
-    public class ConsoleInterface : IWriter, IReader
+    public class ConsoleInputOutputProvider : IInputOutputProvider
     {
         public void WriteLine(string message)
         {

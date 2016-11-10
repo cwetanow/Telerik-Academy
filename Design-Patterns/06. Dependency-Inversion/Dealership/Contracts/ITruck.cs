@@ -1,6 +1,6 @@
 ﻿namespace Dealership.Contracts
 {
-    public interface ITruck
+    public interface ITruck : IVehicle
     {
         int WeightCapacity { get; }
     }
