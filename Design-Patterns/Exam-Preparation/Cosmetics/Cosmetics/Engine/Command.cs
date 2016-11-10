@@ -3,7 +3,7 @@
     using System;
     using System.Collections.Generic;
 
-    using Cosmetics.Contracts;
+    using Contracts;
 
     public class Command : ICommand
     {
@@ -64,7 +64,8 @@
             }
 
             this.Name = input.Substring(0, indexOfFirstSeparator);
-            this.Parameters = input.Substring(indexOfFirstSeparator + 1).Split(new[] { SplitCommandSymbol }, StringSplitOptions.RemoveEmptyEntries);
+            this.Parameters = input.Substring(indexOfFirstSeparator + 1)
+                .Split(new[] { SplitCommandSymbol }, StringSplitOptions.RemoveEmptyEntries);
         }
     }
 }

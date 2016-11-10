@@ -5,13 +5,15 @@
     using System.Linq;
     using System.Text;
 
-    using Cosmetics.Contracts;
-    using Cosmetics.Common;
+    using Contracts;
+    using Common;
 
     internal class Toothpaste : Product, IToothpaste, IProduct
     {
         private const int MinLengthIngredient = 4;
         private const int MaxLengthIngredient = 12;
+
+        private const string InvalidStringLength = "{0} must be between {1} and {2} symbols long!";
 
         private readonly IList<string> ingredients;
 
@@ -31,7 +33,7 @@
         {
             var result = new StringBuilder();
             result.AppendLine(base.Print());
-            result.Append(string.Format("  * Ingredients: {0}", this.Ingredients));
+            result.Append($"  * Ingredients: {this.Ingredients}");
             return result.ToString();
         }
 
@@ -39,7 +41,7 @@
         {
             if (ingredients.Any(i => i.Length < MinLengthIngredient || i.Length > MaxLengthIngredient))
             {
-                throw new IndexOutOfRangeException(string.Format(GlobalErrorMessages.InvalidStringLength, "Each ingredient", MinLengthIngredient, MaxLengthIngredient));
+                throw new IndexOutOfRangeException(string.Format(InvalidStringLength, "Each ingredient", MinLengthIngredient, MaxLengthIngredient));
             }
         }
     }

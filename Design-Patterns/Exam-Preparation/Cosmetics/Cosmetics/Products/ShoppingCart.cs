@@ -1,14 +1,16 @@
-﻿namespace Cosmetics.Products
+﻿using System;
+
+namespace Cosmetics.Products
 {
-    using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    using Cosmetics.Contracts;
-    using Cosmetics.Common;
+    using Contracts;
 
     internal class ShoppingCart : IShoppingCart
     {
+        private const string ObjectCannotBeNull = "{0} cannot be null!";
+
         protected readonly IList<IProduct> products;
 
         public ShoppingCart()
@@ -18,13 +20,21 @@
 
         public void AddProduct(IProduct product)
         {
-            Validator.CheckIfNull(product, string.Format(GlobalErrorMessages.ObjectCannotBeNull, "Product to add to cart"));
+            if (product == null)
+            {
+                throw new NullReferenceException(string.Format(ObjectCannotBeNull, "Product to add to cart"));
+            }
+
             this.products.Add(product);
         }
 
         public void RemoveProduct(IProduct product)
         {
-            Validator.CheckIfNull(product, string.Format(GlobalErrorMessages.ObjectCannotBeNull, "Product to remove from cart"));
+            if (product == null)
+            {
+                throw new NullReferenceException(string.Format(ObjectCannotBeNull, "Product to remove from cart"));
+            }
+
             this.products.Remove(product);
         }
 

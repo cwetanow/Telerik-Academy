@@ -23,8 +23,8 @@
         {
             var result = new StringBuilder();
             result.AppendLine(base.Print());
-            result.AppendLine(string.Format("  * Quantity: {0} ml", this.Milliliters));
-            result.Append(string.Format("  * Usage: {0}", this.Usage));
+            result.AppendLine($"  * Quantity: {this.Milliliters} ml");
+            result.Append($"  * Usage: {this.Usage}");
             return result.ToString();
         }
     }

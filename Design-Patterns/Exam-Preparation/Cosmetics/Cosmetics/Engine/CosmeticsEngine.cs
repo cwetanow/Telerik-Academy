@@ -1,4 +1,7 @@
-﻿namespace Cosmetics.Engine
+﻿using System.Collections.ObjectModel;
+using System.Globalization;
+
+namespace Cosmetics.Engine
 {
     using System;
     using System.Collections.Generic;
@@ -59,9 +62,9 @@
             this.PrintReports(commandResult);
         }
 
-        private IList<string> ProcessCommands(IEnumerable<ICommand> commands)
+        private IEnumerable<string> ProcessCommands(IEnumerable<ICommand> commands)
         {
-            var reports = new List<string>();
+            var reports = new Collection<string>();
 
             foreach (var command in commands)
             {
@@ -81,56 +84,66 @@
 
         private string ProcessSingleCommand(ICommand command)
         {
-            switch (command.Name)
+            if (command.Name == "CreateCategory")
             {
-                case "CreateCategory":
-                    var categoryName = command.Parameters[0];
-                    return this.CreateCategory(categoryName);
-
-                case "AddToCategory":
-                    var categoryNameToAdd = command.Parameters[0];
-                    var productToAdd = command.Parameters[1];
-                    return this.AddToCategory(categoryNameToAdd, productToAdd);
-
-                case "RemoveFromCategory":
-                    var categoryNameToRemove = command.Parameters[0];
-                    var productToRemove = command.Parameters[1];
-                    return this.RemoveCategory(categoryNameToRemove, productToRemove);
-
-                case "ShowCategory":
-                    var categoryToShow = command.Parameters[0];
-                    return this.ShowCategory(categoryToShow);
-
-                case "CreateShampoo":
-                    var shampooName = command.Parameters[0];
-                    var shampooBrand = command.Parameters[1];
-                    var shampooPrice = decimal.Parse(command.Parameters[2]);
-                    var shampooGender = this.GetGender(command.Parameters[3]);
-                    var shampooMilliliters = uint.Parse(command.Parameters[4]);
-                    var shampooUsage = this.GetUsage(command.Parameters[5]);
-                    return this.CreateShampoo(shampooName, shampooBrand, shampooPrice, shampooGender, shampooMilliliters, shampooUsage);
-
-                case "CreateToothpaste":
-                    var toothpasteName = command.Parameters[0];
-                    var toothpasteBrand = command.Parameters[1];
-                    var toothpastePrice = decimal.Parse(command.Parameters[2]);
-                    var toothpasteGender = this.GetGender(command.Parameters[3]);
-                    var toothpasteIngredients = command.Parameters[4].Trim().Split(',').ToList();
-                    return this.CreateToothpaste(toothpasteName, toothpasteBrand, toothpastePrice, toothpasteGender, toothpasteIngredients);
-
-                case "AddToShoppingCart":
-                    var productToAddToCart = command.Parameters[0];
-                    return this.AddToShoppingCart(productToAddToCart);
-
-                case "RemoveFromShoppingCart":
-                    var productToRemoveFromCart = command.Parameters[0];
-                    return this.RemoveFromShoppingCart(productToRemoveFromCart);
-
-                case "TotalPrice":
-                    return string.Format(TotalPriceInShoppingCart, this.shoppingCart.TotalPrice());
-
-                default:
-                    return string.Format(InvalidCommand, command.Name);
+                var categoryName = command.Parameters[0];
+                return this.CreateCategory(categoryName);
+            }
+            else if (command.Name == "AddToCategory")
+            {
+                var categoryNameToAdd = command.Parameters[0];
+                var productToAdd = command.Parameters[1];
+                return this.AddToCategory(categoryNameToAdd, productToAdd);
+            }
+            else if (command.Name == "RemoveFromCategory")
+            {
+                var categoryNameToRemove = command.Parameters[0];
+                var productToRemove = command.Parameters[1];
+                return this.RemoveCategory(categoryNameToRemove, productToRemove);
+            }
+            else if (command.Name == "ShowCategory")
+            {
+                var categoryToShow = command.Parameters[0];
+                return this.ShowCategory(categoryToShow);
+            }
+            else if (command.Name == "CreateShampoo")
+            {
+                var shampooName = command.Parameters[0];
+                var shampooBrand = command.Parameters[1];
+                var shampooPrice = decimal.Parse(command.Parameters[2]);
+                var shampooGender = this.GetGender(command.Parameters[3]);
+                var shampooMilliliters = uint.Parse(command.Parameters[4]);
+                var shampooUsage = this.GetUsage(command.Parameters[5]);
+                return this.CreateShampoo(shampooName, shampooBrand, shampooPrice, shampooGender, shampooMilliliters,
+                    shampooUsage);
+            }
+            else if (command.Name == "CreateToothpaste")
+            {
+                var toothpasteName = command.Parameters[0];
+                var toothpasteBrand = command.Parameters[1];
+                var toothpastePrice = decimal.Parse(command.Parameters[2]);
+                var toothpasteGender = this.GetGender(command.Parameters[3]);
+                var toothpasteIngredients = command.Parameters[4].Trim().Split(',').ToList();
+                return this.CreateToothpaste(toothpasteName, toothpasteBrand, toothpastePrice, toothpasteGender,
+                    toothpasteIngredients);
+            }
+            else if (command.Name == "AddToShoppingCart")
+            {
+                var productToAddToCart = command.Parameters[0];
+                return this.AddToShoppingCart(productToAddToCart);
+            }
+            else if (command.Name == "RemoveFromShoppingCart")
+            {
+                var productToRemoveFromCart = command.Parameters[0];
+                return this.RemoveFromShoppingCart(productToRemoveFromCart);
+            }
+            else if (command.Name == "TotalPrice")
+            {
+                return string.Format(TotalPriceInShoppingCart, this.shoppingCart.TotalPrice());
+            }
+            else
+            {
+                return string.Format(InvalidCommand, command.Name);
             }
         }
 
@@ -271,30 +284,14 @@
 
         private GenderType GetGender(string genderAsString)
         {
-            switch (genderAsString)
-            {
-                case "men":
-                    return GenderType.Men;
-                case "women":
-                    return GenderType.Women;
-                case "unisex":
-                    return GenderType.Unisex;
-                default:
-                    throw new InvalidOperationException(InvalidGenderType);
-            }
+            return (GenderType)Enum.Parse(typeof(GenderType),
+                   CultureInfo.CurrentCulture.TextInfo.ToTitleCase(genderAsString.ToLower()));
         }
 
         private UsageType GetUsage(string usageAsString)
         {
-            switch (usageAsString)
-            {
-                case "everyday":
-                    return UsageType.EveryDay;
-                case "medical":
-                    return UsageType.Medical;
-                default:
-                    throw new InvalidOperationException(InvalidUsageType);
-            }
+            return (UsageType)Enum.Parse(typeof(UsageType),
+                CultureInfo.CurrentCulture.TextInfo.ToTitleCase(usageAsString.ToLower()));
         }
     }
 }

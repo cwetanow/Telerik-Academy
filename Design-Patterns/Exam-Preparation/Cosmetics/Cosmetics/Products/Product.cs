@@ -1,4 +1,6 @@
-﻿namespace Cosmetics.Products
+﻿using System;
+
+namespace Cosmetics.Products
 {
     using System.Text;
 
@@ -10,13 +12,16 @@
         private const int MinBrandLength = 2;
         private const int MinStringLength = 3;
         private const int MaxStringLength = 10;
+
         private const string ProductName = "Product name";
         private const string ProductBrand = "Product brand";
+        private const string InvalidStringLength = "{0} must be between {1} and {2} symbols long!";
+        private const string StringCannotBeNullOrEmpty = "{0} cannot be null or empty!";
 
         private string name;
         private string brand;
 
-        public Product(string name, string brand, decimal price, GenderType gender)
+        protected Product(string name, string brand, decimal price, GenderType gender)
         {
             this.Name = name;
             this.Brand = brand;
@@ -26,14 +31,22 @@
 
         public string Name
         {
-            get 
+            get
             {
                 return this.name;
             }
             private set
             {
-                Validator.CheckIfStringIsNullOrEmpty(value, string.Format(GlobalErrorMessages.StringCannotBeNullOrEmpty, ProductName));
-                Validator.CheckIfStringLengthIsValid(value, MaxStringLength, MinStringLength, string.Format(GlobalErrorMessages.InvalidStringLength, ProductName, MinStringLength, MaxStringLength));
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new NullReferenceException(string.Format(StringCannotBeNullOrEmpty, ProductName));
+                }
+
+                if (value.Length < MinStringLength || MaxStringLength < value.Length)
+                {
+                    throw new IndexOutOfRangeException(string.Format(InvalidStringLength, ProductName, MinStringLength, MaxStringLength));
+                }
+
                 this.name = value;
             }
         }
@@ -46,8 +59,16 @@
             }
             private set
             {
-                Validator.CheckIfStringIsNullOrEmpty(value, string.Format(GlobalErrorMessages.StringCannotBeNullOrEmpty, ProductBrand));
-                Validator.CheckIfStringLengthIsValid(value, MaxStringLength, MinBrandLength, string.Format(GlobalErrorMessages.InvalidStringLength, ProductBrand, MinBrandLength, MaxStringLength));
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new NullReferenceException(string.Format(StringCannotBeNullOrEmpty, ProductBrand));
+                }
+
+                if (value.Length < MinBrandLength || MaxStringLength < value.Length)
+                {
+                    throw new IndexOutOfRangeException(string.Format(InvalidStringLength, ProductBrand, MinBrandLength, MaxStringLength));
+                }
+
                 this.brand = value;
             }
         }
@@ -55,13 +76,13 @@
         public decimal Price { get; protected set; }
 
         public GenderType Gender { get; private set; }
-        
+
         public virtual string Print()
         {
             var result = new StringBuilder();
-            result.AppendLine(string.Format("- {0} - {1}:", this.Brand, this.Name));
-            result.AppendLine(string.Format("  * Price: ${0}", this.Price));
-            result.Append(string.Format("  * For gender: {0}", this.Gender));
+            result.AppendLine($"- {this.Brand} - {this.Name}:");
+            result.AppendLine($"  * Price: ${this.Price}");
+            result.Append($"  * For gender: {this.Gender}");
             return result.ToString();
         }
     }
