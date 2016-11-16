@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.RemoveNegativeNumbers", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Labyrinth", "14.Labyrinth\14.Labyrinth.csproj", "{207F5BB0-1854-473A-B821-8C2B88F39675}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.ImplementLinkedQueue", "13.ImplementLinkedQueue\13.ImplementLinkedQueue.csproj", "{B8558448-6F7B-47D4-98D8-3373F3D526AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{207F5BB0-1854-473A-B821-8C2B88F39675}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{207F5BB0-1854-473A-B821-8C2B88F39675}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{207F5BB0-1854-473A-B821-8C2B88F39675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8558448-6F7B-47D4-98D8-3373F3D526AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8558448-6F7B-47D4-98D8-3373F3D526AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8558448-6F7B-47D4-98D8-3373F3D526AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8558448-6F7B-47D4-98D8-3373F3D526AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
