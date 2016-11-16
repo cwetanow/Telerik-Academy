@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ReverseIntegers", "02.Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.SortElements", "03.SortElements\03.SortElements.csproj", "{0DBA9B94-1228-4D67-BC83-8A2F067E4284}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.RemoveNegativeNumbers", "05.RemoveNegativeNumbers\05.RemoveNegativeNumbers.csproj", "{257B0724-4FC1-444C-83E0-AFD6202C789F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Labyrinth", "14.Labyrinth\14.Labyrinth.csproj", "{207F5BB0-1854-473A-B821-8C2B88F39675}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{0DBA9B94-1228-4D67-BC83-8A2F067E4284}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DBA9B94-1228-4D67-BC83-8A2F067E4284}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DBA9B94-1228-4D67-BC83-8A2F067E4284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{257B0724-4FC1-444C-83E0-AFD6202C789F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{257B0724-4FC1-444C-83E0-AFD6202C789F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{257B0724-4FC1-444C-83E0-AFD6202C789F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{257B0724-4FC1-444C-83E0-AFD6202C789F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207F5BB0-1854-473A-B821-8C2B88F39675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207F5BB0-1854-473A-B821-8C2B88F39675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207F5BB0-1854-473A-B821-8C2B88F39675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207F5BB0-1854-473A-B821-8C2B88F39675}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
