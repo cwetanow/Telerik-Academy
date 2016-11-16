@@ -1,0 +1,26 @@
+[{
+    "firstName": "Cynthia",
+    "middleName": "Beverly",
+    "lastName": "Margaret",
+    "insuranceNumber": "0",
+    "age": 1,
+    "contactDetails": {
+        "phoneNumber": "Tempsoft",
+        "email": "bgibson0@e-recht24.de",
+        "roomNumber": 117
+    },
+    "itemsForSale": [{
+        "itemName": "Namfix",
+        "price": 4,
+        "giveAwayStatus": "Give away"
+    }, {
+        "itemName": "Job",
+        "price": 39,
+        "giveAwayStatus": "Give away"
+    }, {
+        "itemName": "Pannier",
+        "price": 16,
+        "giveAwayStatus": "Give away"
+    }],
+    "itemsReceived": null
+}]
