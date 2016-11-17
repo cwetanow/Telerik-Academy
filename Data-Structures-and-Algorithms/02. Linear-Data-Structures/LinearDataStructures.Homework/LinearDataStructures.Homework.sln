@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.RemoveNumbersOddTimes", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.FindOccuranceTimes", "07.FindOccuranceTimes\07.FindOccuranceTimes.csproj", "{D0A90ABA-11B4-4190-8838-672D3CE6C922}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Majorant", "08.Majorant\08.Majorant.csproj", "{7A287DCF-8C3C-4397-8B1F-86D023034BCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{D0A90ABA-11B4-4190-8838-672D3CE6C922}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0A90ABA-11B4-4190-8838-672D3CE6C922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0A90ABA-11B4-4190-8838-672D3CE6C922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A287DCF-8C3C-4397-8B1F-86D023034BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A287DCF-8C3C-4397-8B1F-86D023034BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A287DCF-8C3C-4397-8B1F-86D023034BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A287DCF-8C3C-4397-8B1F-86D023034BCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
