@@ -17,6 +17,14 @@ function wait(time) {
     });
 }
 
+function splitGenres(genres) {
+    genres.forEach(function (genre) {
+        genre.title = genre.title.split(' ')[0].toLowerCase();
+    }, this);
+
+    return genres;
+}
+
 const db = require('./config/mongoose')(constants.connectionString);
 
 const modelsFactory = require('./models');
@@ -25,7 +33,7 @@ db.on('error', (err) => {
     console.log(err);
 });
 
-function getMoviesFromUrl(url, queue) {
+function getMoviesFromUrl(url) {
     httpRequester.get(url)
         .then((result) => {
             const selector = '.col-title span[title] a';
@@ -44,11 +52,11 @@ function getMoviesFromUrl(url, queue) {
             return wait(2000);
         })
         .then(() => {
-            if (queue.isEmpty()) {
+            if (urlQueue.isEmpty()) {
                 return;
             }
 
-            getMoviesFromUrl(queue.dequeue(), queue);
+            getMoviesFromUrl(urlQueue.dequeue());
         })
         .catch((err) => {
             console.dir(err, {
@@ -58,7 +66,7 @@ function getMoviesFromUrl(url, queue) {
 }
 
 function getGenres() {
-    httpRequester.get('http://www.imdb.com/genre/')
+    httpRequester.get(constants.genreUrl)
         .then((result) => {
             const selector = '.genre-table h3 a';
             const html = result.body;
@@ -69,6 +77,7 @@ function getGenres() {
             imdbGenres.forEach(function (genre) {
                 genre.title = genre.title.split(' ')[0].toLowerCase();
             }, this);
+            imdbGenres = splitGenres(imdbGenres);
 
             console.log('Received genres');
 
@@ -80,18 +89,15 @@ function getGenres() {
                 }
             }, this);
 
-            return Promise.resolve()
-                .then(() => {
-                    return urlQueue;
-                });
+            return Promise.resolve();
         })
-        .then((queue) => {
-            const asyncPagesCount = 30;
+        .then(() => {
+            console.log(urlQueue.length);
+            const asyncPagesCount = 20;
 
             for (let i = 0; i < asyncPagesCount; i += 1) {
-                getMoviesFromUrl(queue.dequeue(), queue);
+                getMoviesFromUrl(urlQueue.dequeue());
             }
-
         })
         .catch((err) => {
             console.log(err);
@@ -100,5 +106,6 @@ function getGenres() {
 
 db.on('open', () => {
     console.log('Connection is open');
+
     getGenres();
 }, this);
