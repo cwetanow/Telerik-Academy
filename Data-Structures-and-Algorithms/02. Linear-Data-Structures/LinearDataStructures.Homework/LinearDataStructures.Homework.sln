@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.LinkedListImplementation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.DynamicStackImplementation", "12.DynamicStackImplementation\12.DynamicStackImplementation.csproj", "{DBCF2512-8BF0-4E03-AB91-14225C0789E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.LongestSubsequence", "04.LongestSubsequence\04.LongestSubsequence.csproj", "{31B40A14-C094-47DB-A2A1-67477F76318A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{DBCF2512-8BF0-4E03-AB91-14225C0789E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBCF2512-8BF0-4E03-AB91-14225C0789E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBCF2512-8BF0-4E03-AB91-14225C0789E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B40A14-C094-47DB-A2A1-67477F76318A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B40A14-C094-47DB-A2A1-67477F76318A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B40A14-C094-47DB-A2A1-67477F76318A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B40A14-C094-47DB-A2A1-67477F76318A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,7 +8,7 @@ namespace _12.DynamicStackImplementation
         {
             var stack = new DynamicStack<int>();
 
-            for (int i = 0; i < 10; i++)
+            for (var i = 0; i < 10; i++)
             {
                 stack.Push(i);
 
