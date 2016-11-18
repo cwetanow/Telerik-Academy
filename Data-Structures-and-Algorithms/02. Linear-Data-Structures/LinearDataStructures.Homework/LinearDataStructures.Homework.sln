@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.FindOccuranceTimes", "07
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.Majorant", "08.Majorant\08.Majorant.csproj", "{7A287DCF-8C3C-4397-8B1F-86D023034BCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.FirstNumbersOfSequence", "09.FirstNumbersOfSequence\09.FirstNumbersOfSequence.csproj", "{38BF07A2-A718-4790-8CED-EBB5478470F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.SortedOperators", "10.SortedOperators\10.SortedOperators.csproj", "{F94A31A3-2B8F-4008-836C-8945201883DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{7A287DCF-8C3C-4397-8B1F-86D023034BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A287DCF-8C3C-4397-8B1F-86D023034BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A287DCF-8C3C-4397-8B1F-86D023034BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38BF07A2-A718-4790-8CED-EBB5478470F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38BF07A2-A718-4790-8CED-EBB5478470F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38BF07A2-A718-4790-8CED-EBB5478470F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38BF07A2-A718-4790-8CED-EBB5478470F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94A31A3-2B8F-4008-836C-8945201883DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94A31A3-2B8F-4008-836C-8945201883DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94A31A3-2B8F-4008-836C-8945201883DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94A31A3-2B8F-4008-836C-8945201883DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
