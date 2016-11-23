@@ -7,9 +7,11 @@ namespace Passwords
     public class Startup
     {
         private static readonly List<string> Passwords = new List<string>();
+
         private static int n;
         private static int k;
         private static string relations;
+
         private static readonly int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
 
         public static void Main(string[] args)
@@ -29,49 +31,53 @@ namespace Passwords
 
         public static void Generate(string result)
         {
-            var index = result.Length;
-            if (index >= n)
+            while (true)
             {
-                if (!Passwords.Contains(result))
+                var index = result.Length;
+                if (index >= n)
                 {
-                    Passwords.Add(result);
-                }
+                    if (!Passwords.Contains(result))
+                    {
+                        Passwords.Add(result);
+                    }
 
-                return;
-            }
-
-            var sign = relations[index - 1];
-
-            if (sign == '=')
-            {
-                Generate(result + numbers[index]);
-            }
-            else if (sign == '<')
-            {
-                var lastNum = result[index - 1] - '0';
-                lastNum = lastNum == 0 ? 10 : lastNum;
-                if (lastNum == 1)
-                {
                     return;
                 }
 
-                for (var i = 1; i < lastNum; i++)
+                if (relations[index - 1] == '=')
                 {
-                    Generate(result + numbers[i - 1]);
+                    result = result + result[index - 1];
+                    continue;
                 }
-            }
-            else if (sign == '>')
-            {
-                var lastNum = result[index - 1] - '0';
-                if (lastNum == 0)
+                else if (relations[index - 1] == '<')
                 {
-                    return;
-                }
+                    var lastNum = result[index - 1] - '0';
+                    lastNum = lastNum == 0 ? 10 : lastNum;
 
-                for (var i = lastNum + 1; i < 11; i++)
-                {
-                    Generate(result + numbers[i - 1]);
+                    if (lastNum == 1)
+                    {
+                        return;
+                    }
+
+                    for (var i = 1; i < lastNum; i++)
+                    {
+                        Generate(result + numbers[i - 1]);
+                    }
                 }
+                else if (relations[index - 1] == '>')
+                {
+                    var lastNum = result[index - 1] - '0';
+                    if (lastNum == 0)
+                    {
+                        return;
+                    }
+
+                    for (var i = lastNum + 1; i < 11; i++)
+                    {
+                        Generate(result + numbers[i - 1]);
+                    }
+                }
+                break;
             }
         }
     }
