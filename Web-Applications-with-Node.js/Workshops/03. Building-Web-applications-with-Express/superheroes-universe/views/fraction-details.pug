@@ -1,0 +1,10 @@
+extends _layout
+
+block content
+        if fraction
+            h1= fraction.name
+            p= fraction.superheroes
+            h3= fraction.alignment
+            p= fraction.planets
+        else 
+            h2 "No fraction found"
