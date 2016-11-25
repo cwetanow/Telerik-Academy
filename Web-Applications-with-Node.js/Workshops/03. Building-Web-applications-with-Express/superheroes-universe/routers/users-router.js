@@ -9,7 +9,7 @@ module.exports = (app, data) => {
         .get('/register', usersController.getRegister)
         .post('/register', usersController.register)
         .get('/profile', usersController.getProfile)
-        .get('/unauthorized', usersController.getUnauthorized),
+        .get('/unauthorized', usersController.getUnauthorized)
         .get('logout', usersController.logout);
 
     app.use(router);
