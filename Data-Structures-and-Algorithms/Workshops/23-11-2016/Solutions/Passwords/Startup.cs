@@ -43,9 +43,9 @@ namespace Passwords
                 {
                     if (relations[index - 1] == '>')
                     {
-                        var lastNum = result[index - 1] - '0';
-                        if (lastNum != 0)
+                        if (result[index - 1] != '0')
                         {
+                            var lastNum = result[index - 1] - '0';
                             for (var i = lastNum + 1; i < 11; i++)
                             {
                                 result[index] = numbers[i - 1];
@@ -55,11 +55,11 @@ namespace Passwords
                     }
                     else if (relations[index - 1] == '<')
                     {
-                        var lastNum = result[index - 1] - '0';
-                        lastNum = lastNum == 0 ? 10 : lastNum;
-
-                        if (lastNum != 1)
+                        if (result[index - 1] != '1')
                         {
+                            var lastNum = result[index - 1] - '0';
+                            lastNum = lastNum == 0 ? 10 : lastNum;
+
                             for (var i = 1; i < lastNum; i++)
                             {
                                 result[index] = numbers[i - 1];
