@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Passwords
 {
@@ -12,7 +11,7 @@ namespace Passwords
         private static int k;
         private static string relations;
 
-        private static readonly int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
+        private static readonly char[] numbers = { '1', '2', '3', '4', '5', '6', '7', '8', '9', '0' };
 
         public static void Main(string[] args)
         {
@@ -20,67 +19,60 @@ namespace Passwords
             relations = Console.ReadLine();
             k = int.Parse(Console.ReadLine());
 
+            var result = new char[n];
+
             foreach (var number in numbers)
             {
-                Generate(number.ToString());
+                result[0] = number;
+                Generate(result, 1);
             }
 
             Passwords.Sort();
             Console.WriteLine(Passwords[k - 1]);
         }
 
-        public static void Generate(string result)
+        public static void Generate(char[] result, int index)
         {
-            var builder = new StringBuilder(result);
             while (true)
             {
-                var index = builder.Length;
                 if (index >= n)
                 {
-                    if (!Passwords.Contains(result))
-                    {
-                        Passwords.Add(result);
-                    }
-
-                    return;
+                    Passwords.Add(string.Join("", result));
                 }
-
-                if (relations[index - 1] == '=')
+                else
                 {
-                    builder.Append(result[index - 1]);
-                    result = builder.ToString();
-                    continue;
-                }
-                else if (relations[index - 1] == '<')
-                {
-                    var lastNum = result[index - 1] - '0';
-                    lastNum = lastNum == 0 ? 10 : lastNum;
-
-                    if (lastNum == 1)
+                    if (relations[index - 1] == '>')
                     {
-                        return;
+                        var lastNum = result[index - 1] - '0';
+                        if (lastNum != 0)
+                        {
+                            for (var i = lastNum + 1; i < 11; i++)
+                            {
+                                result[index] = numbers[i - 1];
+                                Generate(result, index + 1);
+                            }
+                        }
                     }
+                    else if (relations[index - 1] == '<')
+                    {
+                        var lastNum = result[index - 1] - '0';
+                        lastNum = lastNum == 0 ? 10 : lastNum;
 
-                    for (var i = 1; i < lastNum; i++)
-                    {
-                        builder.Append(numbers[i - 1]);
-                        Generate(builder.ToString());
-                        builder.Remove(result.Length, 1);
+                        if (lastNum != 1)
+                        {
+                            for (var i = 1; i < lastNum; i++)
+                            {
+                                result[index] = numbers[i - 1];
+                                Generate(result, index + 1);
+                            }
+                        }
                     }
-                }
-                else if (relations[index - 1] == '>')
-                {
-                    var lastNum = result[index - 1] - '0';
-                    if (lastNum == 0)
+                    else
                     {
-                        return;
-                    }
+                        result[index] = result[index - 1];
+                        index = index + 1;
 
-                    for (var i = lastNum + 1; i < 11; i++)
-                    {
-                        builder.Append(numbers[i - 1]);
-                        Generate(builder.ToString());
-                        builder.Remove(result.Length, 1);
+                        continue;
                     }
                 }
 
