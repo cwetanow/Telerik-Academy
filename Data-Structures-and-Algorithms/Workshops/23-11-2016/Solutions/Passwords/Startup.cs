@@ -31,9 +31,10 @@ namespace Passwords
 
         public static void Generate(string result)
         {
+            var builder = new StringBuilder(result);
             while (true)
             {
-                var index = result.Length;
+                var index = builder.Length;
                 if (index >= n)
                 {
                     if (!Passwords.Contains(result))
@@ -46,7 +47,8 @@ namespace Passwords
 
                 if (relations[index - 1] == '=')
                 {
-                    result = result + result[index - 1];
+                    builder.Append(result[index - 1]);
+                    result = builder.ToString();
                     continue;
                 }
                 else if (relations[index - 1] == '<')
@@ -61,7 +63,9 @@ namespace Passwords
 
                     for (var i = 1; i < lastNum; i++)
                     {
-                        Generate(result + numbers[i - 1]);
+                        builder.Append(numbers[i - 1]);
+                        Generate(builder.ToString());
+                        builder.Remove(result.Length, 1);
                     }
                 }
                 else if (relations[index - 1] == '>')
@@ -74,9 +78,12 @@ namespace Passwords
 
                     for (var i = lastNum + 1; i < 11; i++)
                     {
-                        Generate(result + numbers[i - 1]);
+                        builder.Append(numbers[i - 1]);
+                        Generate(builder.ToString());
+                        builder.Remove(result.Length, 1);
                     }
                 }
+
                 break;
             }
         }
