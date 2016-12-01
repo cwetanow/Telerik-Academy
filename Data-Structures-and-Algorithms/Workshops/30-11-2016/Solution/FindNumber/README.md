@@ -2,22 +2,23 @@
 
 ## Description
 
-You are given an array of **N** integer numbers (may be unsorted). Find the number at index **K** if the array was sorted.
+You are given an array of **N** strings (may be unsorted). Find the number at index **K** if the array was sorted lexicographically.
 
 ## Input
 - **N** and **K** are read from the first line
   - Separated with a space
-- The array of numbers is read from the second line
-  - Numbers are separated by spaces
+- The array of strings is read from the second line
+  - Strings are separated by spaces
 
 ## Output
 - Output the number on a single line
 
 ## Constraints
 - **1** <= **N** <= **100 000**
-- Numbers in the array will be in the interval <code>[ -2<sup>63</sup>; 2<sup>63</sup> )</code>
-- Time limit: **0.08 seconds**
-- Memory limit: **32 MB**
+- Strings will be consisted of alphanumerical characters
+- Strings will be of length no more than **10**
+- Time limit: **0.2 seconds**
+- Memory limit: **64 MB**
 
 ## Sample test
 
@@ -57,5 +58,5 @@ You are given an array of **N** integer numbers (may be unsorted). Find the numb
 
 #### Output
 ```
-15
+8
 ```

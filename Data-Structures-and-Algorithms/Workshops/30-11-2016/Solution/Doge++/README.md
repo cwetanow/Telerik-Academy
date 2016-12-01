@@ -2,7 +2,7 @@
 
 ## Description
 Remember **Doge** the dog? He needs your help again. He is in the top left corner of a field that has some enemies in it.
-As you might remember, **Doge** cannot step on these cells. He can move only **down** or **right**. But he can also make at most **K** moves **up** and **right**.
+As you might remember, **Doge** cannot step on these cells. He can move only **down** or **right**. But he can also make at most **K** moves **up** and **left**.
 
 ![doge labyrinth](https://raw.githubusercontent.com/TelerikAcademy/Data-Structures-and-Algorithms/master/Topics/08.%20Dynamic-Programming/imgs/labirynth.png)
 
@@ -13,7 +13,7 @@ Your task is, by given size of the field, locations of the enemies and **K**, to
   - **R** is the number of rows
   - **C** is the number of columns
   - **K** is **K**
-- On the fourth line you will receive pairs of enemy coordinates, separated by `;`
+- On the second line you will receive pairs of enemy coordinates, separated by `;`
 
 ## Output
 - On a single line, output the number of unique ways for **Doge** to reach the bottom right cell
@@ -38,7 +38,7 @@ Your task is, by given size of the field, locations of the enemies and **K**, to
 
 #### Output
 ```
-112
+30
 ```
 
 ### Sample test 2
@@ -51,7 +51,7 @@ Your task is, by given size of the field, locations of the enemies and **K**, to
 
 #### Output
 ```
-147
+35
 ```
 
 ### Sample test 3
@@ -65,4 +65,17 @@ Your task is, by given size of the field, locations of the enemies and **K**, to
 #### Output
 ```
 4692
+```
+
+### Sample test 4
+
+#### Input
+```
+5 5 1
+2 3;1 1
+```
+
+#### Output
+```
+923
 ```
