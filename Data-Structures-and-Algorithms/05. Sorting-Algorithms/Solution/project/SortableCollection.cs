@@ -47,7 +47,7 @@
 
         public void PrintAllItemsOnConsole()
         {
-            for (int i = 0; i < this.items.Count; i++)
+            for (var i = 0; i < this.items.Count; i++)
             {
                 if (i == 0)
                 {
