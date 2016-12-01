@@ -22,12 +22,12 @@ namespace FindNumber
 
             while (i <= j)
             {
-                while (elements[i].CompareTo(pivot) < 0)
+                while (string.Compare(elements[i], pivot, StringComparison.Ordinal) < 0)
                 {
                     i++;
                 }
 
-                while (elements[j].CompareTo(pivot) > 0)
+                while (string.Compare(elements[j], pivot, StringComparison.Ordinal) > 0)
                 {
                     j--;
                 }
