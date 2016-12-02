@@ -6,6 +6,8 @@ namespace ExchangeRates
 {
     class Startup
     {
+        private static double max;
+
         static void Main(string[] args)
         {
             var currentMoney = double.Parse(Console.ReadLine());
@@ -17,18 +19,19 @@ namespace ExchangeRates
             {
                 var input = Console.ReadLine().Split(' ').Select(double.Parse).ToList();
                 list.Add(new List<double>());
-                list[i].AddRange(input); 
+                list[i].AddRange(input);
             }
 
             var result = currentMoney;
             var isFirstCurrency = true;
+            max = currentMoney;
 
-            foreach (var day in list)
+            for (var i = 0; i < list.Count; i++)
             {
-                var c1c2 = day[0];
-                var c2c1 = day[1];
+                var c1c2 = list[i][0];
+                var c2c1 = list[i][1];
 
-                if (isFirstCurrency)
+                if (isFirstCurrency && i < list.Count - 1)
                 {
                     var inOtherCurrency = result * c1c2;
                     var turnedBack = inOtherCurrency * c2c1;
@@ -38,24 +41,20 @@ namespace ExchangeRates
                         isFirstCurrency = !isFirstCurrency;
                     }
                 }
-                else
+                else if (!isFirstCurrency)
                 {
                     var inOtherCurrency = result * c2c1;
-                    var turnedBack = inOtherCurrency * c1c2;
-                    if (turnedBack > result)
+
+                    if (inOtherCurrency > max)
                     {
+                        max = inOtherCurrency;
                         result = inOtherCurrency;
                         isFirstCurrency = !isFirstCurrency;
                     }
                 }
             }
 
-            if (!isFirstCurrency)
-            {
-                result *= list[list.Count - 1][1];
-            }
-
-            Console.WriteLine("{0:F2}", result);
+            Console.WriteLine("{0:F2}", max);
         }
     }
 }
