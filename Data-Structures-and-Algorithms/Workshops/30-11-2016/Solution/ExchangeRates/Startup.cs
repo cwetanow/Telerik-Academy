@@ -6,19 +6,19 @@ namespace ExchangeRates
 {
     class Startup
     {
-        private static double max;
+        private static decimal max;
 
         static void Main(string[] args)
         {
-            var currentMoney = double.Parse(Console.ReadLine());
+            var currentMoney = decimal.Parse(Console.ReadLine());
 
             var n = int.Parse(Console.ReadLine());
 
-            var list = new List<List<double>>(n);
+            var list = new List<List<decimal>>(n);
             for (var i = 0; i < n; i++)
             {
-                var input = Console.ReadLine().Split(' ').Select(double.Parse).ToList();
-                list.Add(new List<double>());
+                var input = Console.ReadLine().Split(' ').Select(decimal.Parse).ToList();
+                list.Add(new List<decimal>());
                 list[i].AddRange(input);
             }
 
@@ -38,7 +38,11 @@ namespace ExchangeRates
                     if (turnedBack > result)
                     {
                         result = inOtherCurrency;
-                        isFirstCurrency = !isFirstCurrency;
+                        if (turnedBack > max)
+                        {
+                            max = turnedBack;
+                        }
+                        isFirstCurrency = false;
                     }
                 }
                 else if (!isFirstCurrency)
@@ -49,7 +53,7 @@ namespace ExchangeRates
                     {
                         max = inOtherCurrency;
                         result = inOtherCurrency;
-                        isFirstCurrency = !isFirstCurrency;
+                        isFirstCurrency = true;
                     }
                 }
             }
