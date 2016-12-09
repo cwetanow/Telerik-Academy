@@ -12,10 +12,10 @@ namespace OddNumber
 
             var counters = new HashSet<string>();
 
-            var input = Console.ReadLine();
-
             for (var i = 0; i < n; i++)
             {
+                var input = Console.ReadLine();
+
                 if (counters.Contains(input))
                 {
                     counters.Remove(input);
@@ -24,8 +24,6 @@ namespace OddNumber
                 {
                     counters.Add(input);
                 }
-
-                input = Console.ReadLine();
             }
 
             Console.WriteLine(counters.ElementAt(0));
