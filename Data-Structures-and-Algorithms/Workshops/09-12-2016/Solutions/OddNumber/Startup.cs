@@ -10,25 +10,25 @@ namespace OddNumber
         {
             var n = int.Parse(Console.ReadLine());
 
-            var counters = new Dictionary<string, int>();
+            var counters = new HashSet<string>();
+
+            var input = Console.ReadLine();
 
             for (var i = 0; i < n; i++)
             {
-                var input = Console.ReadLine();
-
-                if (counters.ContainsKey(input))
+                if (counters.Contains(input))
                 {
-                    counters[input]++;
+                    counters.Remove(input);
                 }
                 else
                 {
-                    counters[input] = 1;
+                    counters.Add(input);
                 }
+
+                input = Console.ReadLine();
             }
 
-            var result = counters.FirstOrDefault(x => x.Value % 2 == 1);
-
-            Console.WriteLine(result.Key);
+            Console.WriteLine(counters.ElementAt(0));
         }
     }
 }
