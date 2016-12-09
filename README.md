@@ -12,3 +12,4 @@ Repository for the Telerik Academy Season 2016-2017 courses
 | High-Quality-Code-Part-2 |   JS-Applications   |
 | Design-Patterns | Databases      |
 | Data-Structures-and-Algorithms | Web-Applications-with-Node.js      |
+|                                | Angular-2
