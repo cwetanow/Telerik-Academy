@@ -25,6 +25,7 @@ namespace Reconstruction
             return weightCompared == 0 ? this.StartNode.CompareTo(other.StartNode) : -weightCompared;
         }
     }
+
     public class Startup
     {
         private static bool[,] roads;
