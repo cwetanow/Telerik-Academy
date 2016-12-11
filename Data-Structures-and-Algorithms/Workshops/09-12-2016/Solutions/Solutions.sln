@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddNumber", "OddNumber\OddNumber.csproj", "{57EEA651-2E0D-49C8-8656-5517DE8CA802}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diameter", "Diameter\Diameter.csproj", "{F84C9226-D637-4324-A9B3-3087A506CED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reconstruction", "Reconstruction\Reconstruction.csproj", "{52C41563-27D8-4378-834E-73952F2E500B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{57EEA651-2E0D-49C8-8656-5517DE8CA802}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57EEA651-2E0D-49C8-8656-5517DE8CA802}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57EEA651-2E0D-49C8-8656-5517DE8CA802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F84C9226-D637-4324-A9B3-3087A506CED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F84C9226-D637-4324-A9B3-3087A506CED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F84C9226-D637-4324-A9B3-3087A506CED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F84C9226-D637-4324-A9B3-3087A506CED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C41563-27D8-4378-834E-73952F2E500B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C41563-27D8-4378-834E-73952F2E500B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C41563-27D8-4378-834E-73952F2E500B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C41563-27D8-4378-834E-73952F2E500B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
