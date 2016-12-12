@@ -1,55 +1,90 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Diameter
 {
-    public class Edge : IComparable<Edge>
+    public class Startup
     {
-        public Edge(int startNode, int endNode, int weight)
+        public const long Inf = 99999;
+
+        public static long[,] FloydWarshall(long[,] graph, int verticesCount)
         {
-            this.StartNode = startNode;
-            this.EndNode = endNode;
-            this.Weight = weight;
+            var distance = new long[verticesCount, verticesCount];
+
+            for (var i = 0; i < verticesCount; ++i)
+            {
+                for (var j = 0; j < verticesCount; ++j)
+                {
+                    distance[i, j] = graph[i, j];
+                }
+            }
+
+            for (var k = 0; k < verticesCount; ++k)
+            {
+                for (var i = 0; i < verticesCount; ++i)
+                {
+                    for (var j = 0; j < verticesCount; ++j)
+                    {
+                        if (distance[i, k] + distance[k, j] < distance[i, j])
+                        {
+                            distance[i, j] = distance[i, k] + distance[k, j];
+                        }
+                    }
+                }
+            }
+
+            return distance;
         }
 
-        public int StartNode { get; set; }
-
-        public int EndNode { get; set; }
-
-        public int Weight { get; set; }
-
-        public int CompareTo(Edge other)
+        public static long GetLongestPath(long[,] graph, int verticles)
         {
-            var weightCompared = this.Weight.CompareTo(other.Weight);
-            return weightCompared == 0 ? this.StartNode.CompareTo(other.StartNode) : -weightCompared;
-        }
-    }
+            var distances = FloydWarshall(graph, verticles);
 
-    class Startup
-    {
+            var max = long.MinValue;
+
+            for (var i = 0; i < verticles; i++)
+            {
+                for (var j = i + 1; j < verticles; j++)
+                {
+                    if (distances[i, j] > max)
+                    {
+                        max = distances[i, j];
+                    }
+                }
+            }
+
+            return max;
+        }
+
         static void Main(string[] args)
         {
             var n = int.Parse(Console.ReadLine());
 
-            var tree = new List<Edge>();
+            var graph = new long[n, n];
+
+            for (var i = 0; i < n; i++)
+            {
+                for (var j = 0; j < n; j++)
+                {
+                    graph[i, j] = Inf;
+                }
+            }
 
             for (var i = 0; i < n - 1; i++)
             {
-                var input = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+                var input = Console.ReadLine()
+                    .Split(' ')
+                    .Select(long.Parse)
+                    .ToArray();
 
-                var edge = new Edge(input[0], input[1], input[2]);
-
-                tree.Add(edge);
+                graph[input[0], input[1]] = input[2];
+                graph[input[1], input[0]] = input[2];
             }
 
-            tree.Sort();
-            
-            var result = 0;
-            
-            Console.WriteLine(result);
+            var longest = GetLongestPath(graph, n);
+
+            Console.WriteLine(longest);
         }
+
     }
 }
