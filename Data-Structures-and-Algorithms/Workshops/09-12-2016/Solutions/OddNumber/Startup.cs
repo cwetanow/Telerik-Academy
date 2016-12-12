@@ -9,24 +9,16 @@ namespace OddNumber
         static void Main(string[] args)
         {
             var n = int.Parse(Console.ReadLine());
+            
+            var res = 0l;
 
-            var counters = new HashSet<string>();
-
-            for (var i = 0; i < n; i++)
+            for (int i = 0; i < n; i++)
             {
-                var input = Console.ReadLine();
-
-                if (counters.Contains(input))
-                {
-                    counters.Remove(input);
-                }
-                else
-                {
-                    counters.Add(input);
-                }
+                res = res ^ long.Parse(Console.ReadLine());
             }
 
-            Console.WriteLine(counters.ElementAt(0));
+            Console.WriteLine(res);
         }
+
     }
 }
