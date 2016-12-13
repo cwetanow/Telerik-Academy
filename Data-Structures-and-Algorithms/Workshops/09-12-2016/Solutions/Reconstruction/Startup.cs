@@ -25,7 +25,6 @@ namespace Reconstruction
             return weightCompared == 0 ? this.StartNode.CompareTo(other.StartNode) : -weightCompared;
         }
     }
-
     public class Startup
     {
         private static bool[,] roads;
@@ -72,90 +71,75 @@ namespace Reconstruction
                 }
             }
 
+            var initialEdges = GetInitialEdges();
+
             var edges = new List<Edge>();
 
             InitializeGraph(edges);
 
-            edges.Sort();
-
-            var tree = new int[n + 1];
-            var treesCount = 1;
-
-            var mpd = FindMinimumSpanningTree(edges, tree, treesCount);
+            var mpd = FindMinimumSpanningTree(new List<Edge>(edges), n);
 
             var result = 0;
 
-            foreach (var edge in edges)
+            foreach (var initialEdge in initialEdges)
             {
-                if (mpd.Contains(edge))
+                if (mpd.FirstOrDefault(e => e.StartNode == initialEdge.StartNode && e.EndNode == initialEdge.EndNode) == null)
                 {
-                    if (!roads[edge.StartNode, edge.EndNode])
-                    {
-                        var replacement = edges.FirstOrDefault(e => e.StartNode == edge.StartNode && !mpd.Contains(e));
+                    var edge = mpd.FirstOrDefault(x => x.StartNode == initialEdge.StartNode);
 
-                        if (replacement != null)
-                        {
-                            result += GetCost(costsToConstruct, replacement.StartNode, replacement.EndNode);
-                            continue;
-                        }
-
-                        result += GetCost(costsToConstruct, edge.StartNode, edge.EndNode);
-                    }
+                    result += GetCost(costsToDestroy, edge.StartNode, edge.EndNode);
                 }
-                else
+            }
+
+            foreach (var edge in mpd)
+            {
+                if (initialEdges.FirstOrDefault(x => x.StartNode == edge.StartNode && x.EndNode == edge.EndNode) == null)
                 {
-                    if (roads[edge.StartNode, edge.EndNode])
-                    {
-                        result += GetCost(costsToDestroy, edge.StartNode, edge.EndNode);
-                    }
+                    result += GetCost(costsToConstruct, edge.StartNode, edge.EndNode);
                 }
             }
 
             Console.WriteLine(result);
         }
-        private static ICollection<Edge> FindMinimumSpanningTree(IEnumerable<Edge> edges, IList<int> tree, int treesCount)
+
+        private static IList<Edge> GetInitialEdges()
+        {
+            var result = new List<Edge>();
+
+            for (var i = 0; i < n; i++)
+            {
+                for (var j = i + 1; j < n; j++)
+                {
+                    if (roads[i, j])
+                    {
+                        result.Add(new Edge(i, j, 0));
+                    }
+                }
+            }
+
+            return result;
+        }
+
+        private static ICollection<Edge> FindMinimumSpanningTree(List<Edge> edges, int vertexCount)
         {
             var mpd = new List<Edge>();
 
-            foreach (var edge in edges)
+            var startEdge = edges.OrderBy(e => e.Weight).FirstOrDefault();
+            mpd.Add(startEdge);
+            edges.Remove(startEdge);
+
+            while (mpd.Count < vertexCount - 1)
             {
-                if (tree[edge.StartNode] == 0) // not visited
-                {
-                    if (tree[edge.EndNode] == 0) // both ends are not visited
-                    {
-                        tree[edge.StartNode] = tree[edge.EndNode] = treesCount;
-                        treesCount++;
-                    }
-                    else
-                    {
-                        // attach the start node to the tree of the end node
-                        tree[edge.StartNode] = tree[edge.EndNode];
-                    }
-                    mpd.Add(edge);
-                }
-                else // the start is part of a tree
-                {
-                    if (tree[edge.EndNode] == 0)
-                    {
-                        //attach the end node to the tree;
-                        tree[edge.EndNode] = tree[edge.StartNode];
-                        mpd.Add(edge);
-                    }
-                    else if (tree[edge.EndNode] != tree[edge.StartNode]) // combine the trees
-                    {
-                        int oldTreeNumber = tree[edge.EndNode];
+                var allVertex = mpd.Select(x => x.StartNode).ToList();
+                allVertex.AddRange(mpd.Select(x => x.EndNode));
+                allVertex = allVertex.Distinct().ToList();
 
-                        for (int i = 0; i < tree.Count; i++)
-                        {
-                            if (tree[i] == oldTreeNumber)
-                            {
-                                tree[i] = tree[edge.StartNode];
-                            }
-                        }
+                var candidate = edges.Where(x => allVertex.Contains(x.StartNode) || allVertex.Contains(x.EndNode))
+                    .OrderBy(x => x.Weight)
+                    .FirstOrDefault();
 
-                        mpd.Add(edge);
-                    }
-                }
+                mpd.Add(candidate);
+                edges.Remove(candidate);
             }
 
             return mpd;
