@@ -92,9 +92,28 @@ namespace Reconstruction
                 }
                 else
                 {
+                    // HAVE TO FIND BEST FUCKING OPTIMAL NODE TO DESTROY 
                     if (roads[edge.StartNode, edge.EndNode])
                     {
-                        // HAVE TO FIND BEST FUCKING OPTIMAL NODE TO DESTROY 
+                        var connectedNodes = edges.Where(e => EdgeIsConnected(edge, e))
+                            .ToList();
+
+                        connectedNodes.Remove(edge);
+
+                        if (connectedNodes.Count > 0)
+                        {
+                            var littlest = connectedNodes
+                                .OrderBy(x => x.Weight)
+                                .FirstOrDefault();
+
+                            if (roads[littlest.StartNode, littlest.EndNode])
+                            {
+                                result += GetCost(costsToDestroy, littlest.StartNode, littlest.EndNode);
+                            }
+
+                            continue;
+                        }
+
                         result += GetCost(costsToDestroy, edge.StartNode, edge.EndNode);
                     }
                 }
@@ -102,6 +121,15 @@ namespace Reconstruction
 
             Console.WriteLine(result);
         }
+
+        private static bool EdgeIsConnected(Edge edge, Edge comparingEdge)
+        {
+            return edge.StartNode == comparingEdge.StartNode ||
+                   edge.StartNode == comparingEdge.EndNode ||
+                   edge.EndNode == comparingEdge.StartNode ||
+                   edge.EndNode == comparingEdge.EndNode;
+        }
+
         private static ICollection<Edge> FindMinimumSpanningTree(IList<Edge> edges, IList<int> tree, int treesCount, int nodesCount)
         {
             var mpd = new List<Edge>();
