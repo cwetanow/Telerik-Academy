@@ -22,7 +22,7 @@ namespace Reconstruction
         public int CompareTo(Edge other)
         {
             var weightCompared = this.Weight.CompareTo(other.Weight);
-            return weightCompared == 0 ? this.StartNode.CompareTo(other.StartNode) : -weightCompared;
+            return weightCompared == 0 ? this.StartNode.CompareTo(other.StartNode) : weightCompared;
         }
     }
     public class Startup
@@ -71,78 +71,75 @@ namespace Reconstruction
                 }
             }
 
-            var initialEdges = GetInitialEdges();
-
             var edges = new List<Edge>();
 
             InitializeGraph(edges);
 
-            var mpd = FindMinimumSpanningTree(new List<Edge>(edges), n);
+            var tree = new int[n + 1];
+
+            var mpd = FindMinimumSpanningTree(edges, tree, 1, n);
 
             var result = 0;
 
-            foreach (var initialEdge in initialEdges)
+            foreach (var edge in edges)
             {
-                if (mpd.FirstOrDefault(e => e.StartNode == initialEdge.StartNode && e.EndNode == initialEdge.EndNode) == null)
+                if (mpd.Contains(edge))
                 {
-                    var edge = mpd.FirstOrDefault(x => x.StartNode == initialEdge.StartNode);
-
-                    result += GetCost(costsToDestroy, edge.StartNode, edge.EndNode);
+                    if (!roads[edge.StartNode, edge.EndNode])
+                    {
+                        result += GetCost(costsToConstruct, edge.StartNode, edge.EndNode);
+                    }
                 }
-            }
-
-            foreach (var edge in mpd)
-            {
-                if (initialEdges.FirstOrDefault(x => x.StartNode == edge.StartNode && x.EndNode == edge.EndNode) == null)
+                else
                 {
-                    result += GetCost(costsToConstruct, edge.StartNode, edge.EndNode);
+                    if (roads[edge.StartNode, edge.EndNode])
+                    {
+                        // HAVE TO FIND BEST FUCKING OPTIMAL NODE TO DESTROY 
+                        result += GetCost(costsToDestroy, edge.StartNode, edge.EndNode);
+                    }
                 }
             }
 
             Console.WriteLine(result);
         }
-
-        private static IList<Edge> GetInitialEdges()
-        {
-            var result = new List<Edge>();
-
-            for (var i = 0; i < n; i++)
-            {
-                for (var j = i + 1; j < n; j++)
-                {
-                    if (roads[i, j])
-                    {
-                        result.Add(new Edge(i, j, 0));
-                    }
-                }
-            }
-
-            return result;
-        }
-
-        private static ICollection<Edge> FindMinimumSpanningTree(List<Edge> edges, int vertexCount)
+        private static ICollection<Edge> FindMinimumSpanningTree(IList<Edge> edges, IList<int> tree, int treesCount, int nodesCount)
         {
             var mpd = new List<Edge>();
 
-            var startEdge = edges.OrderBy(e => e.Weight).FirstOrDefault();
-            mpd.Add(startEdge);
-            edges.Remove(startEdge);
+            edges = edges.OrderBy(x => x.Weight).ToList();
+            var addedEdges = new List<int>();
 
-            while (mpd.Count < vertexCount - 1)
+            var starter = edges.FirstOrDefault();
+
+            if (starter == null)
             {
-                var allVertex = mpd.Select(x => x.StartNode).ToList();
-                allVertex.AddRange(mpd.Select(x => x.EndNode));
-                allVertex = allVertex.Distinct().ToList();
+                return mpd;
+            }
+            mpd.Add(starter);
+            addedEdges.Add(starter.StartNode);
+            addedEdges.Add(starter.EndNode);
 
-                var candidate = edges.Where(x => allVertex.Contains(x.StartNode) || allVertex.Contains(x.EndNode))
-                    .OrderBy(x => x.Weight)
-                    .FirstOrDefault();
+            while (mpd.Count != nodesCount - 1)
+            {
+                var minimal = edges.FirstOrDefault(e => AddedEdgesContainsEdge(addedEdges, e));
 
-                mpd.Add(candidate);
-                edges.Remove(candidate);
+                if (minimal != null)
+                {
+                    mpd.Add(minimal);
+                    addedEdges.Add(addedEdges.Contains(minimal.StartNode) ? minimal.EndNode : minimal.StartNode);
+                    edges.Remove(minimal);
+                }
             }
 
             return mpd;
+        }
+
+        private static bool AddedEdgesContainsEdge(ICollection<int> addedEdges, Edge edge)
+        {
+            var startIsIn = addedEdges.Contains(edge.StartNode);
+            var endIsIn = addedEdges.Contains(edge.EndNode);
+
+            return (startIsIn && !endIsIn) || (!startIsIn && endIsIn);
         }
 
         private static void InitializeGraph(ICollection<Edge> edges)
