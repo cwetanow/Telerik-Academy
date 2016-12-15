@@ -1,89 +1,108 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Diameter
 {
     public class Startup
     {
-        public const long Inf = 99999;
+        static Dictionary<int, List<Tuple<int, int>>> tree;
+        static Dictionary<int, bool> visited;
+        static int farthestNode = 0;
+        static long farthestNodeTotal = 0;
+        static long max = 0;
 
-        public static long[,] FloydWarshall(long[,] graph, int verticesCount)
+        private static void DFS(int fromRoot, long total)
         {
-            var distance = new long[verticesCount, verticesCount];
+            visited[fromRoot] = true;
 
-            for (var i = 0; i < verticesCount; ++i)
+            foreach (var descendant in tree[fromRoot])
             {
-                for (var j = 0; j < verticesCount; ++j)
+                if (!visited[descendant.Item1])
                 {
-                    distance[i, j] = graph[i, j];
+                    DFS(descendant.Item1, total + descendant.Item2);
                 }
             }
 
-            for (var k = 0; k < verticesCount; ++k)
-            {
-                for (var i = 0; i < verticesCount; ++i)
-                {
-                    for (var j = 0; j < verticesCount; ++j)
-                    {
-                        if (distance[i, k] + distance[k, j] < distance[i, j])
-                        {
-                            distance[i, j] = distance[i, k] + distance[k, j];
-                        }
-                    }
-                }
-            }
+            visited[fromRoot] = false;
 
-            return distance;
+            max = total > max ? total : max;
         }
 
-        public static long GetLongestPath(long[,] graph, int verticles)
+        private static void FindFarthestNode(int node, long total)
         {
-            var distances = FloydWarshall(graph, verticles);
+            visited[node] = true;
 
-            var max = long.MinValue;
-
-            for (var i = 0; i < verticles; i++)
+            foreach (var descendant in tree[node])
             {
-                for (var j = i + 1; j < verticles; j++)
+
+                if (!visited[descendant.Item1])
                 {
-                    if (distances[i, j] > max)
-                    {
-                        max = distances[i, j];
-                    }
+
+                    FindFarthestNode(descendant.Item1, total + descendant.Item2);
                 }
             }
 
-            return max;
+            visited[node] = false;
+
+            if (total > farthestNodeTotal)
+            {
+                farthestNodeTotal = total;
+                farthestNode = node;
+            }
+        }
+
+        private static void Input()
+        {
+            var nodeCount = int.Parse(Console.ReadLine());
+
+            tree = new Dictionary<int, List<Tuple<int, int>>>(nodeCount);
+            visited = new Dictionary<int, bool>(nodeCount);
+
+            for (var i = 0; i < nodeCount - 1; i++)
+            {
+                var vals = Console.ReadLine()
+                    .Split(' ')
+                    .Select(int.Parse)
+                    .ToArray();
+
+                var node = new Tuple<int, int>(vals[1], vals[2]);
+                var parentOfNode = new Tuple<int, int>(vals[0], vals[2]);
+
+                if (!tree.ContainsKey(parentOfNode.Item1))
+                {
+                    tree.Add(parentOfNode.Item1, new List<Tuple<int, int>>());
+                }
+
+                if (!tree.ContainsKey(node.Item1))
+                {
+                    tree.Add(node.Item1, new List<Tuple<int, int>>());
+                }
+
+                if (!visited.ContainsKey(node.Item1))
+                {
+                    visited.Add(node.Item1, false);
+                }
+
+                if (!visited.ContainsKey(parentOfNode.Item1))
+                {
+                    visited.Add(parentOfNode.Item1, false);
+                }
+
+                tree[parentOfNode.Item1].Add(node);
+                tree[node.Item1].Add(parentOfNode);
+            }
         }
 
         static void Main(string[] args)
         {
-            var n = int.Parse(Console.ReadLine());
+            Input();
 
-            var graph = new long[n, n];
+            var someNode = tree.First((h) => h.Key > 0).Key;
+            FindFarthestNode(someNode, 0);
+            DFS(farthestNode, 0);
 
-            for (var i = 0; i < n; i++)
-            {
-                for (var j = 0; j < n; j++)
-                {
-                    graph[i, j] = Inf;
-                }
-            }
-
-            for (var i = 0; i < n - 1; i++)
-            {
-                var input = Console.ReadLine()
-                    .Split(' ')
-                    .Select(long.Parse)
-                    .ToArray();
-
-                graph[input[0], input[1]] = input[2];
-                graph[input[1], input[0]] = input[2];
-            }
-
-            var longest = GetLongestPath(graph, n);
-
-            Console.WriteLine(longest);
+            Console.WriteLine(max);
         }
 
     }
