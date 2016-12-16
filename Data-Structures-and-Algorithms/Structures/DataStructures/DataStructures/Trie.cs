@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace DataStructures
@@ -13,24 +12,24 @@ namespace DataStructures
                 this.Children = new List<Node>();
             }
 
-            public Node(char character, int weight = 0)
+            public Node(string word, double weight = 0)
             {
-                this.Character = character;
+                this.Word = word;
                 this.Weight = weight;
                 this.Children = new List<Node>();
             }
 
             public IList<Node> Children { get; private set; }
 
-            public char Character { get; private set; }
+            public string Word { get; private set; }
 
-            public int Weight { get; private set; }
+            public double Weight { get; private set; }
 
-            public Node FindChild(char c)
+            public Node FindChild(string wordToSearch)
             {
-                for (int i = 0; i < this.Children.Count; i++)
+                for (var i = 0; i < this.Children.Count; i++)
                 {
-                    if (Children.ElementAt(i).Character == c)
+                    if (Children.ElementAt(i).Word == wordToSearch)
                     {
                         return Children.ElementAt(i);
                     }
@@ -47,7 +46,7 @@ namespace DataStructures
             this.root = new Node();
         }
 
-        public void AddWord(string word, int weight)
+        public void AddWord(string word, double weight)
         {
             if (word.Length == 0)
             {
@@ -56,10 +55,18 @@ namespace DataStructures
 
             var current = this.root;
 
-            for (var i = 0; i < word.Length; i++)
+            for (int i = 0; i < word.Length; i++)
             {
-                var currentCharacter = word[i];
-                var child = current.FindChild(currentCharacter);
+                var currentWord = word[i].ToString();
+                i++;
+
+                while (i < word.Length && char.IsLetter(word[i]))
+                {
+                    currentWord += word[i];
+                    i++;
+                }
+
+                var child = current.FindChild(currentWord);
 
                 if (child != null)
                 {
@@ -69,13 +76,13 @@ namespace DataStructures
                 {
                     Node newNode;
 
-                    if (i == word.Length - 2)
+                    if (i >= word.Length - 2)
                     {
-                        newNode = new Node(currentCharacter, weight);
+                        newNode = new Node(currentWord, weight);
                     }
                     else
                     {
-                        newNode = new Node(currentCharacter);
+                        newNode = new Node(currentWord);
                     }
 
                     current.Children.Add(newNode);
@@ -90,7 +97,16 @@ namespace DataStructures
 
             for (int i = 0; i < word.Length; i++)
             {
-                var child = current.FindChild(word[i]);
+                var currentWord = word[i].ToString();
+                i++;
+
+                while (i < word.Length && char.IsLetter(word[i]))
+                {
+                    currentWord += word[i];
+                    i++;
+                }
+
+                var child = current.FindChild(currentWord);
 
                 if (child != null)
                 {
@@ -105,30 +121,34 @@ namespace DataStructures
             return true;
         }
 
-        public int GetWordWeight(string word)
+        public double GetWordWeight(string word)
         {
-            if (this.HasWord(word))
+            var current = this.root;
+
+            for (int i = 0; i < word.Length; i++)
             {
-                var current = this.root;
+                var currentWord = word[i].ToString();
+                i++;
 
-                for (int i = 0; i < word.Length; i++)
+                while (i < word.Length && char.IsLetter(word[i]))
                 {
-                    var child = current.FindChild(word[i]);
-
-                    if (child != null)
-                    {
-                        current = child;
-                    }
-                    else
-                    {
-                        return 0;
-                    }
+                    currentWord += word[i];
+                    i++;
                 }
 
-                return current.Weight;
+                var child = current.FindChild(currentWord);
+
+                if (child != null)
+                {
+                    current = child;
+                }
+                else
+                {
+                    return 0;
+                }
             }
 
-            return 0;
+            return current.Weight;
         }
     }
 }

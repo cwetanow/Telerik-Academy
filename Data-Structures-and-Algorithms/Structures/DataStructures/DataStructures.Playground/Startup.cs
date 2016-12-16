@@ -12,9 +12,11 @@ namespace DataStructures.Playground
                 "selection sort    20",
                 "linked list           20",
                 "program            5",
-                "viagra                -100" };
+                "viagra                -100",
+            "selection sort fast 10"
+            };
 
-            var words = "The selection sort algorithm could be applied to linked lists.";
+            var words = "The selection sort algorithm could be applied to linked lists. viagra";
 
             var trie = new Trie();
 
@@ -24,43 +26,81 @@ namespace DataStructures.Playground
                     .Where(x => !string.IsNullOrEmpty(x))
                     .ToArray();
 
-                var result = string.Empty;
+                var result = input[0];
 
-                for (int i = 0; i < input.Length - 1; i++)
+                for (int i = 1; i < input.Length - 1; i++)
                 {
-                    result += (input[i] + ' ');
+                    result += (' ' + input[i]);
                 }
 
-                trie.AddWord(result.ToLower(), int.Parse(input[input.Length - 1]));
+                trie.AddWord(result.ToLower(), double.Parse(input[input.Length - 1]));
             }
 
-            var current = string.Empty;
-            var score = 0;
+            var score = 0.0;
             var spaceCounters = 0;
+            var currentWord = string.Empty;
 
             words = words.ToLower();
             for (var i = 0; i < words.Length; i++)
             {
-                current += words[i];
-
-                if (words[i] == ' ')
+                if (!char.IsLetter(words[i]))
                 {
-                    spaceCounters++;
-
-                    if (!trie.HasWord(current))
-                    {
-                        current = string.Empty;
-                    }
+                    continue;
                 }
 
-                if (trie.GetWordWeight(current) != 0)
+                if (currentWord.Length == 0)
                 {
-                    if (!char.IsLetter(words[i + 1]))
-                    {
-                        score += trie.GetWordWeight(current);
-                        current = string.Empty;
-                    }
+                    currentWord = words[i].ToString();
+                    i++;
                 }
+
+                while (i < words.Length && char.IsLetter(words[i]))
+                {
+                    currentWord += words[i];
+                    i++;
+                }
+
+                spaceCounters++;
+
+                if (!trie.HasWord(currentWord))
+                {
+                    currentWord = string.Empty;
+                    continue;
+                }
+
+                var currentScore = 0.0;
+
+                while (trie.HasWord(currentWord))
+                {
+                    currentWord += ' ';
+                    var j = i;
+                    while (trie.GetWordWeight(currentWord) == 0)
+                    {
+                        j++;
+
+                        while (j < words.Length && char.IsLetter(words[j]))
+                        {
+                            currentWord += words[j];
+                            j++;
+                        }
+                        
+                        currentWord += ' ';
+
+                        if (!trie.HasWord(currentWord))
+                        {
+                            break;
+                        }
+
+                        spaceCounters++;
+                        i = j;
+                    }
+
+                    var weight = trie.GetWordWeight(currentWord);
+                    currentScore = weight == 0 ? currentScore : weight;
+                }
+
+                score += currentScore;
+                currentWord = string.Empty;
             }
 
             Console.WriteLine(score / spaceCounters);
