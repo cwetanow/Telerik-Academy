@@ -1,10 +1,11 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-    name: 'sort'
+    name: 'moviesSortPipe',
+    pure: false
 })
 export class SortPipe implements PipeTransform {
-    transform(items: any[], ) {
+    transform(items: any[], options: any) {
         return items.sort();
     }
 };
