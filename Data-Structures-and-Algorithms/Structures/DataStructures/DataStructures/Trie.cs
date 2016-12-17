@@ -23,7 +23,7 @@ namespace DataStructures
 
             public string Word { get; private set; }
 
-            public double Weight { get; private set; }
+            public double Weight { get; set; }
 
             public Node FindChild(string wordToSearch)
             {
@@ -71,6 +71,10 @@ namespace DataStructures
                 if (child != null)
                 {
                     current = child;
+                    if (currentWord == word)
+                    {
+                        current.Weight = weight;
+                    }
                 }
                 else
                 {

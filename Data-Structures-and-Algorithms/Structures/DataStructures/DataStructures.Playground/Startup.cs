@@ -11,7 +11,7 @@ namespace DataStructures.Playground
             var dictionary = new[] { "algorithm          10",
                 "selection sort    20",
                 "linked list           20",
-                "program            5",
+                "selection            5",
                 "viagra                -100",
             "selection sort fast 10"
             };
