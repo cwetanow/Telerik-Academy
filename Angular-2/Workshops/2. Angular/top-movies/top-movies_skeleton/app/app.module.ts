@@ -1,6 +1,6 @@
 import { MoviesService } from './core/services/movie-service';
-import { MovieSortPipe } from './pipes/sort-pipe';
-import { MovieFilterPipe } from './pipes/filter-pipe';
+
+import { MovieFilterPipe, MovieSortPipe } from './pipes';
 
 import { MovieComponent } from './movie/movie.component';
 import { MovieListComponent } from './movie/movies-list.component';
