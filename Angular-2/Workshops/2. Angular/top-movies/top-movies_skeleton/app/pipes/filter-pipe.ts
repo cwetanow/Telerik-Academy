@@ -7,12 +7,14 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 export class MovieFilterPipe implements PipeTransform {
     transform(movies: MovieModel[], filter: string): any {
-        if (movies) {
+        if (filter) {
             return movies.filter(m => {
                 return m.Title
                     .toLocaleLowerCase()
                     .indexOf(filter) > -1;
             });
         }
+
+        return movies;
     }
 }

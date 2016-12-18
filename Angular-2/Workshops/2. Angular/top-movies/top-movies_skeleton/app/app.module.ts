@@ -1,4 +1,4 @@
-import { SortPipe } from './pipes/sort-pipe';
+import { MovieSortPipe } from './pipes/sort-pipe';
 import { MovieFilterPipe } from './pipes/filter-pipe';
 
 import { MovieComponent } from './movie/movie.component';
@@ -23,7 +23,7 @@ import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
         MovieListComponent,
         MovieComponent,
 
-        SortPipe,
+        MovieSortPipe,
         MovieFilterPipe
     ],
     bootstrap: [AppComponent]

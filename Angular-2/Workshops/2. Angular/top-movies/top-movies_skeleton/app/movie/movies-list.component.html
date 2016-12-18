@@ -1,4 +1,21 @@
 <input type="text" class="form-control" placeholder="Search..." [(ngModel)]="filterProperty" value="{{filterProperty}}" />
-<tbody>
-    <tr mvdb-movie-short *ngFor="let movie of (movies | movieFilterPipe:filterProperty)" [movie]="movie"></tr>
-</tbody>
+<div class="form-group col-md-4 col-md-offset-1">
+    <label for="filter">Order:</label>
+    <select class="form-control" id="filter" (change)="onWayChange($event)">
+            <option [selected]="sortingWay === 'asc'" value="1">Ascending</option>
+            <option [selected]="sortingWay === 'desc'" value="-1">Descending</option>
+        </select>
+</div>
+<div class="form-group col-md-4 col-md-offset-1">
+    <label for="sort">Sort by:</label>
+    <select class="form-control" id="sort" (change)="onSortingChange($event)">
+            <option [selected]="sortingProperty === 'Title'" value="Title">Title</option>
+            <option [selected]="sortingProperty === 'imdbRating'" value="Rating">Rating</option>
+            <option [selected]="sortingProperty === 'Year'" value="Year">Year</option>
+        </select>
+</div>
+<div class="row">
+    <div class="col-lg-8" mvdb-movie-short *ngFor="let movie of ( movies | moviesSortPipe: [sortingProperty, sortingWay] | movieFilterPipe:filterProperty )"
+        [movie]="movie">
+    </div>
+</div>

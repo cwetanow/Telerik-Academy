@@ -9,10 +9,15 @@ import { Http, Response } from '@angular/http';
 export class MovieListComponent implements OnInit {
     movies: MovieModel[];
     pageTitle: string;
+
     filterProperty: string;
+    sortingWay: number;
+    sortingProperty: string;
 
     constructor(private http: Http) {
         this.filterProperty = '';
+        this.sortingWay = 1;
+        this.sortingProperty = "Title";
     }
 
     ngOnInit() {
@@ -24,9 +29,11 @@ export class MovieListComponent implements OnInit {
             });
     };
 
-    onInput(event: any) {
-        console.log(event.target.value);
+    onWayChange(event: any) {
+        this.sortingWay = +event.target.value;
     }
 
-
+    onSortingChange(event: any) {
+        this.sortingProperty = event.target.value;
+    }
 }
