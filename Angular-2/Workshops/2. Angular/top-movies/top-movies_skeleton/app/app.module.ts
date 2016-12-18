@@ -1,3 +1,4 @@
+import { MoviesService } from './core/services/movie-service';
 import { MovieSortPipe } from './pipes/sort-pipe';
 import { MovieFilterPipe } from './pipes/filter-pipe';
 
@@ -25,6 +26,9 @@ import { Ng2BootstrapModule } from 'ng2-bootstrap/ng2-bootstrap';
 
         MovieSortPipe,
         MovieFilterPipe
+    ],
+    providers: [
+        MoviesService
     ],
     bootstrap: [AppComponent]
 })

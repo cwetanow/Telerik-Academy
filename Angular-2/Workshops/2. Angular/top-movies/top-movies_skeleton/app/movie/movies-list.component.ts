@@ -1,6 +1,7 @@
 import { MovieModel } from './../core/models/movie';
 import { Component, OnInit, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { Http, Response } from '@angular/http';
+import { MoviesService } from '../core/services/movie-service';
 
 @Component({
     selector: 'movies-list',
@@ -14,14 +15,14 @@ export class MovieListComponent implements OnInit {
     sortingWay: number;
     sortingProperty: string;
 
-    constructor(private http: Http) {
+    constructor(private moviesService: MoviesService) {
         this.filterProperty = '';
         this.sortingWay = 1;
         this.sortingProperty = "Title";
     }
 
     ngOnInit() {
-        this.http.get('../data/movies.json')
+        this.moviesService.getMovies()
             .map((res: Response) => res.json())
             .subscribe(
             (res) => {
