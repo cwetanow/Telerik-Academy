@@ -1,3 +1,4 @@
+import { MovieModel } from './../core/models/movie';
 import { Component, OnInit, Inject, ChangeDetectionStrategy } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
@@ -6,10 +7,12 @@ import { Http, Response } from '@angular/http';
     templateUrl: 'movies-list.component.html'
 })
 export class MovieListComponent implements OnInit {
-    movies: any[];
+    movies: MovieModel[];
     pageTitle: string;
+    filterProperty: string;
 
     constructor(private http: Http) {
+        this.filterProperty = '';
     }
 
     ngOnInit() {
@@ -20,4 +23,10 @@ export class MovieListComponent implements OnInit {
                 this.movies = res;
             });
     };
+
+    onInput(event: any) {
+        console.log(event.target.value);
+    }
+
+
 }

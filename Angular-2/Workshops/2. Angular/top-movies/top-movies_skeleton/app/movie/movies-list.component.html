@@ -1,3 +1,4 @@
+<input type="text" class="form-control" placeholder="Search..." [(ngModel)]="filterProperty" value="{{filterProperty}}" />
 <tbody>
-    <tr mvdb-movie-short *ngFor="let movie of movies" [movie]="movie"></tr>
+    <tr mvdb-movie-short *ngFor="let movie of (movies | movieFilterPipe:filterProperty)" [movie]="movie"></tr>
 </tbody>

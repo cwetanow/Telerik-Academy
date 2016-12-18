@@ -1,4 +1,4 @@
-export class Movie {
+export class MovieModel {
     Title: string;
     Year: number;
     Rated: string;
