@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'mvdb-app',
+    selector: 'app',
     templateUrl: './app.component.html'
 })
-export class AppComponent {}
+export class AppComponent { }

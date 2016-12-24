@@ -4,7 +4,6 @@ import { Http, Response } from '@angular/http';
 import { MoviesService } from '../core/services/movie-service';
 
 @Component({
-    selector: 'movies-list',
     templateUrl: 'movies-list.component.html'
 })
 export class MovieListComponent implements OnInit {
@@ -38,3 +37,4 @@ export class MovieListComponent implements OnInit {
         this.sortingProperty = event.target.value;
     }
 }
+

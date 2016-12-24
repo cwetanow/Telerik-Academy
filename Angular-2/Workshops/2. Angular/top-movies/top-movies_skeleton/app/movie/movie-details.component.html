@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <h1>{{movie.Title}} ({{movie.Year}})</h1>
+            <hr>
+            <p><span class="glyphicon glyphicon-time"></span> {{movie.Released}}</p>
+            <p>
+                <span class="glyphicon glyphicon-facetime-video"></span> Directed by {{movie.Director}}</p>
+            <p>
+                <span class="glyphicon glyphicon-edit"></span> {{movie.Writer}}
+            </p>
+            <star-rating [rating]="movie.imdbRating">
+            </star-rating>
+            <hr>
+            <img class="img-responsive" src="{{movie.Poster}}" alt="">
+            <hr>
+            <p class="lead">
+                Genres: {{movie.Genre}}
+            </p>
+            <p>{{movie.Runtime}} long</p>
+            <hr>
+            <h3>Story</h3>
+            <p>
+                {{movie.Plot}}
+            </p>
+            <p class="lead">
+                Actors: {{movie.Actors}}
+            </p>
+            <hr>
+        </div>
+    </div>
+</div>

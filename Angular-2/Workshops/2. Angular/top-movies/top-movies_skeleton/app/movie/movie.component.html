@@ -2,7 +2,7 @@
     <img [src]="movie.Poster" [alt]="movie.Title" style="width: 40%">
 </td>
 <td class="title">
-    <a href="#">{{movie.Title}}</a>
+    <a [routerLink]="['/details', movie.Title]">{{movie.Title}}</a>
     <span class="year_type">({{movie.Year}})</span><br>
     <div class="user_rating">
         {{movie.imdbRating}} <span class="glyphicon glyphicon-star"></span>

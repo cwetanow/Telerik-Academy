@@ -1,0 +1,8 @@
+<span *ngFor="let star of stars">
+    <span *ngIf="star <= rating">
+        &#9733;
+    </span>
+<span *ngIf="star > rating">
+        &#9734;
+    </span>
+</span>{{rating}}/10
