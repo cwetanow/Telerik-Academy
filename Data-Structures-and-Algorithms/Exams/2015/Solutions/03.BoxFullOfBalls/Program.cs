@@ -16,6 +16,8 @@ namespace _03.BoxFullOfBalls
                 .Select(int.Parse)
                 .ToList();
 
+            moves.Sort();
+
             var ballsInterval = Console.ReadLine()
                 .Split(' ')
                 .Select(int.Parse)
@@ -74,7 +76,7 @@ namespace _03.BoxFullOfBalls
                 {
                     if (move > i)
                     {
-                        continue;
+                        break;
                     }
 
                     if (!plays[i - move])
