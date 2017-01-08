@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Words", "06.Words\06.Wor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.BoxFullOfBalls", "03.BoxFullOfBalls\03.BoxFullOfBalls.csproj", "{569D5815-81D8-48E2-A83A-0882F1AD9DCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.OfficeSpace", "02.OfficeSpace\02.OfficeSpace.csproj", "{62C4A3B1-B5E4-46F3-A59B-94BBCB1C6672}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{569D5815-81D8-48E2-A83A-0882F1AD9DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{569D5815-81D8-48E2-A83A-0882F1AD9DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{569D5815-81D8-48E2-A83A-0882F1AD9DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C4A3B1-B5E4-46F3-A59B-94BBCB1C6672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C4A3B1-B5E4-46F3-A59B-94BBCB1C6672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C4A3B1-B5E4-46F3-A59B-94BBCB1C6672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C4A3B1-B5E4-46F3-A59B-94BBCB1C6672}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
