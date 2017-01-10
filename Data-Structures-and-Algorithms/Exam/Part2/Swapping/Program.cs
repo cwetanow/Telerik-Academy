@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Swapping
 {
@@ -18,24 +16,42 @@ namespace Swapping
                 .ToList();
 
             var initialNumbers = Enumerable.Range(1, n)
-                .ToList();
+                .ToDictionary(num => num, num => num - 1);
+
+            var len = initialNumbers.Count;
 
             foreach (var number in numbers)
             {
-                var index = initialNumbers.IndexOf(number);
+                var index = initialNumbers[number];
 
-                var left = initialNumbers.GetRange(0, index);
-                var right = initialNumbers.GetRange(index + 1, n - index - 1);
-
-                initialNumbers.Clear();
-
-                initialNumbers.AddRange(right);
-                initialNumbers.Add(number);
-                initialNumbers.AddRange(left);
+                for (var i = 1; i <= n; i++)
+                {
+                    var num = initialNumbers[i];
+                    if (num > index)
+                    {
+                        initialNumbers[i] -= index + 1;
+                    }
+                    else if (num < index)
+                    {
+                        initialNumbers[i] += len - index;
+                    }
+                    else
+                    {
+                        initialNumbers[i] = len - 1 - index;
+                    }
+                }
             }
 
-            var result = string.Join(" ", initialNumbers);
-            Console.WriteLine(result);
+            var nums = initialNumbers
+                .Select(num => new
+                {
+                    Index = num.Value,
+                    Number = num.Key
+                })
+                .ToList();
+            nums.Sort((a, b) => a.Index.CompareTo(b.Index));
+
+            Console.WriteLine(string.Join(" ", nums.Select(x => x.Number)));
         }
     }
 }
