@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 
 namespace Documentation
 {
@@ -7,11 +8,9 @@ namespace Documentation
     {
         static void Main(string[] args)
         {
-            var str = Console.ReadLine().ToList();
+            var str = RemoveWhitespace(Console.ReadLine());
 
-            str.RemoveAll(c => !char.IsLetter(c));
-
-            var len = str.Count;
+            var len = str.Length;
             var steps = 0;
             for (var i = 0; i < len / 2; i++)
             {
@@ -43,6 +42,20 @@ namespace Documentation
             }
 
             Console.WriteLine(steps);
+        }
+
+        private static string RemoveWhitespace(string str)
+        {
+            var builder = new StringBuilder();
+            foreach (var charche in str)
+            {
+                if (char.IsLetter(charche))
+                {
+                    builder.Append(charche);
+                }
+            }
+
+            return builder.ToString();
         }
     }
 }
