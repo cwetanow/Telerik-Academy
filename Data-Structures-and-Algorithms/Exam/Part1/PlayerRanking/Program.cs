@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Wintellect.PowerCollections;
 
 namespace PlayerRanking
 {
     class Program
     {
         private static readonly Dictionary<string, SortedSet<Player>> playersByType = new Dictionary<string, SortedSet<Player>>();
-        private static readonly List<Player> players = new List<Player>();
+        private static readonly BigList<Player> players = new BigList<Player>();
 
         private const string SuccessAdd = "Added player {0} to position {1}";
         private const string Result = "Type {0}: {1}";
