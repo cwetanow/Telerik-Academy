@@ -13,4 +13,4 @@ Repository for the Telerik Academy Season 2016-2017 courses
 | Design-Patterns | Databases      |
 | Data-Structures-and-Algorithms | Web-Applications-with-Node.js      |
 |                                | Angular-2 |
-| ASP.NET-Web-Forms | Mobile-Applications-for-Android |
+| ASP.NET-Web-Forms |                       |
