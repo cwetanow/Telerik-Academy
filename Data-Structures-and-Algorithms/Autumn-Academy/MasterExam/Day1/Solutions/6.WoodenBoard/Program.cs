@@ -15,15 +15,18 @@ namespace _6.WoodenBoard
 
         public static int CountNumberOfAppends(string str)
         {
-            if (IsPalindrome(str))
+            var result = 0;
+            var index = 0;
+            while (!IsPalindrome(str, index))
             {
-                return 0;
+                index++;
+                result++;
             }
 
-            return 1 + CountNumberOfAppends(str.Substring(1, str.Length - 1));
+            return result;
         }
 
-        static bool IsPalindrome(string str)
+        static bool IsPalindrome(string str, int start)
         {
             var lenght = str.Length;
 
@@ -32,7 +35,7 @@ namespace _6.WoodenBoard
                 return true;
             }
 
-            for (int i = 0, j = lenght - 1; i < j; i++, j--)
+            for (int i = start, j = lenght - 1; i < j; i++, j--)
             {
                 if (str[i] != str[j])
                 {
